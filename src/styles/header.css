@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--font-name);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+section {
+    padding: 50px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: unset;
+}
+
+ul {
+    list-style: none;
+
+}
+
+/*======reusable class ====*/
+.container {
+    width: 1140px;
+    padding: 0px 15px;
+    margin: auto;
+}
+
+.section_title {
+    color: var(--heading-color);
+    font-weight: 700;
+
+}
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.logo_img{
+    background: var(--bg-gradient);
+    width: 35px;
+    height: 35px;
+    line-height:35px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo_img img{
+    width: 100%;
+}
+.logo h2{
+    color: var(--heading-color);
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+}
+
+.nav_item a{
+    color: var(--heading-color);
+    font-weight: 600 !important;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+.nav_item a:hover{
+    color: var(--primary-color);
+}
+.nav_right{
+    display: flex;
+    align-items:center;
+    column-gap: 1.5rem;
+}
+.register_btn{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    color:#fff;
+    background: var(--primary-color);
+    border-radius: 5px;
+    font-family: var(--font-name);
+    font-size: 1.0rem;
+    font-weight: 500 ;
+    cursor: pointer;
+}
+.mobile__menu{
+    color: var(--heading-color) ;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+
+}
+.sticky_header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background:#fff;
+}
