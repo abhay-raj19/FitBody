@@ -32,13 +32,13 @@
 
 ## 📍Table Of Contents
 
-- [About](#🎯About)
-- [Live Demo](#🖱️Live Demo)
-- [Issues to be welcomed](#🔩Issues to be welcomed)
-- [Building FitBody](#📦️Building FitBody)
-- [Note](#🗒️NOTE)
-- [Features](#💫Features)
-- [Technology Stack](#💻Technology Stack)
+- [About](#About)
+- [Live Demo](#Live Demo)
+- [Issues to be welcomed](#Issues to be welcomed)
+- [Building FitBody](#Building FitBody)
+- [Note](#NOTE)
+- [Features](#Features)
+- [Technology Stack](#Technology Stack)
 - [License](#License)
 - [Repo Status](#Repo Status)
 - [Our Contributors](#Our Contributors)
