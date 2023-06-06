@@ -151,4 +151,4 @@ Licensed under the MIT License.
 <!-- Thank you to all the amazing contributors who have made this project possible!
 Show some ❤️ by starring this awesome repository! -->
 
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">⇑</a>)</p>
