@@ -33,15 +33,15 @@
 ## 📍Table Of Contents
 
 - [About](#About)
-- [Live Demo](#Live Demo)
-- [Issues to be welcomed](#Issues to be welcomed)
-- [Building FitBody](#Building FitBody)
+- [Live Demo](#LiveDemo)
+- [Issues to be welcomed](#Issuestobewelcomed)
+- [Building FitBody](#BuildingFitBody)
 - [Note](#NOTE)
 - [Features](#Features)
-- [Technology Stack](#Technology Stack)
+- [Technology Stack](#TechnologyStack)
 - [License](#License)
-- [Repo Status](#Repo Status)
-- [Our Contributors](#Our Contributors)
+- [Repo Status](#RepoStatus)
+- [Our Contributors](#OurContributors)
 
 
 ## 🎯About
