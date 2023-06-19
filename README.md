@@ -1,7 +1,10 @@
-<div id="top"></div>
-<p align="center">
-<img width="100%" src="https://github.com/abhay-raj19/FitBody/blob/main/src/assets/repo%20imges/Screenshot%201.png" alt="FitBody" />
+
+<p align="center" style="color: #6f55f2; font-family: Rockwell, serif; font-size: 24px; font-weight: bold;">
+  🏋🏽FitBody🏋🏽
 </p>
+
+
+![Website Screenshot](/src/assets/repo%20imges/Screenshot%201.png)
 <p align="center">
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
@@ -25,7 +28,7 @@
      <br>
 </p>
 
-# 🏋🏽FitBody🏋🏽
+# 
 
 <!-- ## Simple website that will blow your mind and requires many PR to be raised. -->
 
