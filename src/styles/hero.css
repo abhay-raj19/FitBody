@@ -174,3 +174,105 @@
 .dumble_icon img{
     width: 100%;
 }
+
+/* CSS code for Hero component */
+
+@media (max-width: 768px) {
+    .hero_wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+  
+    .hero_content .section_title {
+      font-size: 2.5rem;
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .hero_content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+  
+    .hero_content p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .hero_btns {
+      flex-direction: column;
+      align-items: center;
+      column-gap: 0;
+    }
+  
+    .watch_btn {
+      font-size: 0.9rem;
+    }
+  
+    .box-01 {
+      width: 250px;
+      height: 250px;
+      border: 15px solid rgba(141, 141, 235, 1);
+    }
+  
+    .box-02 {
+      width: 200px;
+      height: 200px;
+      border: 15px solid #b5a9f3;
+    }
+  
+    .box-03 {
+      width: 150px;
+      height: 150px;
+      border: 15px solid #d3cef2;
+    }
+  
+    .heart_rate {
+      width: 80px;
+      top: 45%;
+      left: -5%;
+      padding: 10px;
+    }
+  
+    .heart_rate h5,
+    .heart_rate h6 {
+      font-size: 0.7rem;
+    }
+  
+    .heart_rate h6 {
+      margin-top: 5px;
+    }
+  
+    .gym_location {
+      top: -5%;
+      right: -8%;
+      padding: 0.8rem;
+    }
+  
+    .gym_location span {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  
+    .gym_location h5 {
+      font-size: 0.8rem;
+    }
+  
+    .dumble_icon {
+      top: -5%;
+      left: -3%;
+      width: 30px;
+      height: 30px;
+      padding: 10px 7px;
+    }
+  
+    .dumble_icon img {
+      width: 80%;
+    }
+  }
+  

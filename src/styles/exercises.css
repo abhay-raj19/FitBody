@@ -57,3 +57,31 @@
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.801);
 }
+
+/* //// */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .exercise_wrapper {
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+  
+    .exercise_item {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .container.exercise_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .exercise_icon img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  

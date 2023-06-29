@@ -41,3 +41,48 @@
     color: #777;
     font-size: 1rem;
 }
+/* 
+------ */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer_wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer_box {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .logo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer_title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .logo h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .footer_title {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+  

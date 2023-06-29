@@ -41,3 +41,54 @@
     margin-bottom: 50px;
     text-align: center;
 }
+
+/* -------- */
+
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .sliders {
+      width: 100%;
+    }
+    
+    .slide_item {
+      padding: 20px;
+    }
+    
+    .slide_item h4 {
+      font-size: 1.8rem;
+    }
+    
+    .slide_item p {
+      font-size: 1rem;
+    }
+    
+    .slide_img-01,
+    .slide_img-02,
+    .slide_img-03 {
+      border-radius: 0.6rem;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .slide_item {
+      padding: 10px;
+    }
+    
+    .slide_item h4 {
+      font-size: 1.5rem;
+    }
+    
+    .slide_item p {
+      font-size: 0.9rem;
+    }
+    
+    .slide_img-01,
+    .slide_img-02,
+    .slide_img-03 {
+      border-radius: 0.4rem;
+      margin-bottom: 10px;
+    }
+  }

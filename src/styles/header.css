@@ -85,6 +85,7 @@ ul {
     display: flex;
     align-items: center;
     column-gap: 2.7rem;
+    justify-content: flex-end;
 }
 
 .nav_item a{
@@ -129,3 +130,10 @@ ul {
     z-index: 99;
     background:#fff;
 }
+
+/* ------ */
+
+/* New Styles for Mobile Menu */
+.mobile-menu-open .navigation {
+    display: block;
+  }
