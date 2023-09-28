@@ -4,7 +4,7 @@
 </p>
 
 
-![Website Screenshot](/src/assets/repo%20imges/Screenshot%201.png)
+![Website Screenshot](/src/assets/repo%20imges/Screenshot%201.jpg)
 <p align="center">
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
