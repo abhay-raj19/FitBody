@@ -130,6 +130,16 @@ ul {
     z-index: 99;
     background:#fff;
 }
+.logo h2 a {
+    text-decoration: none; 
+    
+    color: #000; 
+    transition: color 0.3s ease;
+}
+
+.logo h2 a:hover {
+    color: #0078d4; 
+}
 
 /* ------ */
 
