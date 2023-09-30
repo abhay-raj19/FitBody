@@ -11,6 +11,7 @@
 }
 .footer_box{
     width:30%;
+    
 }
 .abc{
     padding-right:50px;
@@ -30,10 +31,15 @@
 }
 .footer_links li a {
     color: var(--heading-color);
-    cursor: pointer;
+ 
 }
-.footer_links li a:hover {
-    color:var(--primary-color);
+
+/* changes some css  */
+
+.footer_links li:hover {
+  color: #0078d4;                  
+  cursor: pointer;
+ 
 }
 .copyright{
     margin-top: 30px;
