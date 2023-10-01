@@ -10,8 +10,10 @@ const Footer = () => {
         <div className="footer_wrapper">
             <div className="footer_box">
             <div className="logo">
-            <div className="logo_img"><img src={logo} alt="" /></div>
-            <h2>FitBody</h2>
+            <div className="logo_img">
+            <a href="/"><img src={logo} alt="logo" /></a>
+                </div>
+            <h2><a href="/">FitBody</a></h2>
             </div>
             <p className='abc'>
                 Lorem ipsum dolor, sit amet con adig elit. Sunt sed commodi, repudiandae quidem omnis saepe.

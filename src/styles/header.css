@@ -103,6 +103,7 @@ ul {
     align-items:center;
     column-gap: 1.5rem;
 }
+
 .register_btn{
     border: none;
     outline: none;
@@ -114,7 +115,12 @@ ul {
     font-size: 1.0rem;
     font-weight: 500 ;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
+.register_btn:hover {
+    background-color: #9d42d2; 
+    transform: scale(1.05); 
+  }
 .mobile__menu{
     color: var(--heading-color) ;
     font-size: 1.3rem;
@@ -129,6 +135,16 @@ ul {
     left: 0;
     z-index: 99;
     background:#fff;
+}
+.logo h2 a {
+    text-decoration: none; 
+    
+    color: #000; 
+    transition: color 0.3s ease;
+}
+
+.logo h2 a:hover {
+    color: #0078d4; 
 }
 
 /* ------ */
