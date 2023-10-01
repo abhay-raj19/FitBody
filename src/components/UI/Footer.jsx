@@ -22,9 +22,9 @@ const Footer = () => {
             <div className="footer_box">
                 <h4 className="footer_title">Company</h4>
                 <ul className="footer_links">
-                    <li><a href="#"></a>Our Program</li>
-                    <li><a href="#"></a>Our Plan</li>
-                    <li><a href="#"></a>Become A Member</li>
+                    <li>Our Program</li>
+                    <li>Our Plan</li>
+                    <li>Become A Member</li>
                 </ul>
             </div>
             
@@ -32,9 +32,9 @@ const Footer = () => {
             <div className="footer_box">
                 <h4 className="footer_title">Quick Links</h4>
                 <ul className="footer_links">
-                    <li><a href="#"></a>About Us</li>
-                    <li><a href="#"></a>Contact Us</li>
-                    <li><a href="#"></a>Support</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Support</li>
                 </ul>
             </div>
 
@@ -42,9 +42,9 @@ const Footer = () => {
             <div className="footer_box">
                 <h4 className="footer_title">Quick Links</h4>
                 <ul className="footer_links">
-                    <li><a href="#"></a>About Us</li>
-                    <li><a href="#"></a>Contact Us</li>
-                    <li><a href="#"></a>Support</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Support</li>
                 </ul>
             </div>
 
