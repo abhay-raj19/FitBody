@@ -22,6 +22,10 @@ const nav__links = [
     path: '#pricing-plan',
     display: 'Pricing'
   },
+  {
+    path:'#Logout',
+    display:'Logout'
+  },
 ]
 
 

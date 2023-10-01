@@ -20,12 +20,7 @@ const Hero = () => {
                             <span className="highlights"> Healthy </span> Lifestyle</h2>
                         <p data-aos='fade-up'
                         data-aos-delay='100'
-                         data-aos-duration='1800'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            <br />
-                            At fugiat, totam voluptatibus quo dicta vel, vitae nisi hic sequi, expedita
-                            maiores
-                            <br />
-                            reiciendis ab quaerat? Aliquam nemo incidunt doloribus corruption .</p>
+                         data-aos-duration='1800'>Regular exercise is the cornerstone of a healthy lifestyle. It boosts physical fitness, strengthens the immune system, and reduces the risk of chronic diseases. Exercise also enhances mental well-being, reducing stress and anxiety. Incorporating it into daily routines fosters longevity, energy, and overall vitality, promoting a fulfilling life.</p>
                         <div className="hero_btns" data-aos='fade-up'
                         data-aos-delay='200'
                          data-aos-duration='2000'>
