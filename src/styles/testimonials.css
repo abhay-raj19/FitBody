@@ -1,5 +1,5 @@
 .sliders{
-    width: 600px;
+    width: 100%;
 }
 .slide_item{
     background: #fff;
@@ -41,7 +41,17 @@
     margin-bottom: 50px;
     text-align: center;
 }
-
+.testimonial-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.swiper{
+  width: 35vw;
+}
 /* -------- */
 
 
@@ -70,6 +80,12 @@
       border-radius: 0.6rem;
       margin-bottom: 20px;
     }
+    .testimonial-container{
+      flex-direction: column;
+    }
+    .swiper{
+      width: 80vw;
+    }
   }
   
   @media screen and (max-width: 480px) {
@@ -90,5 +106,11 @@
     .slide_img-03 {
       border-radius: 0.4rem;
       margin-bottom: 10px;
+    }
+    .testimonial-container{
+      flex-direction: column;
+    }
+    .swiper{
+      width: 80vw;
     }
   }
