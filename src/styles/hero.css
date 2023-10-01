@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    padding-right: 50px;
 }
 
 .hero_content .section_title{
