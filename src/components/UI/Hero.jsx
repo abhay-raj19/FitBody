@@ -20,12 +20,10 @@ const Hero = () => {
                             <span className="highlights"> Healthy </span> Lifestyle</h2>
                         <p data-aos='fade-up'
                         data-aos-delay='100'
-                         data-aos-duration='1800'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                         data-aos-duration='1800'> Make exercise a daily habit.
                             <br />
-                            At fugiat, totam voluptatibus quo dicta vel, vitae nisi hic sequi, expedita
-                            maiores
-                            <br />
-                            reiciendis ab quaerat? Aliquam nemo incidunt doloribus corruption .</p>
+                            Exercise isn't just the key; it's the driving force  <br />that propels you toward a life of boundless health and vitality
+ </p>
                         <div className="hero_btns" data-aos='fade-up'
                         data-aos-delay='200'
                          data-aos-duration='2000'>

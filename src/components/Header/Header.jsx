@@ -69,7 +69,7 @@ const Header = () => {
             <div className="logo_img">
               <a href="/"><img src={logo} alt="logo" /></a>
             </div>
-            <h2><a href="/">FitBody</a></h2>
+            <h2 className='fitbody'><a  href="/">FitBody</a></h2>
           </div>
 
           {/*====Navigation bar====*/}
