@@ -15,7 +15,7 @@ const Exercises = () => {
                 <h2 className="section_title">
                     Benifits of <span className="highlights">Exercise</span>
                 </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet at praesentium eos odio accusantium dolorum similique.</p>
+                <p>Exercise offers a wide range of physical, mental, and emotional benefits. Incorporating regular physical activity into your life can have a significant positive impact on your overall well-being..</p>
             </div>
 
             {/* =============Excersise list============ */}
@@ -27,7 +27,7 @@ const Exercises = () => {
                     </span>
                     <div className="exercise_content">
                         <h4>Healthy Life</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet at praesentium eos odio accusantium dolorum similique.</p>
+                        <p>A healthy life is characterized by a balanced approach to physical, mental, and emotional well-being. It involves regular exercise, nutritious eating, adequate sleep, and stress management. </p>
                     </div>
                 </div>
                 <div className="exercise_item" data-aos='zoom-in'
@@ -37,7 +37,7 @@ const Exercises = () => {
                     </span>
                     <div className="exercise_content">
                         <h4>Increased Flexibility</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet at praesentium eos odio accusantium dolorum similique.</p>
+                        <p>Regular stretching exercises and yoga can help achieve this. Improved flexibility contributes to better posture, reduced risk of injuries, and increased agility, making daily activities and physical performance more comfortable and efficient.</p>
                     </div>
                 </div>
                 <div className="exercise_item" data-aos='zoom-in'
@@ -48,7 +48,7 @@ const Exercises = () => {
 
                     <div className="exercise_content">
                         <h4>Reducing Boold Pressure</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet at praesentium eos odio accusantium dolorum similique.
+                        <p> Lifestyle changes like a balanced diet low in sodium, regular exercise, stress management, and limiting alcohol can help lower high blood pressure. Medications may also be prescribed.
                         </p>
                     </div>
                 </div>

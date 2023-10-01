@@ -10,7 +10,7 @@ const Pricing = () => {
                         Gym <span className="highlights">Pricing </span>Plan
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi labore animi voluptates consequatur. Nisi, sunt odio ipsa ab soluta volulorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad odit quibusdam modi ex incidunt, laudantium totam nemo tenetur corporis.
+                    Presenting a comprehensive breakdown of membership plans, fees, and payment options. Users can easily compare pricing tiers, from basic to premium packages, to find the ideal fit for their fitness goals and budget. Transparent pricing ensures informed decisions and hassle-free gym selection.
                     </p>
                 </div>
 
