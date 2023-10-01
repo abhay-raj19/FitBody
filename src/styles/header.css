@@ -57,6 +57,7 @@ ul {
     justify-content: space-between;
 }
 .logo{
+  
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -76,11 +77,13 @@ ul {
 .logo_img img{
     width: 100%;
 }
-.logo h2{
+.logo h2 a{
+
     color: var(--heading-color);
     font-weight: 700 !important;
     font-size: 1.8rem;
-}
+}  
+
 .menu{
     display: flex;
     align-items: center;
@@ -138,10 +141,12 @@ ul {
 }
 .logo h2 a {
     text-decoration: none; 
-    
     color: #000; 
     transition: color 0.3s ease;
 }
+.fitbody{ 
+   padding-top: 13px;
+} 
 
 .logo h2 a:hover {
     color: #0078d4; 
