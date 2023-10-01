@@ -101,9 +101,8 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 
 2. In the root directory: `npm install` for downloading all the dependencies needed for the project.
 
-3. Run `npm run build` for building the project.
+3. Run `npm start` for starting the server (FitBody is currently running on `localhost:3000`)
 
-4. Run `npm start` for starting the server (FitBody is currently running on `localhost:3000`)
 
 
     Happy coding :)
@@ -144,13 +143,56 @@ Licensed under the MIT License.
 <br><br>
 
 
-## Our Contributors
+## Contributors
 
-<a href="https://github.com/abhay-raj19/FitBody/graphs/contributors">
-  <img align="center" src="https://contrib.rocks/image?max=100&repo=abhay-raj19/FitBody" />
-</a> 
 
-<!-- Thank you to all the amazing contributors who have made this project possible!
-Show some ❤️ by starring this awesome repository! -->
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/abhayraj19">
+        <img src="https://github.com/abhay-raj19.png" width="100px;" alt="username1"/><br />
+        <sub><b>Abhay-raj19</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ASIMNEUPANE">
+        <img src="https://github.com/ASIMNEUPANE.png" width="100px;" alt="username2"/><br />
+        <sub><b>ASIMNEUPANE</b></sub>
+      </a>
+    </td>
+    <!-- <td align="center">
+      <a href="https://github.com/username3">
+        <img src="https://github.com/username3.png" width="100px;" alt="username3"/><br />
+        <sub><b>Username 3</b></sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/username4">
+        <img src="https://github.com/username4.png" width="100px;" alt="username4"/><br />
+        <sub><b>Username 4</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/username5">
+        <img src="https://github.com/username5.png" width="100px;" alt="username5"/><br />
+        <sub><b>Username 5</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/username6">
+        <img src="https://github.com/username6.png" width="100px;" alt="username6"/><br />
+        <sub><b>Username 6</b></sub>
+      </a>
+    </td> -->
+  </tr>
+</table>
+
+
+Thank you to all the amazing contributors who have made this project possible!
+
+Show some ❤️ by starring this repository !
 
 <p align="right">(<a href="#top">⇑</a>)</p>
+
