@@ -4,6 +4,13 @@ import dumbleIcon from '../../assets/img/dumble.png'
 import '../../styles/hero.css';
 
 const Hero = () => {
+  
+    function playVideo() {
+        const videoId = 'frbn9lNq_Ak'; 
+        const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+        window.open(videoUrl, '_blank');
+    }
+    
     return (
         <section id="home">
             <div className="container">
@@ -28,7 +35,11 @@ const Hero = () => {
                         data-aos-delay='200'
                          data-aos-duration='2000'>
                             <button className="register_btn">Get Started</button>
-                            <button className="watch_btn">
+                            <button className="watch_btn"
+                                onClick={()=>{        
+                                    playVideo( );
+                                }}
+                            >
                                 <span>
                                     <i class="ri-play-fill"></i>
                                 </span>
