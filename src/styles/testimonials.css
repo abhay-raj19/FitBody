@@ -5,6 +5,7 @@
     background: #fff;
     padding:40px;
     border-radius:5px;
+    height: 660px;
 }
 
 .slide_img-01 img,
@@ -64,6 +65,7 @@
     
     .slide_item {
       padding: 20px;
+      height: 595px;
     }
     
     .slide_item h4 {
@@ -84,13 +86,14 @@
       flex-direction: column;
     }
     .swiper{
-      width: 80vw;
+      width: 70vw;
     }
   }
   
   @media screen and (max-width: 480px) {
     .slide_item {
       padding: 10px;
+      height: 595px;
     }
     
     .slide_item h4 {
@@ -111,6 +114,6 @@
       flex-direction: column;
     }
     .swiper{
-      width: 80vw;
+      width: 70vw;
     }
   }
