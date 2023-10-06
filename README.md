@@ -151,24 +151,24 @@ Licensed under the MIT License.
     <td align="center">
       <a href="https://github.com/abhayraj19">
         <img src="https://github.com/abhay-raj19.png" width="100px;" alt="username1"/><br />
-        <sub><b>Abhay-raj19</b></sub>
+        <sub><b>Abhay rajpoot</b></sub>
+      </a>
+    </td>
+   <td align="center">
+      <a href="https://github.com/Ayushhgupta39">
+        <img src="https://github.com/Ayushhgupta39.png" width="100px;" alt="username3"/><br />
+        <sub><b>Ayush gupta</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/ASIMNEUPANE">
         <img src="https://github.com/ASIMNEUPANE.png" width="100px;" alt="username2"/><br />
-        <sub><b>ASIMNEUPANE</b></sub>
+        <sub><b>Asimneupmane</b></sub>
       </a>
     </td>
-    <!-- <td align="center">
-      <a href="https://github.com/username3">
-        <img src="https://github.com/username3.png" width="100px;" alt="username3"/><br />
-        <sub><b>Username 3</b></sub>
-      </a>
-    </td>
-  </tr>
+  </tr>  
   <tr>
-    <td align="center">
+   <!--   <td align="center">
       <a href="https://github.com/username4">
         <img src="https://github.com/username4.png" width="100px;" alt="username4"/><br />
         <sub><b>Username 4</b></sub>
