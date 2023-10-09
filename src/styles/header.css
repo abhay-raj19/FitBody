@@ -90,6 +90,7 @@ ul {
     color: var(--heading-color);
     font-weight: 700 !important;
     font-size: 1.8rem;
+    margin-top: 1rem;
 }
 
 .nav__links {

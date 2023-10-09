@@ -8,6 +8,7 @@ import Hero from "./components/UI/Hero";
 import Pricing from "./components/UI/Pricing";
 import Start from "./components/UI/Start"; 
 import Testimonials from "./components/UI/Testimonials";
+import ContactUs from "./components/UI/ContactUs";
 
 function App() {
 
@@ -24,8 +25,8 @@ function App() {
     <Start/>
     <Pricing/>
     <Testimonials/>
+    <ContactUs />
     <Footer/>
-
     </>   
   );
 }

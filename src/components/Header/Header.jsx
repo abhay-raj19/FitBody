@@ -20,6 +20,10 @@ const nav__links = [
     path: "#pricing-plan",
     display: "Pricing",
   },
+  {
+    path: "#contact-us",
+    display: "Contact Us"
+  }
 ];
 
 const Header = () => {
