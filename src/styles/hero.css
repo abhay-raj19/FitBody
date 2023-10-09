@@ -42,7 +42,7 @@
     color: var(--heading-color);
     font-size: 1rem;
     font-weight: 600;
-    cursor:pointer;
+    cursor: pointer;
     background-color: #fff;
 }
 
@@ -73,7 +73,6 @@
     width: 300px;
     height: 300px;
     border-radius: 100%;
-
     border: 25px solid #d3cef2;
 }
 .hero_img-wrapper{
@@ -95,6 +94,7 @@
 .box_img{
     width:121.5%;
 }
+
 .heart_rate{
     width: 100px;
     position: absolute;
@@ -113,11 +113,11 @@
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;;
     background:#d3cef2;
     color: #d7337a;
     border-radius: 3px;
-    padding:3px ;
+    padding: 3px ;
 
 }
 .heart_rate h5,h6 {
@@ -188,6 +188,15 @@
       align-items: center;
       padding-top: 30px;
     }
+
+    .hero_img {
+      margin-top: 50px;
+    }
+
+    .main_img {
+      padding-top: 20px;
+      width: 350px;
+    }
   
     .hero_content .section_title {
       font-size: 2.5rem;
@@ -211,7 +220,7 @@
     .hero_btns {
       flex-direction: column;
       align-items: center;
-      column-gap: 0;
+      gap: 2rem;
     }
   
     .watch_btn {
@@ -219,28 +228,37 @@
     }
   
     .box-01 {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       border: 15px solid rgba(141, 141, 235, 1);
     }
   
     .box-02 {
+
       width: 150px;
       height: 150px;
       border: 15px solid #b5a9f3;
     }
   
     .box-03 {
-      width: 150px;
-      height: 150px;
+      width: 240px;
+      height: 240px;
       border: 15px solid #d3cef2;
     }
   
     .heart_rate {
-      width: 80px;
-      top: 45%;
-      left: -5%;
-      padding: 10px;
+      width: 70px;
+      top: 55%;
+      left: -7%;
+      padding: 2px;
+    }
+
+    .heart_rate h5{
+      margin-bottom: 0px;
+    }
+
+    .heart_rate span {
+      margin-top: 8px;
     }
   
     .heart_rate h5,
@@ -248,14 +266,11 @@
       font-size: 0.7rem;
     }
   
-    .heart_rate h6 {
-      margin-top: 5px;
-    }
-  
     .gym_location {
+      width: 90px;
       top: -5%;
-      right: -8%;
-      padding: 0.8rem;
+      right: -4%;
+      padding: 0.4rem;
     }
   
     .gym_location span {
