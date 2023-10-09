@@ -8,6 +8,8 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import aavtar01 from "../../assets/img/avatar01.png";
 import aavtar02 from "../../assets/img/avatar02.png";
+import aavtar03 from "../../assets/img/avatar03.png";
+import aavtar04 from "../../assets/img/avatar04.png";
 
 // import required modules
 import { EffectCards } from "swiper";
@@ -18,6 +20,8 @@ export default function App() {
       <section>
         <div className="container sliders">
           <h2 className="section_title">Testimonials</h2>
+          <div className=" testimonial-container">
+            {/* Testimonials for womens */}
           <Swiper
             effect={"cards"}
             grabCursor={true}
@@ -74,6 +78,48 @@ export default function App() {
               </div>
             </SwiperSlide>
           </Swiper>
+          {/* Testimonials for mens */}
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="slide_item">
+                <div className="slide_img-01">
+                  <img src={aavtar03} alt="" />
+                </div>
+                <h4>Jake D'souza</h4>
+                <p>
+                Signing up for this fitness program has been a game-changer for me. The trainers here are a wealth of knowledge and provide unwavering support. They've helped me break through my own barriers and accomplish goals I never imagined. The gym's uplifting atmosphere and the camaraderie among members make every workout a joy.
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_item">
+                <div className="slide_img-02">
+                  <img src={aavtar04} alt="" />
+                </div>
+                <h4>Robin Thomas</h4>
+                <p>
+                I can honestly say that joining this fitness community was one of the most rewarding decisions I've ever made. The trainers go above and beyond, offering their expertise and unwavering encouragement. They've propelled me past my own limitations, helping me achieve feats I once thought impossible. The gym's positive ambiance and the friendly, like-minded individuals I've met have made each workout a highlight of my day.
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slide_item">
+                <div className="slide_img-03">
+                  <img src={aavtar03} alt="" />
+                </div>
+                <h4>Jake Demello</h4>
+                <p>
+                Enrolling in this fitness program has been a game-changer for me. The trainers are not only incredibly knowledgeable but also genuinely caring and supportive. They've motivated me to surpass my own expectations and achieve results I could only dream of. The gym's vibrant atmosphere and the welcoming community of members have made every workout an enjoyable experience.
+                </p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          </div>
         </div>
       </section>
     </>
