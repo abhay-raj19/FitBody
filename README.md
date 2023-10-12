@@ -47,7 +47,7 @@
 
 
 ## 🎯About
-FitBody is the growing platform for Gym-enthusiasts and they can choose there respective domains for the pricing category and we are happy to invite you in the gym-community. This initiative will cater to the Gym demands of the Body feasts and give assistance to them in every way possible. Everyone out there is running in the race to the top, and we here offer a push to anyone who needs it. Whether you come for the diet-Plan, Testimonials , or attend our meets, you will emerge from FitBody with good body-Shaping ,positive-perspective, influences, and connections.
+FitBody is the growing platform for Gym-enthusiasts and they can choose there respective domains for the pricing category and we are happy to invite you in the gym-community.
 
 ## 🖱️Live Demo
 
@@ -175,6 +175,18 @@ Licensed under the MIT License.
     <td align="center">
       <a href="https://github.com/Faisalhs51">
         <img src="https://github.com/Faisalhs51.png" width="100px;" alt="username2"/><br />
+        <sub><b>Faisalhs51</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/akssshh">
+        <img src="https://github.com/akssshh.png" width="100px;" alt="username2"/><br />
+        <sub><b>Faisalhs51</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ani-netizen">
+        <img src="https://github.com/ani-netizen.png" width="100px;" alt="username2"/><br />
         <sub><b>Faisalhs51</b></sub>
       </a>
     </td>
