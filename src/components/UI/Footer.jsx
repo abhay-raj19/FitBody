@@ -54,21 +54,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          <div className="footer_box">
-            <h4 className="footer_title">Quick Links</h4>
-            <ul className="footer_links">
-              <li>
-                <a href="#"></a>About Us
-              </li>
-              <li>
-                <a href="#"></a>Contact Us
-              </li>
-              <li>
-                <a href="#"></a>Support
-              </li>
-            </ul>
-          </div>
         </div>
         <p className="copyright">
           Copyright - {year} developed by abhay-raj19.All rights reserved.
