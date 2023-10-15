@@ -23,7 +23,7 @@
 
 .hero_content p {
     font-size: 1rem;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     margin-bottom: 50px;
     line-height: 30px;
 }
@@ -44,6 +44,7 @@
     font-weight: 600;
     cursor: pointer;
     background-color: #fff;
+    
 }
 
 .watch_btn span {

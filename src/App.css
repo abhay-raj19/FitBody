@@ -10,15 +10,26 @@
     rgba(141, 141, 235, 1) 85%
   );
   --font-name: "Questrial", sans-serif;
-
-  /* 
-        #9785f2
-        #b5a9f3
-        #d3cef2
-        #d7337a
-    */
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
+/* Styles for light mode */
+.light-mode-app {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Styles for dark mode */
+.dark-mode-app {
+  background-color:#111;
+   color:#f7f7f7
+}
+
+
+
+/* Common styles for both modes */
+/* ... */
 
