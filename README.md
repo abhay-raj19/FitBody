@@ -177,6 +177,7 @@ Licensed under the MIT License.
         <img src="https://github.com/akssshh.png" width="100px;" alt="username2"/><br />
         <sub><b>akssshh</b></sub>
       </a>
+
     </td>
     <td align="center">
       <a href="https://github.com/ASIMNEUPANE">
@@ -184,25 +185,6 @@ Licensed under the MIT License.
         <sub><b>Asimneupmane</b></sub>
       </a>
     </td>
-  </tr> 
-  <!-- <tr>
-   <td align="center">
-      <a href="https://github.com/abhayraj19">
-        <img src="https://github.com/abhay-raj19.png" width="100px;" alt="username1"/><br />
-        <sub><b>Abhay rajpoot</b></sub>
-      </a>
-    </td>
-   <td align="center">
-      <a href="https://github.com/Ayushhgupta39">
-        <img src="https://github.com/Ayushhgupta39.png" width="100px;" alt="username3"/><br />
-        <sub><b>Ayush gupta</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/ASIMNEUPANE">
-        <img src="https://github.com/ASIMNEUPANE.png" width="100px;" alt="username2"/><br />
-        <sub><b>Asimneupmane</b></sub>
-      </a>
     </td>
     <td align="center">
       <a href="https://github.com/Faisalhs51">
