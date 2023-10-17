@@ -32,7 +32,7 @@ const Hero = () => {
                                 <span>
                                     <i class="ri-play-fill"></i>
                                 </span>
-                                Watch Video
+                                <span className="watch_video">Watch Video</span>
                             </button>
                         </div>
                     </div>
