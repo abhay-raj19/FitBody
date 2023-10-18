@@ -1,6 +1,6 @@
 .footer{
     padding: 50px 0px;
-    background: #eeeaff;
+    background: #eeeaff ;
 }
 
 .footer_wrapper{
@@ -28,6 +28,7 @@
 }
 .footer_links li {
     line-height: 28px;
+    color:black;
 }
 .footer_links li a {
     color: var(--heading-color);

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../../styles/header.css";
 import logo from "../../assets/img/dumble.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const nav__links = [
   {
@@ -25,27 +25,35 @@ const nav__links = [
     display: "Contact Us"
   }
 ];
-const Header = () => {
+const Header = ({isDarkMode, setDarkMode}) => {
   const [open, setOpen] = React.useState(false);
+  const [headerBackground, setHeaderBackground] = useState(isDarkMode ? "#111" : "transparent");
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const headerRef = useRef(null);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode);
+  };
+
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
       document.documentElement.scrollTop > 80
     ) {
+      setHeaderBackground(isDarkMode ? "#111" : "#fff");
       headerRef.current.classList.add("sticky_header");
     } else {
       headerRef.current.classList.remove("sticky_header");
-    }
+    } 
   };
 
   useEffect(() => {
+    setHeaderBackground(isDarkMode ? "#111" : "transparent");
     window.addEventListener("scroll", headerFunc);
 
     return () => window.removeEventListener("scroll", headerFunc);
-  }, []);
+  }, [isDarkMode]);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -59,9 +67,12 @@ const Header = () => {
     });
   };
 
+  const headerClass = isDarkMode ? "header dark-mode" : "header";
+
+
   
   return (
-    <header className="header" ref={headerRef}>
+    <header className={headerClass} style={{ background: headerBackground }} ref={headerRef}>
       <div className="container">
         <div className="nav__wrapper">
           {/*=====LOGO===*/}
@@ -73,6 +84,13 @@ const Header = () => {
                 <img src={logo} alt="" />
               </div>
               <h2>FitBody</h2>
+              <div className='styles-container' onClick={toggleDarkMode}>
+                <div className='styles-icon'>🌙</div>
+                <div className='styles-icon'>🔆</div>
+                <div className='styles-ball'
+                style={!isDarkMode  ? {left: "2px" } :  { right: "2px" } }
+                  />
+                </div>
             </div>
 
             <div className="nav-btn">
@@ -106,6 +124,7 @@ const Header = () => {
               {/* <span className="mobile__menu">
                 <i className="ri-menu-line"></i>
               </span> */}
+              
             </div>
           </div>
         </div>
