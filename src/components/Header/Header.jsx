@@ -36,6 +36,14 @@ const Header = ({isDarkMode, setDarkMode}) => {
     setDarkMode(!isDarkMode);
   };
 
+  const toggleMobileMenu = () => {
+    const navCheck = document.getElementById("nav-check");
+    if (navCheck) {
+      navCheck.checked = !navCheck.checked;
+    }
+  };
+
+
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
@@ -65,6 +73,7 @@ const Header = ({isDarkMode, setDarkMode}) => {
       left: 0,
       top: location - 80,
     });
+    toggleMobileMenu();
   };
 
   const headerClass = isDarkMode ? "header dark-mode" : "header";
