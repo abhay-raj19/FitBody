@@ -152,6 +152,7 @@ ul {
     left: 0;
     z-index: 99;
     background: #fff;
+    opacity: 0.5;
 }
 
 .logo h2 a {
