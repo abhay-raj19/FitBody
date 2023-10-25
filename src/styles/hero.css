@@ -23,7 +23,7 @@
 
 .hero_content p {
     font-size: 1rem;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     margin-bottom: 50px;
     line-height: 30px;
 }
@@ -39,24 +39,31 @@
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
-    color: var(--heading-color);
-    font-size: 1rem;
-    font-weight: 600;
     cursor: pointer;
-    background-color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
 }
 
-.watch_btn span {
-    background :#fff;
+.watch_btn span i{
+    background :#f7f7f7;
     border-radius: 50%;
     padding: 0.8rem;
     color: var(--primary-color);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow:3px 3px 8px -1px #d3cef2 ;
+    box-shadow:3px 3px 10px -1px #d3cef2 ;
 }
+
+.watch_video{
+  color: white;
+  mix-blend-mode: difference;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
 .box-01{
     width: 400px;
     height: 400px;

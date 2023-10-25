@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 import Aos from "aos";
 import "./App.css";
 import Header from "./components/Header/Header";
@@ -16,10 +16,13 @@ function App() {
     Aos.init()
   }, [])
   
+  const [isDarkMode, setDarkMode] = useState(false);
+
 
   return ( 
     <>
-    <Header/> 
+    <div  className={isDarkMode ? "dark-mode-app" : "light-mode-app"} >
+    <Header isDarkMode={isDarkMode} setDarkMode={setDarkMode}/> 
     <Hero/>
     <Exercises/>
     <Start/>
@@ -27,6 +30,7 @@ function App() {
     <Testimonials/>
     <ContactUs />
     <Footer/>
+    </div>
     </>   
   );
 }

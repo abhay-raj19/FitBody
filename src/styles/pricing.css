@@ -10,7 +10,7 @@
 }
 .pricing_top p {
     font-size: 1.1rem;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     line-height: 28px;
     margin-bottom: 50px;
 }
@@ -25,7 +25,7 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     border-radius: 5px;
     width: 33%;
-    background-color:#fff ;
+    /* background-color:#fff ; */
 }
 
 .pricing_card-top{
@@ -43,7 +43,7 @@
 }
 .pricing_card-top .pricing span{
     font-size: 1rem;
-    color: #666;
+    /* color: #666; */
 }
 .pricing_items .services{
     padding : 30px;
@@ -53,7 +53,7 @@
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
-    color: #666;
+    /* color: #666; */
     line-height: 28px;
     margin-left: 20px;
 }
@@ -94,7 +94,7 @@
   
   .pricing_top p {
     font-size: 1.1rem;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     line-height: 28px;
     margin-bottom: 50px;
   }
@@ -110,7 +110,8 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     border-radius: 5px;
     width: 33%;
-    background-color: #fff;
+    border : 1px solid white;
+    /* background-color: #fff; */
   }
   
   .pricing_card-top {
@@ -130,7 +131,7 @@
   
   .pricing_card-top .pricing span {
     font-size: 1rem;
-    color: #666;
+    /* color: #666; */
   }
   
   .pricing_items .services {
@@ -141,7 +142,7 @@
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
-    color: #666;
+    /* color: #666; */
     line-height: 28px;
     margin-left: 20px;
   }

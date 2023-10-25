@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 }
 .start_content p{
-    color: var(--heading-color) ;
+    /* color: var(--heading-color) ; */
     font-size:1.1rem;
     line-height: 28px;
     margin-bottom: 50px;
@@ -46,7 +46,7 @@
   }
   
   .start_content p {
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     font-size: 1.1rem;
     line-height: 28px;
     margin-bottom: 50px;

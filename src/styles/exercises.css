@@ -9,7 +9,7 @@
 }
 
 .exercise_top p{
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
     font-size: 1rem;
     line-height: 28px;
 }
