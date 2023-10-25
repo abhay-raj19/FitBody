@@ -140,7 +140,9 @@ ul {
     font-weight: 500;
     cursor: pointer;
 }
-
+.header{
+    margin-top: -20px;
+}
 .register_btn:hover {
     transition: all 0.5s ease-in-out;
     box-shadow: 0.3rem 0.3rem #5844c1, -0.3rem -0.3rem #8b76f4;
@@ -152,9 +154,9 @@ ul {
     top: 0;
     left: 0;
     z-index: 99;
-    /* background: #fff; */
-}
+    background: #fff;
 
+}
 .logo h2 a {
     text-decoration: none;
     color: #000;
