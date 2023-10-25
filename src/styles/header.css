@@ -62,11 +62,17 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
+/* .icon_logo a:hover{
 
+    /* color:black;  */
+    /* text-decoration:none;  */
+    /* cursor:pointer; */
+/* } */ 
 .logo {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    cursor: pointer;
 }
 
 .logo_img {
@@ -166,9 +172,9 @@ ul {
     padding-top: 13px;
 }
 
-.logo h2 a:hover {
+/* .logo h2 a:hover {
     color: #0078d4;
-}
+} */
 
 /* ------ */
 
