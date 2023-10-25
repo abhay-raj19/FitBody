@@ -87,7 +87,7 @@ const Header = ({isDarkMode, setDarkMode}) => {
           {/*=====LOGO===*/}
 
           <input type="checkbox" id="nav-check" hidden />
-          <div className="btn__wrapper">
+          <div className="btn__wrapper ">
             <div className="logo">
               <div className="logo_img">
                 <img src={logo} alt="" />
