@@ -257,7 +257,7 @@ ul {
 .styles-container{
     width: 42px;
     height: 24px;
-    border: 1.5px solid #6f55f2;
+    border: 1.5px solid #53c28b70;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -275,7 +275,7 @@ ul {
   .styles-ball{
     width: 15px;
     height: 15px;
-    background-color: #A899F7;
+    background-color: #53c28b;
     border-radius: 50%;
     position: absolute;
   }
