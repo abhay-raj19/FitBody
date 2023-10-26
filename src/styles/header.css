@@ -155,8 +155,8 @@ ul {
 
 .sticky_header {
     width: 100%;
-    position: sticky;
-    top: 0;
+    position:sticky;
+    top: -20px;
     left: 0;
     z-index: 99;
     background: #fff;
