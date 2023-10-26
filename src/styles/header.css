@@ -62,12 +62,7 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
-/* .icon_logo a:hover{
 
-    /* color:black;  */
-    /* text-decoration:none;  */
-    /* cursor:pointer; */
-/* } */ 
 .logo {
     display: flex;
     align-items: center;
@@ -164,7 +159,6 @@ ul {
 }
 .logo h2 a {
     text-decoration: none;
-    color: #000;
     transition: color 0.3s ease;
 }
 
