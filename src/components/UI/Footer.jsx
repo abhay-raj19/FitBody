@@ -17,7 +17,7 @@ const Footer = () => {
                 </a>
               </div>
               <h2 className="fitbody">
-                <a href="/">FitBody</a>
+                <a href="/#">FitBody</a>
               </h2>
             </div>
             <p className="abc">
@@ -28,35 +28,55 @@ const Footer = () => {
           <div className="footer_box">
             <h4 className="footer_title">Company</h4>
             <ul className="footer_links">
+            <a href="/#">
+              <li> Our Program </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="#"></a>Our Program
+                Our Plan
               </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="#"></a>Our Plan
+                Become A Member
               </li>
-              <li>
-                <a href="#"></a>Become A Member
-              </li>
+              </a>
             </ul>
           </div>
 
           <div className="footer_box">
             <h4 className="footer_title">Quick Links</h4>
             <ul className="footer_links">
+            <a href="/#">
               <li>
-                <a href="#"></a>About Us
+                About Us
               </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="#"></a>Contact Us
+                Contact Us
               </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="#"></a>Support
+                Support
               </li>
+              </a>
             </ul>
           </div>
         </div>
+        <p className="social_media">
+        <a href="/#"> <i href="" class="ri-github-fill"></i> </a>
+        <a href="/#"> <i class="ri-linkedin-box-fill"></i> </a>
+        <a href="/#"> <i class="ri-instagram-line"></i> </a>
+        <a href="/#"> <i class="ri-facebook-circle-fill"></i> </a>
+        <a href="/#"> <i class="ri-twitter-fill"></i> </a>
+        
+        {/* <i class="ri-twitter-x-fill"></i> */}
+
+        </p>
         <p className="copyright">
-          Copyright - {year} developed by abhay-raj19.All rights reserved.
+          Copyright - {year} developed by abhay-raj19. All rights reserved.
         </p>
       </div>
     </footer>
