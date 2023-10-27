@@ -17,7 +17,7 @@ const Footer = () => {
                 </a>
               </div>
               <h2 className="fitbody">
-                <a href="/">FitBody</a>
+                <a href="/#">FitBody</a>
               </h2>
             </div>
             <p className="abc">
@@ -29,13 +29,13 @@ const Footer = () => {
             <h4 className="footer_title">Company</h4>
             <ul className="footer_links">
               <li>
-                <a href="#"></a>Our Program
+                <a href="/#">Our Program</a>
               </li>
               <li>
-                <a href="#"></a>Our Plan
+                <a href="/#">Our Plan</a>
               </li>
               <li>
-                <a href="#"></a>Become A Member
+                <a href="/#">Become A Member</a>
               </li>
             </ul>
           </div>
@@ -44,19 +44,29 @@ const Footer = () => {
             <h4 className="footer_title">Quick Links</h4>
             <ul className="footer_links">
               <li>
-                <a href="#"></a>About Us
+                <a href="/#">About Us</a>
               </li>
               <li>
-                <a href="#"></a>Contact Us
+                <a href="/#">Contact Us</a>
               </li>
               <li>
-                <a href="#"></a>Support
+                <a href="/#">Support</a>
               </li>
             </ul>
           </div>
         </div>
+        <p className="social_media">
+        <a href="/#"> <i href="" class="ri-github-fill"></i> </a>
+        <a href="/#"> <i class="ri-linkedin-box-fill"></i> </a>
+        <a href="/#"> <i class="ri-instagram-line"></i> </a>
+        <a href="/#"> <i class="ri-facebook-circle-fill"></i> </a>
+        <a href="/#"> <i class="ri-twitter-fill"></i> </a>
+        
+        {/* <i class="ri-twitter-x-fill"></i> */}
+
+        </p>
         <p className="copyright">
-          Copyright - {year} developed by abhay-raj19.All rights reserved.
+          Copyright - {year} developed by abhay-raj19. All rights reserved.
         </p>
       </div>
     </footer>
