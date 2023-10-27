@@ -28,30 +28,40 @@ const Footer = () => {
           <div className="footer_box">
             <h4 className="footer_title">Company</h4>
             <ul className="footer_links">
+            <a href="/#">
+              <li> Our Program </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="/#">Our Program</a>
+                Our Plan
               </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="/#">Our Plan</a>
+                Become A Member
               </li>
-              <li>
-                <a href="/#">Become A Member</a>
-              </li>
+              </a>
             </ul>
           </div>
 
           <div className="footer_box">
             <h4 className="footer_title">Quick Links</h4>
             <ul className="footer_links">
+            <a href="/#">
               <li>
-                <a href="/#">About Us</a>
+                About Us
               </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="/#">Contact Us</a>
+                Contact Us
               </li>
+              </a>
+              <a href="/#">
               <li>
-                <a href="/#">Support</a>
+                Support
               </li>
+              </a>
             </ul>
           </div>
         </div>
