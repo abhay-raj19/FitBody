@@ -67,6 +67,7 @@ ul {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
+    cursor: pointer;
 }
 
 .logo_img {
@@ -150,8 +151,8 @@ ul {
 
 .sticky_header {
     width: 100%;
-    position: sticky;
-    top: 0;
+    position:sticky;
+    top: -20px;
     left: 0;
     z-index: 99;
     background: #fff;
@@ -159,7 +160,6 @@ ul {
 }
 .logo h2 a {
     text-decoration: none;
-    color: #000;
     transition: color 0.3s ease;
 }
 
@@ -167,9 +167,9 @@ ul {
     padding-top: 13px;
 }
 
-.logo h2 a:hover {
+/* .logo h2 a:hover {
     color: #0078d4;
-}
+} */
 
 /* ------ */
 
