@@ -92,7 +92,9 @@ const Header = ({isDarkMode, setDarkMode}) => {
               <div className="logo_img">
                 <img src={logo} alt="" />
               </div>
-              <h2>FitBody</h2>
+              <div className="icon_logo">
+              <h2><a href="$">FitBody</a></h2>
+              </div>
               <div className='styles-container' onClick={toggleDarkMode}>
                 <div className='styles-icon'>🌙</div>
                 <div className='styles-icon'>🔆</div>
