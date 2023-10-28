@@ -51,6 +51,27 @@
 /* 
 ------ */
 
+/* Dark mode styles */
+.dark-mode-app .footer {
+  background: #f0eded;
+  color: #0f0f0f; /* Text color in dark mode */
+}
+
+.dark-mode-app .footer_title {
+  color: #131212; /* Heading color in dark mode */
+}
+
+.dark-mode-app .footer_links li {
+  color: #0a0a0a; /* Link color in dark mode */
+}
+
+.dark-mode-app .footer_links li:hover {
+  color: #0078d4;   /* Hover color in dark mode */
+}
+.dark-mode-app .social_media i:hover {
+  color: #0078d4; /* Hover color in dark mode */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .footer_wrapper {
