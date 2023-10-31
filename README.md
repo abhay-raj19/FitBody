@@ -238,12 +238,12 @@ Licensed under the MIT License.
         <sub><b>Anirudh</b></sub>
       </a>
     </td>
-    <!-- <td align="center">
-      <a href="https://github.com/AditiSingh2003">
-        <img src="https://github.com/AditiSingh2003.png" width="100px;" alt="username2"/><br />
-        <sub><b>Aditi Singh</b></sub>
+    <td align="center">
+      <a href="https://github.com/pranshu-5123">
+        <img src="https://github.com/pranshu-5123.png" width="100px;" alt="username2"/><br />
+        <sub><b>Pranshu</b></sub>
       </a>
-      </td> -->
+      </td>
   </tr>
 </table>
 
