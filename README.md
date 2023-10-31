@@ -222,8 +222,7 @@ Licensed under the MIT License.
     </td>    
    <td align="center">
       <a href="https://github.com/singhaman09">
-        <img src="https://github.com/singhaman09
-.png" width="100px;" alt="username3"/><br />
+        <img src="https://github.com/singhaman09.png" width="100px;" alt="username3"/><br />
         <sub><b>Aman Singh</b></sub>
       </a>
     </td>    
