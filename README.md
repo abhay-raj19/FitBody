@@ -195,21 +195,54 @@ Licensed under the MIT License.
       </a>
     </td>    
    <td align="center">
+      <a href="https://github.com/Iamdivyak">
+        <img src="https://github.com/Iamdivyak.png" width="100px;" alt="username3"/><br />
+        <sub><b>Divya</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/vivek-singh-13">
+        <img src="https://github.com/vivek-singh-13.png" width="100px;" alt="username2"/><br />
+        <sub><b>vivek singh</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AditiSingh2003">
+        <img src="https://github.com/AditiSingh2003.png" width="100px;" alt="username2"/><br />
+        <sub><b>Aditi Singh</b></sub>
+      </a>
+      </td>
+  </tr>
+  <!--    2nd row        -->
+   <td align="center">
+      <a href="https://github.com/Himangshi">
+        <img src="https://github.com/Himangshi.png" width="100px;" alt="username3"/><br />
+        <sub><b>Himangshi</b></sub>
+      </a>
+    </td>    
+   <td align="center">
+      <a href="https://github.com/singhaman09">
+        <img src="https://github.com/singhaman09
+.png" width="100px;" alt="username3"/><br />
+        <sub><b>Aman Singh</b></sub>
+      </a>
+    </td>    
+   <td align="center">
+      <a href="https://github.com/kartik2433">
+        <img src="https://github.com/kartik2433.png" width="100px;" alt="username3"/><br />
+        <sub><b>kartik</b></sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://github.com/ani-netizen">
-        <img src="https://github.com/ani-netizen.png" width="100px;" alt="username3"/><br />
-        <sub><b>Ani netizen</b></sub>
+        <img src="https://github.com/ani-netizen.png" width="100px;" alt="username2"/><br />
+        <sub><b>Anirudh</b></sub>
       </a>
     </td>
     <!-- <td align="center">
-      <a href="https://github.com/Faisalhs51">
-        <img src="https://github.com/Faisalhs51.png" width="100px;" alt="username2"/><br />
-        <sub><b>Faisalhs51</b></sub>
-      </a>
-    </td> -->
-    <!-- <td align="center">
-      <a href="https://github.com/akssshh">
-        <img src="https://github.com/akssshh.png" width="100px;" alt="username2"/><br />
-        <sub><b>akssshh</b></sub>
+      <a href="https://github.com/AditiSingh2003">
+        <img src="https://github.com/AditiSingh2003.png" width="100px;" alt="username2"/><br />
+        <sub><b>Aditi Singh</b></sub>
       </a>
       </td> -->
   </tr>
