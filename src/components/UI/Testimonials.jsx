@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-import aavtar01 from "../../assets/img/avatar01.png";
+import updated_avatar01 from "../../assets/img/updated_avatar01.png";
 import aavtar02 from "../../assets/img/avatar02.png";
 import updated_avatar03 from "../../assets/img/updated_avatar03.jpg";
 import aavtar04 from "../../assets/img/avatar04.png";
@@ -31,7 +31,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-01">
-                  <img src={aavtar01} alt="" />
+                  <img src={updated_avatar01} alt="" />
                 </div>
                 <h4>Jasmine Fernandes</h4>
                 <p>
@@ -63,7 +63,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-03">
-                  <img src={aavtar01} alt="" />
+                  <img src={updated_avatar01} alt="" />
                 </div>
                 <h4>Rubini Fernandes</h4>
                 <p>
