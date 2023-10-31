@@ -26,6 +26,7 @@ export default function App() {
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
+            loop={true}
             className="mySwiper"
           >
             <SwiperSlide>
@@ -83,6 +84,7 @@ export default function App() {
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
+            loop={true}
             className="mySwiper"
           >
             <SwiperSlide>
