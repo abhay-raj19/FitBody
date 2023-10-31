@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import aavtar01 from "../../assets/img/avatar01.png";
 import aavtar02 from "../../assets/img/avatar02.png";
-import aavtar03 from "../../assets/img/avatar03.png";
+import updated_avatar03 from "../../assets/img/updated_avatar03.jpg";
 import aavtar04 from "../../assets/img/avatar04.png";
 
 // import required modules
@@ -90,7 +90,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-01">
-                  <img src={aavtar03} alt="" />
+                  <img src={updated_avatar03} alt="" />
                 </div>
                 <h4>Jake D'souza</h4>
                 <p>
@@ -112,7 +112,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-03">
-                  <img src={aavtar03} alt="" />
+                  <img src={updated_avatar03} alt="" />
                 </div>
                 <h4>Jake Demello</h4>
                 <p>
