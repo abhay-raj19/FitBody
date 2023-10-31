@@ -26,6 +26,12 @@
     border-radius: 5px;
     width: 33%;
     /* background-color:#fff ; */
+    transition: background-color 0.3s, transform 0.3s; /* Add a smooth transition effect for both background and scale */
+}
+
+.pricing_item:hover {
+  background-color: #959cdf; /* Change the background color when hovering */
+  transform: scale(1.05); /* Scale the card up a bit on hover for a subtle effect */
 }
 
 .pricing_card-top{
