@@ -1,9 +1,5 @@
 
-<p align="center" style="color: #6f55f2; font-family: Rockwell, serif; font-size: 24px; font-weight: bold;">
-  🏋🏽FitBody🏋🏽
-</p>
-
-![Website Screenshot](./src/assets/repo%20imges/Screenshot%201.jpg)
+<h1 align="center">🏋🏽FitBody🏋🏽</h1>
 <p align="center">
 <div align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
