@@ -49,9 +49,12 @@
     padding : 30px;
 
 }
+.pricing_item .services ul{
+    text-align:start;
+}
 .pricing_item .services ul li {
     display: flex;
-    align-items: center;
+    align-items: start;
     column-gap: 1.5rem;
     /* color: #666; */
     line-height: 28px;
@@ -59,6 +62,7 @@
 }
 .pricing_item .services ul li span i {
     font-size:0.7rem;
+    margin-right: 0.5rem;
 }
 .services{
     text-align: center;
