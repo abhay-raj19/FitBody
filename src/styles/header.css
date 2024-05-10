@@ -55,6 +55,7 @@ ul {
     height: 90px;
     line-height: 70px;
     z-index: 99;
+    margin-top: 10px;
 }
 
 .nav__wrapper {
