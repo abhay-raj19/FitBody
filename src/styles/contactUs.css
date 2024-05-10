@@ -7,13 +7,14 @@
   
   .background {
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh;
   }
   
   .container {
     flex: 0 1 700px;
     margin: auto;
     padding: 10px;
+    min-width: 60vw;
   }
   
   .screen {
@@ -100,7 +101,7 @@
     flex-direction: column;
     position: relative;
     color: #ea1d6f;
-    font-size: 26px;
+    font-size: 40px;
   }
   
   .app-title:after {
