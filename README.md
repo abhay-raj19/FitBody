@@ -43,20 +43,20 @@
 
 
 ## 🎯About
-FitBody is the growing platform for Gym-enthusiasts and they can choose there respective domains for the pricing category and we are happy to invite you in the gym-community.
+FitBody is a growing platform for Enthusiasts and they can choose their respective domains for the pricing category we are happy to invite you to the gym-community.
 
 ## 🖱️Live Demo
 
 Here is the live view of this website. It is hosted on Vercel https://fit-body-delta.vercel.app/
 
-### How to Contribute to this repository
+### How to Contribute to this Repository
 
 1. Fork the repository (Click the Fork button in the top right of this page,
    click your Profile Image)
 
 2. Clone the forked repository to your local machine.
 
-3. Make your branch from test branch.
+3. Make your branch from the test branch.
 
 ```markdown
     git clone https://github.com/abhay-raj19/FitBody.git
@@ -87,7 +87,7 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 ### 🔩Issues to be welcomed
 
 1. Content Correction.
-2. Back pages for the linking the webpages.
+2. Backpages for linking the webpages.
 3. Navigation of the pages.
 4. New cards for Testimonials with Images.
 
@@ -97,7 +97,7 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 
 2. In the root directory: `npm install` for downloading all the dependencies needed for the project.
 
-3. Run `npm start` for starting the server (FitBody is currently running on `localhost:3000`)
+3. Run `npm start` to start the server (FitBody is currently running on `localhost:3000`)
 
 
 
