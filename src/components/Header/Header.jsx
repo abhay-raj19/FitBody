@@ -28,7 +28,7 @@ const nav__links = [
 const Header = ({ isDarkMode, setDarkMode }) => {
 	const [open, setOpen] = useState(false);
 	const [headerBackground, setHeaderBackground] = useState(
-		isDarkMode ? "#111" : "transparent"
+		isDarkMode ? "#111" : "#fff"
 	);
 	const headerRef = useRef(null);
 
@@ -48,7 +48,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 			document.body.scrollTop > 80 ||
 			document.documentElement.scrollTop > 80
 		) {
-			setHeaderBackground(isDarkMode ? "#111" : "transparent");
+			setHeaderBackground(isDarkMode ? "#111" : "#fff");
 			headerRef.current.classList.add("sticky_header");
 		} else {
 			headerRef.current.classList.remove("sticky_header");
@@ -56,7 +56,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 	};
 
 	useEffect(() => {
-		setHeaderBackground(isDarkMode ? "#111" : "transparent");
+		setHeaderBackground(isDarkMode ? "#111" : "#fff");
 		window.addEventListener("scroll", headerFunc);
 		window.scrollTo(window.scrollX, window.scrollY - 1);
 		window.scrollTo(window.scrollX, window.scrollY + 1);
