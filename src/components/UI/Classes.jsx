@@ -94,7 +94,7 @@ const Classes = () => {
             "video": <iframe className='exercise-yt-videos' width="560" height="315" src="https://www.youtube.com/embed/zFiQuXeFEuI?si=9zjkzDQG26eH-my8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         }
     ];
-
+ 
     return (
         <>
             <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
