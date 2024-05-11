@@ -4,7 +4,7 @@ export const checkout=async (req,res)=>{
     try{
     const options = {
         amount: Number(req.body.amount*100),  // amount in the smallest currency unit
-        currency: "USD",
+        currency: "INR",
         receipt: "order_rcptid_11"
       }
       const order = await instance.orders.create(options)
