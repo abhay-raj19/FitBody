@@ -28,18 +28,14 @@ const Footer = () => {
           <div className="footer_box">
             <h4 className="footer_title">Company</h4>
             <ul className="footer_links">
-            <a href="/#">
-              <li> Our Program </li>
+              <a href="/#">
+                <li> Our Program </li>
               </a>
               <a href="/#">
-              <li>
-                Our Plan
-              </li>
+                <li>Our Plan</li>
               </a>
               <a href="/#">
-              <li>
-                Become A Member
-              </li>
+                <li>Become A Member</li>
               </a>
             </ul>
           </div>
@@ -47,33 +43,41 @@ const Footer = () => {
           <div className="footer_box">
             <h4 className="footer_title">Quick Links</h4>
             <ul className="footer_links">
-            <a href="/#">
-              <li>
-                About Us
-              </li>
+              <a href="/#">
+                <li>About Us</li>
+              </a>
+              <a href="#contact-us">
+                <li>Contact Us</li>
               </a>
               <a href="/#">
-              <li>
-                Contact Us
-              </li>
-              </a>
-              <a href="/#">
-              <li>
-                Support
-              </li>
+                <li>Support</li>
               </a>
             </ul>
           </div>
         </div>
         <p className="social_media">
-        <a href="/#"> <i href="" class="ri-github-fill"></i> </a>
-        <a href="/#"> <i class="ri-linkedin-box-fill"></i> </a>
-        <a href="/#"> <i class="ri-instagram-line"></i> </a>
-        <a href="/#"> <i class="ri-facebook-circle-fill"></i> </a>
-        <a href="/#"> <i class="ri-twitter-fill"></i> </a>
-        
-        {/* <i class="ri-twitter-x-fill"></i> */}
+          <a href="/#">
+            {" "}
+            <i href="" class="ri-github-fill"></i>{" "}
+          </a>
+          <a href="/#">
+            {" "}
+            <i class="ri-linkedin-box-fill"></i>{" "}
+          </a>
+          <a href="/#">
+            {" "}
+            <i class="ri-instagram-line"></i>{" "}
+          </a>
+          <a href="/#">
+            {" "}
+            <i class="ri-facebook-circle-fill"></i>{" "}
+          </a>
+          <a href="/#">
+            {" "}
+            <i class="ri-twitter-fill"></i>{" "}
+          </a>
 
+          {/* <i class="ri-twitter-x-fill"></i> */}
         </p>
         <p className="copyright">
           Copyright - {year} developed by abhay-raj19. All rights reserved.
