@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../styles/start.css";
 import trainerImg from "../../assets/img/trainer.png";
 
@@ -33,7 +34,7 @@ const Start = () => {
               determination – you're on the road to a healthier, happier you.{" "}
             </p>
 
-            <button className="register_btn">Get Started</button>
+            <button className="register_btn"><Link to="/classes">Get Started</Link></button>
           </div>
         </div>
       </div>
