@@ -36,10 +36,18 @@ const ContactUs = () => {
     return emailPattern.test(email);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Form data:", formData);
+      const response = await fetch('/api/sendEmail',{
+        method : 'POST',
+        headers: {
+            'Content-Type': 'application/json', 
+        },
+        body: JSON.stringify({ formData.message }),
+    })
+    console.log(await response.json())
       alert("Thanks for contacting us!")
     }
     
