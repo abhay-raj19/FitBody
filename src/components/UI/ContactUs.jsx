@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/contactUs.css";
+import axios from "axios";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -40,14 +41,8 @@ const ContactUs = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Form data:", formData);
-      const response = await fetch('/api/sendEmail',{
-        method : 'POST',
-        headers: {
-            'Content-Type': 'application/json', 
-        },
-        body: JSON.stringify({ formData.message }),
-    })
-    console.log(await response.json())
+      const { data } = await axios.post("http://localhost:5000/api/email", { formData });
+      console.log(data)
       alert("Thanks for contacting us!")
     }
     

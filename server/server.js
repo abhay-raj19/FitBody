@@ -1,6 +1,7 @@
 import {app} from "./app.js"
 import Razorpay from "razorpay"
-
+import dotenv from 'dotenv/config';
+const { config } = dotenv;
 
 export const instance = new Razorpay({
     key_id: process.env.RAZORPAY_API_KEY,
