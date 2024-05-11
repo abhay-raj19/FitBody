@@ -20,9 +20,7 @@ const Pricing = () => {
         image: logo,
         order_id: order.id,
         handler: function (response){
-          alert(response.razorpay_payment_id);
-          alert(response.razorpay_order_id);
-          alert(response.razorpay_signature)
+          alert("payment successfull")
         },
         prefill: {
           name: "Gaurav Kumar",
@@ -69,7 +67,7 @@ const Pricing = () => {
             <div className="pricing_card-top">
               <h2 className="section_title">Regular Member</h2>
               <h2 className="pricing section_title">
-                $50 <span>/Month</span>
+                ₹50 <span>/Month</span>
               </h2>
             </div>
             <div className="services">
@@ -125,7 +123,7 @@ const Pricing = () => {
             <div className="pricing_card-top">
               <h2 className="section_title">Premium Member</h2>
               <h2 className="pricing section_title">
-                $99 <span>/Month</span>
+                ₹99 <span>/Month</span>
               </h2>
             </div>
             <div className="services">
@@ -181,7 +179,7 @@ const Pricing = () => {
             <div className="pricing_card-top">
               <h2 className="section_title">Standard Member</h2>
               <h2 className="pricing section_title">
-                $59 <span>/Month</span>
+                ₹59 <span>/Month</span>
               </h2>
             </div>
             <div className="services">
