@@ -53,16 +53,19 @@
 
 /* Dark mode styles */
 .dark-mode-app .footer {
-  background: #f0eded;
-  color: #0f0f0f; /* Text color in dark mode */
+  background: #001524;
+  color: #fff; /* Text color in dark mode */
+}
+.dark-mode-app .footer p{
+  color: #fff; /* Text color in dark mode */
 }
 
 .dark-mode-app .footer_title {
-  color: #131212; /* Heading color in dark mode */
+  color: #fff; /* Heading color in dark mode */
 }
 
 .dark-mode-app .footer_links li {
-  color: #0a0a0a; /* Link color in dark mode */
+  color: #535fb9; /* Link color in dark mode */
 }
 
 .dark-mode-app .footer_links li:hover {

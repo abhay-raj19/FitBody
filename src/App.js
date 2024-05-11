@@ -16,8 +16,12 @@ function App() {
     Aos.init();
   }, []);
 
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
 
+  useEffect(() => {
+    localStorage.setItem('darkMode', isDarkMode);
+  }, [isDarkMode]);
+  
   return (
     <>
       <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
