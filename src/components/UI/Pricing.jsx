@@ -1,7 +1,48 @@
 import React from "react";
 import "../../styles/pricing.css";
+import axios from "axios";
+import logo from "../../assets/img/dumble.png";
 
 const Pricing = () => {
+  const checkoutHandler = async (amount) => {
+      const { data: { key } } = await axios.get("http://localhost:5000/api/getkey");
+      console.log("key: "+key)
+      const { data: { order } } = await axios.post("http://localhost:5000/api/checkout", { amount });
+      console.log("Order client"+ order.amount)
+      console.log("Order client"+ order.id)
+      
+      const options = {
+        key: key,
+        amount: order.amount,
+        currency: "USD",
+        name: "FitBody",
+        description: "Transaction",
+        image: logo,
+        order_id: order.id,
+        handler: function (response){
+          alert(response.razorpay_payment_id);
+          alert(response.razorpay_order_id);
+          alert(response.razorpay_signature)
+        },
+        prefill: {
+          name: "Gaurav Kumar",
+          email: "gaurav.kumar@example.com",
+          contact: "9000090000"
+        },
+        notes: {
+          "address": "Razorpay Corporate Office"
+        },
+        theme: {
+          "color": "#d3cef2"
+        }
+      };
+
+      console.log(options)
+      const rzp = new window.Razorpay(options);
+      rzp.open();
+
+  };
+
   return (
     <section id="pricing-plan">
       <div className="container">
@@ -67,7 +108,7 @@ const Pricing = () => {
                   </span>
                 </li>
               </ul>
-              <button className="register_btn">Join Now</button>
+              <button onClick={()=>checkoutHandler(50)} className="register_btn">Join Now</button>
               <br />
               <br />
               <br />
@@ -123,7 +164,7 @@ const Pricing = () => {
                   </span>
                 </li>
               </ul>
-              <button className="register_btn">Join Now</button>
+              <button onClick={()=>checkoutHandler(99)} className="register_btn">Join Now</button>
               <br />
               <br />
               <br />
@@ -179,7 +220,7 @@ const Pricing = () => {
                   </span>
                 </li>
               </ul>
-              <button className="register_btn">Join Now</button>
+              <button onClick={()=>checkoutHandler(59)} className="register_btn">Join Now</button>
               <br />
               <br />
               <br />
@@ -215,5 +256,6 @@ const Pricing = () => {
     </section>
   );
 };
+
 
 export default Pricing;
