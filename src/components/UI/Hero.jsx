@@ -1,9 +1,30 @@
-import React from 'react'
-import heroIMG from '../../assets/img/gym-02.png'
+import React, { useEffect, useState } from 'react'
+import heroIMG1 from '../../assets/img/gym-02.png';
+import heroIMG2 from '../../assets/img/gym_2.png';
 import dumbleIcon from '../../assets/img/dumble.png'
 import '../../styles/hero.css';
 
+const shuffleArray = (array) => {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+};
+
 const Hero = () => {
+    const [heroImages, setHeroImages] = useState([heroIMG1, heroIMG2]);
+
+    useEffect(() => {
+        const shuffledImages = shuffleArray([...heroImages]); // Clone the array before shuffling
+        setHeroImages(shuffledImages);
+    }, []); 
+
+   
     return (
         <section id="home">
             <div className="container">
@@ -44,7 +65,7 @@ const Hero = () => {
                                 <div className="box-02">
                                     <div className="box-03">
                                         <div className="box_img">
-                                            <img src={heroIMG} alt="" className='main_img' />
+                                            <img src={heroImages[0]} alt="" className='main_img' />
                                         </div>
                                     </div>
                                 </div>

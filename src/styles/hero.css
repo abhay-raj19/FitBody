@@ -94,6 +94,7 @@
 }
 
 .box_img img {
+  margin-top: 50px;
   height: 100%;
   width: 100%;
 }
@@ -251,6 +252,10 @@
       width: 240px;
       height: 240px;
       border: 15px solid #d3cef2;
+    }
+    .box_img img {
+      margin-top: 30px;
+     
     }
   
     .heart_rate {
