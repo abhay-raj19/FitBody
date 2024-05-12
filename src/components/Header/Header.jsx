@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import "../../styles/header.css";
 import logo from "../../assets/img/dumble.png";
 import { useEffect, useState } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
 
 const nav__links = [
   {
@@ -22,12 +25,14 @@ const nav__links = [
   },
   {
     path: "#contact-us",
-    display: "Contact Us"
-  }
+    display: "Contact Us",
+  },
 ];
-const Header = ({isDarkMode, setDarkMode}) => {
+const Header = ({ isDarkMode, setDarkMode }) => {
   const [open, setOpen] = React.useState(false);
-  const [headerBackground, setHeaderBackground] = useState(isDarkMode ? "#111" : "transparent");
+  const [headerBackground, setHeaderBackground] = useState(
+    isDarkMode ? "#111" : "transparent"
+  );
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const headerRef = useRef(null);
@@ -43,7 +48,6 @@ const Header = ({isDarkMode, setDarkMode}) => {
     }
   };
 
-
   const headerFunc = () => {
     if (
       document.body.scrollTop > 80 ||
@@ -53,7 +57,7 @@ const Header = ({isDarkMode, setDarkMode}) => {
       headerRef.current.classList.add("sticky_header");
     } else {
       headerRef.current.classList.remove("sticky_header");
-    } 
+    }
   };
 
   useEffect(() => {
@@ -78,30 +82,57 @@ const Header = ({isDarkMode, setDarkMode}) => {
 
   const headerClass = isDarkMode ? "header dark-mode" : "header";
 
+  const container = useRef();
 
-  
+  useGSAP(
+    () => {
+      let tl = gsap.timeline();
+      tl.from(container.current, {
+        duration: 1,
+        y: -30,
+        opacity: 0,
+        ease: "power3.out",
+      });
+      tl.from(".nav_item", {
+        duration: 1,
+        y: -30,
+        opacity: 0,
+        ease: "power3.out",
+        stagger: 0.3,
+      });
+    },
+    { scope: container }
+  );
+
   return (
-    <header className={headerClass} style={{ background: headerBackground }} ref={headerRef}>
+    <header
+      className={headerClass}
+      style={{ background: headerBackground }}
+      ref={headerRef}
+    >
       <div className="container">
-        <div className="nav__wrapper">
+        <div ref={container} className="nav__wrapper">
           {/*=====LOGO===*/}
 
           <input type="checkbox" id="nav-check" hidden />
-          <div className="btn__wrapper">
+          <div  className="btn__wrapper">
             <div className="logo">
               <div className="logo_img">
                 <img src={logo} alt="" />
               </div>
               <div className="icon_logo">
-              <h2><a href="$">FitBody</a></h2>
+                <h2>
+                  <a href="$">FitBody</a>
+                </h2>
               </div>
-              <div className='styles-container' onClick={toggleDarkMode}>
-                <div className='styles-icon'>🌙</div>
-                <div className='styles-icon'>🔆</div>
-                <div className='styles-ball'
-                style={!isDarkMode  ? {left: "2px" } :  { right: "2px" } }
-                  />
-                </div>
+              <div className="styles-container" onClick={toggleDarkMode}>
+                <div className="styles-icon">🌙</div>
+                <div className="styles-icon">🔆</div>
+                <div
+                  className="styles-ball"
+                  style={!isDarkMode ? { left: "2px" } : { right: "2px" }}
+                />
+              </div>
             </div>
 
             <div className="nav-btn">
@@ -131,11 +162,10 @@ const Header = ({isDarkMode, setDarkMode}) => {
             {/* Nav Right */}
 
             <div className="nav_right">
-            <button className="register_btn">Register</button>
+              <button className="register_btn">Register</button>
               {/* <span className="mobile__menu">
                 <i className="ri-menu-line"></i>
               </span> */}
-              
             </div>
           </div>
         </div>
