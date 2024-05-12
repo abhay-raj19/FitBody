@@ -1,26 +1,59 @@
+const User = require("../models/userModel");
 
-import User from "../models/User.js";
-import bcrypt from "bcryptjs";
-import { CreateSuccess } from '../utils/success.js';
-import { CreateError } from "../utils/error.js";
+const registerUser = asyncHandler(async (req, res) => {
+  console.log(req.body);
+  const { userName, age, email, password, contact } = req.body;
 
-export const register  = async (req, res, next) => {
-    //return next(CreateError(500,"My custom error!!"));
+  if (!userName || !email || !password) {
+    res.status(400);
+    throw new Error("Please Enter all the Feilds");
+  }
+
+  const userExists = await User.findOne({ email });
+
+  if (userExists) {
+    res.status(400);
+    throw new Error("User already exists");
+  }
+
+  const user = await User.create({
+    userName,
+    email,
+    password,
+    age,
+    contact,
+  });
+
+  if (user) {
     try {
-        // check if the role exists
-        const salt = await bcrypt.genSalt(10); // generate salt for hashing the password
-        const hashedPassword = await bcrypt.hash(req.body.password, salt); // hash the password
-        const newUser = new User({ // create a new user 
-        email: req.body.email,//
-        password: hashedPassword,
-        name: req.body.name
-    });
-    await newUser.save(); // save the user to the database
-    return next(CreateSuccess(200, "User registered Successfully ", newUser));
+      const found = await createAccount(email);
+      console.log(found);
+      res.status(201).send("Account Created");
     } catch (error) {
-        console.log(error.message)
-        return next(CreateError(500, error.message));
+      console.error("Error creating email:", error);
+      res.status(500).send("Error creating account");
     }
-}
+  } else {
+    res.status(400);
+    throw new Error("User not found");
+  }
+});
 
+const authUser = asyncHandler(async (req, res) => {
+  const { email, password } = req.body;
 
+  const user = await User.findOne({ email });
+  if (user && (await user.matchPassword(password))) {
+    console.log(user);
+    res.status(200).json({
+      name: user.name,
+      email: user.email,
+      message: "Login successful",
+    });
+  } else {
+    res.status(401);
+    throw new Error("Invalid Email or Password");
+  }
+});
+
+module.exports = { registerUser, authUser };
