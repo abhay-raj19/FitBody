@@ -43,3 +43,33 @@
 /* Common styles for both modes */
 /* ... */
 
+
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #D3DCDE;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #DCE6E8;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #8D90C3;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #8D90C3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #8D90C3;
+}
