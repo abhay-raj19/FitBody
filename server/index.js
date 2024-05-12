@@ -3,33 +3,42 @@
 
 import express from 'express';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+import { config } from "dotenv";
 import cors from 'cors';
+import Razorpay from "razorpay";
 
 // Importing the Router Files
 import welcomeRouter from './routes/welcomeRoute.js';
 import AuthRoute from './routes/auth.js';
+import paymentRoute from './routes/paymentRoute.js';
+
+config({path:"./config/config.env"})
 
 // Iniliazing Express Server
 const server = express();
-const port = 3000; // Port Number
+const port = process.env.PORT; // Port Number
 
+console.log(port)
 
+export const instance = new Razorpay({
+    key_id: process.env.RAZORPAY_API_KEY,
+    key_secret: process.env.RAZORPAY_API_SECRET,
+});
 
-dotenv.config();
 server.use(express.json());
 server.use(cors(
     {
-        origin: "https:localhost:3000",
+        origin: 'http://localhost:3000',
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
     }));
     
-    
+server.use(express.urlencoded({extended:true})) 
 // Redirecting the routes to the router files 
 
 server.use('/', welcomeRouter);
 server.use("/api/auth", AuthRoute);
+server.use("/api",paymentRoute)
 
 
 // Response Handler Middleware Which will send response to the client in the form of JSON Object 
@@ -57,6 +66,9 @@ const ConnetMongoDB = async () => {
     }
 }
 
+server.get("/api/getkey",(req,res)=>
+    res.status(200).json({key:process.env.RAZORPAY_API_KEY})
+)
 
 // Server Listening
 
