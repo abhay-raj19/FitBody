@@ -10,6 +10,7 @@ import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
         <ContactUs />
         <Footer />
         <BackToTop />
+        <Toaster />
       </div>
     </>
   );
