@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import "../../styles/header.css";
 import logo from "../../assets/img/dumble.png";
 import { useEffect, useState } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(useGSAP);
 
 const nav__links = [
 	{
