@@ -19,7 +19,7 @@ h1 {
 }
 
 .exercise-container {
-  padding: 5rem 10rem 0 10rem; /* Reduce padding for smaller screens */
+  padding: 5rem 28rem 5rem 28rem; /* Reduce padding for smaller screens */
 }
 
 .exercise-card {
@@ -31,7 +31,7 @@ h1 {
   padding: 1.5rem; /* Reduce padding for smaller screens */
   margin: 1.5rem; /* Reduce margin for smaller screens */
   display: flex;
-  flex-direction: row; /* Display elements in a row for larger screens */
+  flex-direction: column; /* Display elements in a row for larger screens */
 }
 
 .exercise-card.light-mode {
@@ -91,11 +91,33 @@ h1 {
 }
 
 .exercise-yt-videos {
+  display: flex;
+  margin: auto;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  /* width: 50%; /* Set video width to 50% for larger screens */
-  /* height: auto; Maintain aspect ratio for the video */
-  margin-left: 1rem; /* Add some spacing between details and video */
+  width: 50%; /* Make the video take full width */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1650px) {
+  /* Tablet styles */
+  .exercise-container {
+    padding: 2rem; /* Reduce padding for tablets */
+  }
+
+  .exercise-card {
+    padding: 1rem; /* Reduce padding for tablets */
+    margin: 1rem; /* Reduce margin for tablets */
+    flex-direction: column;
+  }
+
+  .exercise-yt-videos {
+    width: 100%;
+    margin-left: 0; /* Remove spacing between details and video */
+    margin-top: 1rem; /* Add some spacing between details and video */
+  }
 }
 
 /* Media queries for responsive design */
