@@ -19,7 +19,7 @@ h1 {
 }
 
 .exercise-container {
-  padding: 5rem 28rem 5rem 28rem; /* Reduce padding for smaller screens */
+  padding: 5rem 25rem 5rem 25rem; /* Reduce padding for smaller screens */
 }
 
 .exercise-card {
