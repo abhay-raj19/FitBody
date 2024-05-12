@@ -11,6 +11,7 @@ import Razorpay from "razorpay";
 import welcomeRouter from './routes/welcomeRoute.js';
 import AuthRoute from './routes/auth.js';
 import paymentRoute from './routes/paymentRoute.js';
+import emailRoute from './routes/emailRoute.js';
 
 config({path:"./config/config.env"})
 
@@ -38,7 +39,8 @@ server.use(express.urlencoded({extended:true}))
 
 server.use('/', welcomeRouter);
 server.use("/api/auth", AuthRoute);
-server.use("/api",paymentRoute)
+server.use("/api",paymentRoute);
+server.use("/api",emailRoute);
 
 
 // Response Handler Middleware Which will send response to the client in the form of JSON Object 
