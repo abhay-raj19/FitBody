@@ -53,7 +53,7 @@
 
 /* Dark mode styles */
 .dark-mode-app .footer {
-  background: #001524;
+  background: #111;
   color: #fff; /* Text color in dark mode */
 }
 .dark-mode-app .footer p{
