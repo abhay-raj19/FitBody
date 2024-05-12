@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import "../../styles/contactUs.css";
 
 const ContactUs = () => {
@@ -7,27 +8,20 @@ const ContactUs = () => {
     email: "",
     message: "",
   });
-  const [errors, setErrors] = useState({});
 
   const validateForm = () => {
-    const newErrors = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+    if (formData.name === "" || formData.name === null) {
+      toast.error("please enter your name");
+    } else if (formData.email === "" || formData.email === null) {
+      toast.error("please enter your email");
     } else if (!isValidEmail(formData.email)) {
-      newErrors.email = "Invalid email address";
+      toast.error("Please enter a valid email");
+    } else if (formData.message === "" || formData.message === null) {
+      toast.error("please provide a message");
+    } else {
+      toast.success("Form submitted successfully");
+      console.log("contact form: ", formData);
     }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
   };
 
   const isValidEmail = (email) => {
@@ -38,11 +32,10 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (validateForm()) {
       console.log("Form data:", formData);
-      alert("Thanks for contacting us!")
     }
-    
   };
 
   const handleInputChange = (e) => {
@@ -52,6 +45,55 @@ const ContactUs = () => {
 
   return (
     <section id="contact-us" className="form">
+      <div className="w-full form flex justify-center">
+        <div className="contact-us">
+          <h1 className="heading text-center">Contact Us</h1>
+          {/* contact-us form */}
+          <div className="">
+            <form onSubmit={handleSubmit} className="contact-form">
+              <div className="">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  rows={7}
+                  value={formData.message}
+                  onChange={handleInputChange}
+                />
+              </div>
+              <div className="text-end">
+                <button className="submit" type="submit">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactUs;
+
+/**<section id="contact-us" className="form">
       <div className="background">
         <div className="container">
           <div className="screen">
@@ -118,8 +160,4 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
-};
-
-export default ContactUs;
+    </section> */
