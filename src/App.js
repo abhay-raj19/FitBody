@@ -10,7 +10,6 @@ import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
-import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
