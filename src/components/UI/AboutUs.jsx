@@ -16,7 +16,6 @@ const AboutUs = () => {
     const [productHovered, setProductHovered] = useState(false);
 
   return (
-    // <----About Us----->
     <div id='about-us' style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
     <h1 className='about-us-heading'>About Us</h1>
     <div className='about-us-block'>
@@ -25,7 +24,7 @@ const AboutUs = () => {
                 <img src={pplHovered ? Ppplhover : People} alt="" style={{marginLeft: '1rem', marginTop: '1rem', width: '3rem'}}/>
                 <div className='about-us-blk-text'>Community</div>
             </div>
-            <p className='about-us-blk-para'>At FitBit, our community is our strength. We're more than just a gym; we're a family of like-minded individuals committed to supporting and motivating each other on our fitness journeys. From beginners to seasoned athletes, everyone is welcome here. Together, we celebrate victories, overcome challenges, and forge lifelong friendships.</p>
+            <p className='about-us-blk-para'>At Fitbit, our community is our strength. We're more than just a gym; we're a family of like-minded individuals committed to supporting and motivating each other on our fitness journeys. From beginners to seasoned athletes, everyone is welcome here. Together, we celebrate victories, overcome challenges, and forge lifelong friendships.</p>
         </div>
         <div className='about-us-product' onMouseOver={()=>setProductHovered(true)} onMouseLeave={()=>setProductHovered(false)}>
             <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
@@ -41,7 +40,7 @@ const AboutUs = () => {
                 <img src={placeHovered ? Placehover : Place} alt="" style={{marginLeft: '1rem', marginTop: '1rem', width: '3rem'}}/>
                 <div className='about-us-blk-text'>Locations</div>
             </div>
-            <p className='about-us-blk-para'>With convenient locations in Bengaluru, Mumbai, Chennai, Delhi and Kolkata, FitBit is easily accessible for fitness enthusiasts across the region. Whether you're a local resident or just passing through, you'll find a warm welcome and top-notch facilities at each and every one of our branches.</p>
+            <p className='about-us-blk-para'>With convenient locations in Bengaluru, Mumbai, Chennai, Delhi and Kolkata, Fitbit is easily accessible for fitness enthusiasts across the region. Whether you're a local resident or just passing through, you'll find a warm welcome and top-notch facilities at each and every one of our branches.</p>
         </div>
         <div className='about-us-event' onMouseOver={()=>setProgramHovered(true)} onMouseLeave={()=>setProgramHovered(false)}>
             <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
