@@ -11,6 +11,7 @@ import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
+import AboutUs from "./components/UI/AboutUs";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Start />
         <Pricing />
         <Testimonials />
+        <AboutUs />
         <ContactUs />
         <Footer />
         <BackToTop />
