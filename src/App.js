@@ -10,8 +10,12 @@ import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   useEffect(() => {
     Aos.init();
   }, []);
