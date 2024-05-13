@@ -28,8 +28,8 @@
     /* background-color:#fff ; */
 }
 .pricing_item:hover{
-    transform: scaleZ(1.2);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px 0px;    
+    transform: scaleZ(1.8);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 14px 25px 0px;    
 }
 
 .pricing_card-top{
