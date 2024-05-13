@@ -8,7 +8,10 @@ import cors from 'cors';
 
 // Importing the Router Files
 import welcomeRouter from './routes/welcomeRoute.js';
-import AuthRoute from './routes/auth-route.js';
+import authRoute from './routes/auth-route.js'
+import userRoute from './routes/user-route.js'
+import adminRoute from './routes/admin-route.js'
+import planRoute from './routes/plan-route.js'
 
 // Iniliazing Express Server
 const server = express();
@@ -29,8 +32,10 @@ server.use(cors(
 // Redirecting the routes to the router files 
 
 server.use('/', welcomeRouter);
-server.use("/api/auth", AuthRoute);
-
+server.use("/api/auth",authRoute);
+server.use("/api/user",userRoute)
+server.use('/api/admin',adminRoute)
+server.use('/api/plan',planRoute)
 
 // Response Handler Middleware Which will send response to the client in the form of JSON Object 
 

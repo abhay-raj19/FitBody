@@ -1,6 +1,8 @@
-import {User} from '../models/user-model.js'
+import User from '../models/user-model.js'
 import jwt from 'jsonwebtoken'
 import bcrypt from 'bcryptjs'
+import Admin from '../models/admin-model.js';
+
 export const registerUser = async (req, res) => {
 
   try {
@@ -15,9 +17,9 @@ export const registerUser = async (req, res) => {
     }
 
     const userExists = await User.findOne({ email });
-
-    if (userExists) {
-      return res.status(400).json({ message: "User already exists", success: false });
+    const adminExists=await Admin.findOne({email})
+    if (userExists || adminExists) {
+      return res.status(400).json({ message: "account already exists", success: false });
     }
 
     const user = await User.create({
@@ -73,7 +75,7 @@ export const authUser = async (req, res) => {
 };
 
 export const changePassword = async (req, res) => {
-  // try {
+  try {
     const { email, current_password, new_password } = req.body;
     const user = await User.findOne({ email })
     if (!user) {
@@ -88,10 +90,8 @@ export const changePassword = async (req, res) => {
     user.password = new_password
     await user.save()
     return res.status(200).json({ message: "password changed successfully.", success: true })
-  // }
-  // catch (err) {
-  //   return res.status(500).json({ message: "internal server error", err, success: false })
-  // }
+  }
+  catch (err) {
+    return res.status(500).json({ message: "internal server error", err, success: false })
+  }
 }
-
-

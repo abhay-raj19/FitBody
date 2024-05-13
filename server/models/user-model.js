@@ -46,7 +46,19 @@ const userModel = mongoose.Schema({
       },
     },
   },
-});
+  plan: { 
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: 'Plan' 
+  },
+  planStartDate: { 
+    type: Date, 
+    default: null 
+  }, 
+  planEndDate: { 
+    type: Date, 
+    default: null 
+  }
+},{timestamps:true});
 
 userModel.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
@@ -61,5 +73,6 @@ userModel.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-export const User = mongoose.model("User", userModel);
+const User = mongoose.model("User", userModel);
+export default User;
 
