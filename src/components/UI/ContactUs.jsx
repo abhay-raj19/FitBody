@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/contactUs.css";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -13,18 +15,22 @@ const ContactUs = () => {
     const newErrors = {};
 
     if (!formData.name.trim()) {
+      toast.error("Name is required")
       newErrors.name = "Name is required";
     }
 
-    if (!formData.email.trim()) {
+   else if (!formData.email.trim()) {
+    toast.error("Email is required")
       newErrors.email = "Email is required";
     } else if (!isValidEmail(formData.email)) {
+      toast.error("Invalid email address")
       newErrors.email = "Invalid email address";
-    }
-
-    if (!formData.message.trim()) {
+    }else if (!formData.message.trim()) {
+      toast.error("Message is required")
       newErrors.message = "Message is required";
     }
+
+   
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -40,7 +46,7 @@ const ContactUs = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Form data:", formData);
-      alert("Thanks for contacting us!")
+      toast.success("Thanks for contacting us!")
     }
     
   };
@@ -52,6 +58,7 @@ const ContactUs = () => {
 
   return (
     <section id="contact-us" className="form">
+    <ToastContainer/>
       <div className="background">
         <div className="container">
           <div className="screen">
@@ -85,7 +92,7 @@ const ContactUs = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                     />
-                    {errors.name && <div style={{color: "red "}} className="error-message">{errors.name}</div>}
+                   
                   </div>
                   <div className="app-form-group">
                     <input
@@ -95,7 +102,7 @@ const ContactUs = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                     />
-                    {errors.email && <div  style={{color: "red "}} className="error-message">{errors.email}</div>}
+                   
                   </div>
                   <div className="app-form-group message">
                     <input
@@ -105,7 +112,7 @@ const ContactUs = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                     />
-                    {errors.message && <div style={{color: "red "}}  className="error-message">{errors.message}</div>}
+                   
                   </div>
                   <div className="app-form-group buttons">
                     <button className="app-form-button" onClick={handleSubmit}>
