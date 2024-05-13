@@ -49,6 +49,11 @@
     padding : 30px;
 
 }
+.pricing_items:hover{
+    transform: scaleZ(1.05);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 12px 0px;
+    
+}
 .pricing_item .services ul{
     text-align:start;
 }
