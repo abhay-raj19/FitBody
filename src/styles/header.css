@@ -110,6 +110,7 @@ ul {
     align-items: center;
     justify-content: flex-end;
     column-gap: 2rem;
+    padding: 0.5rem;
 }
 
 .nav_item a {
@@ -145,22 +146,25 @@ ul {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-.header{
+
+.header {
     margin-top: -20px;
 }
+
 .register_btn:hover {
     box-shadow: 0.3rem 0.3rem #5844c1, -0.3rem -0.3rem #8b76f4;
 }
 
 .sticky_header {
     width: 100%;
-    position:sticky;
+    position: sticky;
     top: -20px;
     left: 0;
     z-index: 99;
     background: #fff;
 
 }
+
 .logo h2 a {
     text-decoration: none;
     transition: color 0.3s ease;
@@ -264,7 +268,7 @@ ul {
     }
 }
 
-.styles-container{
+.styles-container {
     width: 42px;
     height: 24px;
     border: 1.5px solid #7d66f3;
@@ -276,19 +280,19 @@ ul {
     margin-left: 10px;
     position: relative;
     cursor: pointer;
-  }
-  
-  .styles-icon{
+}
+
+.styles-icon {
     font-size: 11px;
-  }
-  
-  .styles-ball{
+}
+
+.styles-ball {
     width: 15px;
     height: 15px;
     background-color: #A899F7;
     border-radius: 50%;
     position: absolute;
-  }
+}
 
 
 
@@ -304,12 +308,10 @@ ul {
     }
 
     .nav_item a {
-       
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .nav__links {
         gap: 1.5rem;
     }
 }
-
