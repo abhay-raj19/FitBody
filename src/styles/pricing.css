@@ -51,7 +51,7 @@
 }
 .pricing_items:hover{
     transform: scaleZ(1.05);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 12px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px 0px;
     
 }
 .pricing_item .services ul{
