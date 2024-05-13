@@ -54,6 +54,19 @@
 .swiper{
   width: 40%;
 }
+
+.dark-mode-app .slide_item {
+  background-color:#111;
+}
+
+.dark-mode-app .slide_item h4{
+  color: #fff; /* Text color in dark mode */
+}
+
+.dark-mode-app .slide_item p{
+  color: #fff; /* Text color in dark mode */
+}
+
 /* -------- */
 
 

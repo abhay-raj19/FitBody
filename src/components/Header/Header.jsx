@@ -1,10 +1,11 @@
 import React, { useRef } from "react";
 import "../../styles/header.css";
 import logo from "../../assets/img/dumble.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, createContext } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
+
 
 const nav__links = [
 	{
@@ -87,11 +88,14 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 	const headerClass = isDarkMode ? "header dark-mode" : "header";
 
 	return (
+		<DarkModeContext.Provider value={isDarkMode}>
 		<header
 			className={headerClass}
 			style={{ background: headerBackground }}
 			ref={headerRef}
 		>
+		
+        
 			<div className="container">
 				<div className="nav__wrapper">
 					{/*=====LOGO===*/}
@@ -163,7 +167,10 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 				</div>
 			</div>
 		</header>
+		</DarkModeContext.Provider>
 	);
 };
+
+export const DarkModeContext = createContext();
 
 export default Header;
