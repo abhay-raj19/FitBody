@@ -8,7 +8,7 @@ import cors from 'cors';
 
 // Importing the Router Files
 import welcomeRouter from './routes/welcomeRoute.js';
-import AuthRoute from './routes/auth.js';
+import AuthRoute from './routes/auth-route.js';
 
 // Iniliazing Express Server
 const server = express();
@@ -49,7 +49,7 @@ server.use((obj, req, res, next) => {
 // Database connection Function 
 const ConnetMongoDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/fitbody');
+        await mongoose.connect('mongodb://localhost:27017/fitbody'); 
         console.log('DB connected !');
     } catch (error) { 
        console.error('Error: ', error);

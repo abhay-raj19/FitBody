@@ -1,59 +1,97 @@
-const User = require("../models/userModel");
+import {User} from '../models/user-model.js'
+import jwt from 'jsonwebtoken'
+import bcrypt from 'bcryptjs'
+export const registerUser = async (req, res) => {
 
-const registerUser = async (req, res) => {
-  console.log(req.body);
-  const { userName, age, email, password, contact } = req.body;
+  try {
+    const { name, age, email, contact, password, confirmPasssword, panNumber } = req.body;
 
-  if (!userName || !email || !password) {
-    res.status(400);
-    throw new Error("Please Enter all the Feilds");
-  }
-
-  const userExists = await User.findOne({ email });
-
-  if (userExists) {
-    res.status(400);
-    throw new Error("User already exists");
-  }
-
-  const user = await User.create({
-    userName,
-    email,
-    password,
-    age,
-    contact,
-  });
-
-  if (user) {
-    try {
-      const found = await createAccount(email);
-      console.log(found);
-      res.status(201).send("Account Created");
-    } catch (error) {
-      console.error("Error creating email:", error);
-      res.status(500).send("Error creating account");
+    if (!name || !email || !age || !contact || !password || !confirmPasssword || !panNumber) {
+      return res.status(400).json({ message: "Please Enter all the Feilds", success: false });
     }
-  } else {
-    res.status(400);
-    throw new Error("User not found");
-  }
-};
 
-const authUser = async (req, res) => {
-  const { email, password } = req.body;
+    if (password !== confirmPasssword) {
+      return res.status(400).json({ message: "Confirm password do not match.", success: false });
+    }
 
-  const user = await User.findOne({ email });
-  if (user && (await user.matchPassword(password))) {
-    console.log(user);
-    res.status(200).json({
-      name: user.name,
-      email: user.email,
-      message: "Login successful",
+    const userExists = await User.findOne({ email });
+
+    if (userExists) {
+      return res.status(400).json({ message: "User already exists", success: false });
+    }
+
+    const user = await User.create({
+      name,
+      email,
+      password,
+      age,
+      contact,
+      panNumber
     });
-  } else {
-    res.status(401);
-    throw new Error("Invalid Email or Password");
+
+
+    if (user) {
+      return res.status(201).json({ message: "Account created successfully.", success: true });
+    }
+    else {
+      return res.status(500).json({ message: "internal server error", success: false });
+    }
+  }
+  catch (err) {
+    return res.status(500).json({ message: "internal server error", success: false, err });
+  }
+}
+
+export const authUser = async (req, res) => {
+
+  try {
+    const { email, password } = req.body;
+    const user = await User.findOne({ email });
+    if (user && (await user.matchPassword(password))) {
+
+      const tokenData = {
+        userId: user._id
+      };
+
+      const token = await jwt.sign(tokenData, process.env.JWT_SECRET_KEY, { expiresIn: '1d' });
+      if (!token) {
+        return res.status(500).json({ message: "internal server error", success: false })
+      }
+      return res.status(200).json({
+        token: token,
+        message: "Logged in successful",
+        success: true
+      });
+    }
+    else {
+      return res.status(401).json({ message: "Invalid Email or Password", success: false });
+    }
+  }
+  catch (err) {
+    return res.status(500).json({ message: "internal server error", success: false, err });
   }
 };
 
-module.exports = { registerUser, authUser };
+export const changePassword = async (req, res) => {
+  // try {
+    const { email, current_password, new_password } = req.body;
+    const user = await User.findOne({ email })
+    if (!user) {
+      return res.status(400).json({ message: "No user found!", success: false });
+    }
+    const isPasswordMatch = await bcrypt.compare(current_password, user.password);
+    if (!isPasswordMatch)
+      return res.status(400).json({
+        message: "Current password is incorrect.",
+        success: false
+      })
+    user.password = new_password
+    await user.save()
+    return res.status(200).json({ message: "password changed successfully.", success: true })
+  // }
+  // catch (err) {
+  //   return res.status(500).json({ message: "internal server error", err, success: false })
+  // }
+}
+
+
