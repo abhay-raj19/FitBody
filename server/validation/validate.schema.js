@@ -7,7 +7,7 @@ const validate = (schema) => async (req, res, next) => {
         console.log(err);
         const yourerror = err.errors[0].message;
         res.status(400).json({
-            msg: yourerror,
+            msg: yourerorr,
         });
     }
 }
