@@ -119,6 +119,7 @@ ul {
     cursor: pointer;
     transition: 0.3s;
     font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .nav_item a:hover {
