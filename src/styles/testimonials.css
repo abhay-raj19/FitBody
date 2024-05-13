@@ -19,7 +19,7 @@
 .slide_img-03 img {
     width : auto;
     height: 300px;
-    border-radius: 20px;
+    
 
 }
 
@@ -27,7 +27,7 @@
 .slide_img-01 img,
 .slide_img-02 img,
 .slide_img-03  img {
-    border-radius: 20px;
+    border-radius: 0.6rem;
     margin-bottom: 30px;
 }
 .slide_item h4{
