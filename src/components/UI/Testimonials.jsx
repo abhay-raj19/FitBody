@@ -6,10 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-import updated_avatar01 from "../../assets/img/updated_avatar01.png";
-import aavtar02 from "../../assets/img/avatar02.png";
-import supdated_avatar03 from "../../assets/img/supdated_avatar03.png";
-import aavtar04 from "../../assets/img/avatar04.png";
+import testimonial01 from "../../assets/img/testinomial01.jpg";
+import testimonial02 from "../../assets/img/testimonial02.jpg";
+import testimonial03 from "../../assets/img/testimonial03.jpg";
+import testinomial04 from "../../assets/img/testinomial04.jpg";
+import testinomial05 from "../../assets/img/testinomial05.jpg";
+import testinomial06 from "../../assets/img/testinomial06.jpg";
 
 // import required modules
 import { EffectCards } from "swiper";
@@ -29,10 +31,11 @@ export default function App() {
             loop={true}
             className="mySwiper"
           >
+            
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-01">
-                  <img src={updated_avatar01} alt="" />
+                  <img src={testimonial01} alt="" />
                 </div>
                 <h4>Jasmine Fernandes</h4>
                 <p>
@@ -47,7 +50,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-02">
-                  <img src={aavtar02} alt="" />
+                  <img src={testimonial02} alt="" />
                 </div>
                 <h4>Kiyas Ferns</h4>
                 <p>
@@ -64,7 +67,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-03">
-                  <img src={updated_avatar01} alt="" />
+                  <img src={testimonial03} alt="" />
                 </div>
                 <h4>Rubini Fernandes</h4>
                 <p>
@@ -90,7 +93,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-01">
-                  <img src={supdated_avatar03} alt="" />
+                  <img src={testinomial04} alt="" />
                 </div>
                 <h4>Jake D'souza</h4>
                 <p>
@@ -101,7 +104,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-02">
-                  <img src={aavtar04} alt="" />
+                  <img src={testinomial05} alt="" />
                 </div>
                 <h4>Robin Thomas</h4>
                 <p>
@@ -112,7 +115,7 @@ export default function App() {
             <SwiperSlide>
               <div className="slide_item">
                 <div className="slide_img-03">
-                  <img src={supdated_avatar03} alt="" />
+                  <img src={testinomial06} alt="" />
                 </div>
                 <h4>Jake Demello</h4>
                 <p>
