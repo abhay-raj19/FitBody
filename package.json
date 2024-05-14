@@ -20,7 +20,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
   "devDependencies": {
     "@emotion/babel-plugin": "^11.11.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "vite-tsconfig-paths": "^4.3.2"
   }
 }

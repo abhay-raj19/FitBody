@@ -1,0 +1,51 @@
+.pricing_card-top{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+.pricing_card-top:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(111, 85, 242, 0.8);
+    color:blueviolet;
+     }
+
+
+.pricing.section_title > h2 :hover{
+    color:blueviolet
+}
+
+h2.pricing.section_title:hover{
+    color:blueviolet
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px blueviolet,
+    0 0 70px blueviolet,
+    0 0 80px blueviolet,
+    0 0 100px blueviolet;
+}
+
+
+.pricing_wrapper ul {
+    height: 232px;
+} 
+
+.pricing_item .services{
+    color:blueviolet
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px blueviolet,
+    0 0 70px blueviolet,
+    0 0 80px blueviolet,
+    0 0 100px blueviolet;
+
+}
+
+.pricing_item .services:hover{
+
+ color:rgb(132, 61, 209);
+ transform: scale(0.95);
+ box-shadow: 0 10px 20px rgba(111, 85, 242, 0.8);
+
+
+}
