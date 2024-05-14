@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/start.css";
 import trainerImg from "../../assets/img/trainer.png";
 import { Link } from "react-router-dom";
+import trainerImg2 from "../../assets/img/trainer-png.png";
 
 const Start = () => {
   return (
@@ -10,7 +11,7 @@ const Start = () => {
         <div className="start_wrapper">
           <div className="start_img">
             <img
-              src={trainerImg}
+              src={trainerImg2}
               alt=""
               data-aos="fade-left"
               data-aos-duration="1500"
