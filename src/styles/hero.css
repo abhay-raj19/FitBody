@@ -1,0 +1,305 @@
+.hero_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.hero_content .section_title{
+    font-size: 3rem;
+    padding-right: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.highlights{
+    color: var(--primary-color);
+}
+
+.hero_content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.hero_content p {
+    font-size: 1rem;
+    /* color: var(--heading-color); */
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.hero_btns {
+    display:flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.watch_btn{
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.watch_btn span i{
+    background :#f7f7f7;
+    border-radius: 50%;
+    padding: 0.8rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:3px 3px 10px -1px #d3cef2 ;
+}
+
+.watch_video{
+  color: white;
+  mix-blend-mode: difference;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.box-01{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 25px solid rgba(141, 141, 235, 1);
+}
+.box-02{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: 25px solid #b5a9f3;
+}
+.box-03{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 25px solid #d3cef2;
+}
+.hero_img-wrapper{
+    position: relative;
+    z-index: 1;
+}
+.box_img{
+    position:absolute ;
+    top: -10%;
+    left: -20%;
+    z-index: 10;
+}
+
+.box_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.box_img{
+    width:121.5%;
+}
+
+.heart_rate{
+    width: 100px;
+    position: absolute;
+    top: 60%;
+    left: -20%;
+    z-index: 10;
+    box-shadow: -3px 3px 8px -1px #d3cef2;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+.heart_rate span{
+    width: 30px;
+    height: 25px;   
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;;
+    background:#d3cef2;
+    color: #d7337a;
+    border-radius: 3px;
+    padding: 3px ;
+
+}
+.heart_rate h5,h6 {
+    font-size: 0.8rem;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+.heart_rate h5{
+    margin-bottom: 10px;
+}
+.heart_rate h6{
+    margin-top:  10px;
+}
+.gym_location {
+    position: absolute;
+    top: -2%;
+    right: -3%;
+    z-index: 10;
+    box-shadow: -3px 3px 8px -1px #d3cef2;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1.1rem;
+}
+.gym_location span{
+    width: 30px;
+    height: 30px;   
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+
+}
+.gym_location h5{
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+.dumble_icon{
+    position: absolute;
+    top: 2%;
+    left: 6%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #d7337a;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.dumble_icon img{
+    width: 100%;
+}
+
+/* CSS code for Hero component */
+
+@media (max-width: 768px) {
+    .hero_wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+
+    .hero_img {
+      margin-top: 50px;
+    }
+
+    .main_img {
+      padding-top: 20px;
+      width: 350px;
+    }
+  
+    .hero_content .section_title {
+      font-size: 2.5rem;
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .hero_content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+  
+    .hero_content p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  
+    .hero_btns {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .watch_btn {
+      font-size: 0.9rem;
+    }
+  
+    .box-01 {
+      width: 300px;
+      height: 300px;
+      border: 15px solid rgba(141, 141, 235, 1);
+    }
+  
+    .box-02 {
+
+      width: 150px;
+      height: 150px;
+      border: 15px solid #b5a9f3;
+    }
+  
+    .box-03 {
+      width: 240px;
+      height: 240px;
+      border: 15px solid #d3cef2;
+    }
+  
+    .heart_rate {
+      width: 70px;
+      top: 55%;
+      left: -7%;
+      padding: 2px;
+    }
+
+    .heart_rate h5{
+      margin-bottom: 0px;
+    }
+
+    .heart_rate span {
+      margin-top: 8px;
+    }
+  
+    .heart_rate h5,
+    .heart_rate h6 {
+      font-size: 0.7rem;
+    }
+  
+    .gym_location {
+      width: 90px;
+      top: -5%;
+      right: -4%;
+      padding: 0.4rem;
+    }
+  
+    .gym_location span {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  
+    .gym_location h5 {
+      font-size: 0.8rem;
+    }
+  
+    .dumble_icon {
+      top: -5%;
+      left: -3%;
+      width: 30px;
+      height: 30px;
+      padding: 10px 7px;
+    }
+  
+    .dumble_icon img {
+      width: 80%;
+    }
+  }
+  

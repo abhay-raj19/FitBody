@@ -1,0 +1,75 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+:root {
+  --primary-color: #6f55f2;
+  --heading-color: #132742;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(103, 101, 240, 1) 27%,
+    rgba(141, 141, 235, 1) 85%
+  );
+  --font-name: "Questrial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Styles for light mode */
+.light-mode-app {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Styles for dark mode */
+.dark-mode-app {
+  background-color:#111;
+   color:#f7f7f7
+}
+
+@media (max-width: 768px) {
+  .dark-mode-app,
+  .light-mode-app {
+    overflow-x: hidden;
+  }
+}
+
+
+
+/* Common styles for both modes */
+/* ... */
+
+
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #D3DCDE;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #DCE6E8;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #8D90C3;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #8D90C3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #8D90C3;
+}
