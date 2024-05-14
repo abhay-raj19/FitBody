@@ -6,6 +6,6 @@ const router=express.Router()
 
 router.get('/:id',userDetails)
 router.get('/',getAllUsers)
-router.post('/',isUserAuthenticated,addUserToPlan)
+router.post('/:id',isUserAuthenticated,addUserToPlan)
 
 export default router;

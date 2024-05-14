@@ -8,6 +8,6 @@ router.post('/',isAdminAuthenticated,addPlan)
 router.get('/',getAllPlans)
 router.get('/:id',getPlanDetails)
 router.delete('/:id',isAdminAuthenticated,deletePlan)
-router.get('/plan_users',isAdminAuthenticated,getPlanUsers)
+router.get('/plan_users/:id',isAdminAuthenticated,getPlanUsers)
 
 export default router;

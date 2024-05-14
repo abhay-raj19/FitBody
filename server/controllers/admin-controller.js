@@ -6,13 +6,13 @@ import User from '../models/user-model.js';
 export const registerAdmin = async (req, res) => {
 
     try {
-        const { name, email, contact, password, confirmPasssword } = req.body;
+        const { name, email, contact, password, confirmPassword } = req.body;
 
-        if (!name || !email || !contact || !password || !confirmPasssword) {
+        if (!name || !email || !contact || !password || !confirmPassword) {
             return res.status(400).json({ message: "Please Enter all the Feilds", success: false });
         }
 
-        if (password !== confirmPasssword) {
+        if (password !== confirmPassword) {
             return res.status(400).json({ message: "Confirm password do not match.", success: false });
         }
 

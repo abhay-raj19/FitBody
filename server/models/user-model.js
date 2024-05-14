@@ -51,11 +51,11 @@ const userModel = mongoose.Schema({
     ref: 'Plan' 
   },
   planStartDate: { 
-    type: Date, 
+    type: String, 
     default: null 
   }, 
   planEndDate: { 
-    type: Date, 
+    type: String, 
     default: null 
   }
 },{timestamps:true});
