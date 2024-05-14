@@ -11,6 +11,7 @@ import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import { Toaster } from "react-hot-toast";
+import Reviews from "./components/UI/Reviews";
 
 function App() {
   useEffect(() => {
