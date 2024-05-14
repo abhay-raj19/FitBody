@@ -138,11 +138,17 @@ Licensed under the MIT License.
 ![GitHub language count](https://img.shields.io/github/languages/count/abhay-raj19/FitBody?style=for-the-badge&color=brightgreen)
 <br><br>
 
+## Join our Discord Community
+To get latest updates on the project and to interact with the community. We are happy to help you with your queries.
 
-## Contributors
+  [![Join our Discord server!](https://invidget.switchblade.xyz/9jqmCs3KX3?theme=light)](https://discord.gg/Ra8vsr5bPK)
+
+
+## 🤝Our Contributors
 
 <!-- readme: contributors -start -->
 <!-- readme: contributors -end -->
+
 
 Thank you to all the amazing contributors who have made this project possible!
 

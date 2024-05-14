@@ -10,14 +10,22 @@ import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 
 function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   useEffect(() => {
     Aos.init();
   }, []);
 
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
 
+  useEffect(() => {
+    localStorage.setItem('darkMode', isDarkMode);
+  }, [isDarkMode]);
+  
   return (
     <>
       <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
