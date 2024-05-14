@@ -19,8 +19,11 @@
   .screen {
     position: relative;
     background: #3e3e3e;
-    border-radius: 15px;
-  }
+    border-radius: 20px;
+    border: 5px solid #888;
+    box-shadow: 15px 15px 5px #50565870;
+
+    }
   
   .screen:after {
     content: '';
@@ -83,11 +86,13 @@
   
   .screen-body {
     display: flex;
+    padding: 10px 20px;
+
   }
   
   .screen-body-item {
     flex: 1;
-    padding: 50px;
+    padding: 50px 20px;
   }
   
   .screen-body-item.left {
@@ -96,11 +101,10 @@
   }
   
   .app-title {
-    display: flex;
-    flex-direction: column;
     position: relative;
     color: #ea1d6f;
-    font-size: 26px;
+    font-size: 2.5rem;
+    font-weight: 600;
   }
   
   .app-title:after {
@@ -115,9 +119,10 @@
   }
   
   .app-contact {
-    margin-top: auto;
-    font-size: 8px;
+    margin-top: 10%;
+    font-size: 1rem;
     color: #888;
+
   }
   
   .app-form-group {
@@ -159,9 +164,10 @@
     background: none;
     border: none;
     color: #ea1d6f;
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
     outline: none;
+    font-weight: 600;
   }
   
   .app-form-button:hover {

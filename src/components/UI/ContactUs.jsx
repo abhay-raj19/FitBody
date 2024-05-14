@@ -70,10 +70,9 @@ const ContactUs = () => {
             <div className="screen-body">
               <div className="screen-body-item left">
                 <div className="app-title">
-                  <span>CONTACT</span>
-                  <span>US</span>
+                  <span>CONTACT US</span>
                 </div>
-                <div className="app-contact"></div>
+                <div className="app-contact">drop you message here!</div>
               </div>
               <div className="screen-body-item">
                 <div className="app-form">
