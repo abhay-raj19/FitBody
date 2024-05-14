@@ -1,8 +1,7 @@
 import React from "react";
 import "../../styles/start.css";
 import trainerImg from "../../assets/img/trainer.png";
-import trainerImg2 from "../../assets/img/trainer-png.png";
-
+import { Link } from "react-router-dom";
 
 const Start = () => {
   return (
@@ -11,7 +10,7 @@ const Start = () => {
         <div className="start_wrapper">
           <div className="start_img">
             <img
-              src={trainerImg2}
+              src={trainerImg}
               alt=""
               data-aos="fade-left"
               data-aos-duration="1500"
@@ -35,7 +34,7 @@ const Start = () => {
               determination – you're on the road to a healthier, happier you.{" "}
             </p>
 
-            <button className="register_btn">Get Started</button>
+            <button className="register_btn"><Link to="/classes">Get Started</Link></button>
           </div>
         </div>
       </div>
