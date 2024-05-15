@@ -1,6 +1,7 @@
 .exercise_top{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
+    margin-top: 0;
 }
 
 .exercise_top h2{
@@ -20,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:80px 60px;
+    padding:40px 40px;
 
 }
 .exercise_item{
@@ -83,5 +84,7 @@
     width: 100%;
     max-width: 100%;
   }
-
+ .container.exercise_container{
+    margin-top: 0px;
+ }
   

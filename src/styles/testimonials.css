@@ -1,4 +1,9 @@
-.sliders{
+
+*{
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+}.sliders{
     width: 100%;
 }
 .slide_item{

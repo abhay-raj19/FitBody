@@ -1,4 +1,8 @@
 /* @dhruv8433 custom styles */
+*{
+  margin-top: 0;
+  padding-top: 0;
+}
 .flex {
   display: flex;
 }
@@ -75,6 +79,7 @@ select:focus {
 /* Mobile Styles */
 .form {
   padding: 20px;
+  padding-top: 0;
 }
 
 .contact-us-container {

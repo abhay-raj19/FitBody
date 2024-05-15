@@ -10,7 +10,7 @@ const Exercises = () => {
       <div className="container exercise_container">
         <div className="exercise_top">
           <h2 className="section_title">
-            Benifits of <span className="highlights">Exercise</span>
+            Benefits of <span className="highlights">Exercise</span>
           </h2>
           <p>
             You'll discover the transformative power it holds in shaping a life

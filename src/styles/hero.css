@@ -1,14 +1,15 @@
 .hero_wrapper{
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 20px;
+    margin-bottom: 0;
 }
 
 .hero_content .section_title{
     font-size: 3rem;
     padding-right: 60px;
     line-height: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .highlights{
@@ -301,5 +302,9 @@
     .dumble_icon img {
       width: 80%;
     }
+  }
+  .container{
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   
