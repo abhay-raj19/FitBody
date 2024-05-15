@@ -16,6 +16,7 @@ const AboutUs = () => {
     const [productHovered, setProductHovered] = useState(false);
 
   return (
+    // <----About Us----->
     <div id='about-us' style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
     <h1 className='about-us-heading'>About Us</h1>
     <div className='about-us-block'>
