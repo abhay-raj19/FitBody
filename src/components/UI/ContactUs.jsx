@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/contactUs.css";
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -45,6 +45,11 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      })
       console.log("Form data:", formData);
       toast.success("Thanks for contacting us!")
     }
