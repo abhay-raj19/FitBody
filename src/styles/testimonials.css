@@ -13,16 +13,11 @@
 .slide_img-02 img,
 .slide_img-03 img {
     width : 100%;
+    border-radius: 0.8rem;
+    border : 2px solid #6f55f2;
+    
 }
-.slide_img-01{
-    background: #eeeaff;
-}
-.slide_img-02{
-    background: #d3cef2;
-}
-.slide_img-02{
-    background: rgba(141, 141, 235, 1) 85% ;
-}
+
 
 .slide_img-01,
 .slide_img-02,

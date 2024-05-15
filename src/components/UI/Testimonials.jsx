@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-import updated_avatar01 from "../../assets/img/updated_avatar01.png";
-import aavtar02 from "../../assets/img/avatar02.png";
-import supdated_avatar03 from "../../assets/img/supdated_avatar03.png";
-import aavtar04 from "../../assets/img/avatar04.png";
-
+import testinomial03 from "../../assets/img/testinomial03.jpg";
+import testinomial01 from "../../assets/img/testinomial01.jpeg";
+import testinomial02 from "../../assets/img/testinomial02.jpg";
+import testinomial04 from "../../assets/img/testinomial04.jpg";
+import testinomial05 from "../../assets/img/testinomial05.jpg";
 // import required modules
 import { EffectCards } from "swiper";
 import Reviews from "./Reviews";
@@ -35,7 +35,7 @@ export default function App() {
               <SwiperSlide>
                 <div className="slide_item">
                   <div className="slide_img-02">
-                    <img src={aavtar02} alt="" />
+                    <img src={testinomial04} alt="" />
                   </div>
                   <h4>Kiyas Ferns</h4>
                   <p>
@@ -52,7 +52,7 @@ export default function App() {
               <SwiperSlide>
                 <div className="slide_item">
                   <div className="slide_img-03">
-                    <img src={updated_avatar01} alt="" />
+                    <img src={testinomial05} alt="" />
                   </div>
                   <h4>Rubini Fernandes</h4>
                   <p>
@@ -70,7 +70,7 @@ export default function App() {
               <SwiperSlide>
                 <div className="slide_item">
                   <div className="slide_img-01">
-                    <img src={supdated_avatar03} alt="" />
+                    <img src={testinomial01} alt="" />
                   </div>
                   <h4>Jake D'souza</h4>
                   <p>
@@ -86,7 +86,7 @@ export default function App() {
               <SwiperSlide>
                 <div className="slide_item">
                   <div className="slide_img-02">
-                    <img src={aavtar04} alt="" />
+                    <img src={testinomial03} alt="" />
                   </div>
                   <h4>Robin Thomas</h4>
                   <p>
@@ -104,7 +104,7 @@ export default function App() {
               <SwiperSlide>
                 <div className="slide_item">
                   <div className="slide_img-03">
-                    <img src={supdated_avatar03} alt="" />
+                    <img src={testinomial02} alt="" />
                   </div>
                   <h4>Jake Demello</h4>
                   <p>
