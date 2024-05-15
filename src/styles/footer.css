@@ -113,6 +113,18 @@
   .social_media i{
     margin-right: 0.75rem;
     margin-left: 0.75rem;
+    
+  }
+
+  .social_media svg {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  
+  }
+  
+  .social_media svg:hover {
+    color: #0078d4;
+    cursor: pointer;
   }
 
   .social_media i:hover {
