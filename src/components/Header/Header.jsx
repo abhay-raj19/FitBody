@@ -117,8 +117,8 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 									className="styles-ball"
 									style={
 										!isDarkMode
-											? { left: "2px" }
-											: { right: "2px" }
+											? { transform:'translateX(0%)' }
+											: { transform:'translateX(140%)'}
 									}
 								/>
 							</div>

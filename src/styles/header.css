@@ -57,6 +57,7 @@ ul {
     z-index: 99;
     margin-top: 10px;
     user-select: none;
+    transition: 0.1s ease-in;
 }
 
 .nav__wrapper {
@@ -292,6 +293,7 @@ ul {
     background-color: #A899F7;
     border-radius: 50%;
     position: absolute;
+    transition: 0.5s ease-in;
 }
 
 
