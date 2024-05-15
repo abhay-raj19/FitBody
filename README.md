@@ -145,10 +145,9 @@ To get latest updates on the project and to interact with the community. We are 
 
 
 ## 🤝Our Contributors
-
-<!-- readme: contributors -start -->
-<!-- readme: contributors -end -->
-
+<a href="https://github.com/abhay-raj19/FitBody/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abhay-raj19/FitBody" />
+</a>
 
 Thank you to all the amazing contributors who have made this project possible!
 
