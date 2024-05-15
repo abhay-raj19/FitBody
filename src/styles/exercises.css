@@ -1,6 +1,11 @@
+*{
+  margin-top:0;
+  margin-bottom:0;
+}
 .exercise_top{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
+    margin-top:0;
 }
 
 .exercise_top h2{
@@ -20,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:80px 60px;
+    padding:40px 40px;
 
 }
 .exercise_item{
