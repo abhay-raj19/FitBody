@@ -1,7 +1,12 @@
 
-
+*{
+  margin-top:0;
+  margin-bottom:0;
+}
 .pricing_top{
     text-align: center;
+    margin-top:
+        0;
 }
 
 .pricing_top h2{
