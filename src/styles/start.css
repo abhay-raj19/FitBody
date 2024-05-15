@@ -1,18 +1,27 @@
+*{
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .start_wrapper{
     display:flex;
     justify-content:space-between;
     column-gap: 3rem;
     align-items: center;
+   margin-top: 0;
+   padding-top: 0;
 }
 .start_img ,
 .start_content{
     width: 50%;
+   
 }
 .start_img{
   display: flex;
   justify-content: center;
   align-self: center;
   padding-bottom: 4rem;
+
 }
 .start_img img{
     width: 70%;
@@ -24,6 +33,7 @@
 .start_content h2{
     font-size: 2.5rem;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 .start_content p{
     /* color: var(--heading-color) ; */

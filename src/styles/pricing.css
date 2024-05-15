@@ -2,17 +2,20 @@
 
 .pricing_top{
     text-align: center;
+    margin-top: 0;
 }
 
 .pricing_top h2{
     font-size: 2.5rem;
     margin-bottom: 20px;
+    margin-top: 0;
 }
 .pricing_top p {
     font-size: 1.1rem;
     /* color: var(--heading-color); */
     line-height: 28px;
     margin-bottom: 50px;
+    margin-top: 0;
 }
 .pricing_wrapper{
     display: flex;
@@ -146,7 +149,9 @@
   .pricing_items .services {
     padding: 30px;
   }
-  
+  .section_title{
+    margin-top: 0;
+  }
   .pricing_item .services ul li {
     display: flex;
     align-items: center;
@@ -196,7 +201,7 @@
   
     .pricing_item {
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 0rem;
     }
   }
   
