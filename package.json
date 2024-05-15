@@ -18,6 +18,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.23.1",
     "remixicon": "^2.5.0",
     "styled-components": "^5.3.11",
     "swiper": "^9.3.2",
