@@ -58,7 +58,7 @@ const ContactUs = () => {
 
   return (
     <section id="contact-us" className="form">
-    <ToastContainer/>
+   
       <div className="background">
         <div className="container">
           <div className="screen">
@@ -75,7 +75,9 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="screen-body">
+           
               <div className="screen-body-item left">
+              <ToastContainer position="top-right" />
                 <div className="app-title">
                   <span>CONTACT</span>
                   <span>US</span>
