@@ -1,6 +1,11 @@
 /* @dhruv8433 custom styles */
+*{
+  margin-top:0;
+  margin-bottom:0;
+}
 .flex {
   display: flex;
+  margin-top:0;
 }
 
 .justify-center {
@@ -9,6 +14,7 @@
 
 .w-full {
   width: 100%;
+  margin-top:0;
 }
 
 .flex-col {
