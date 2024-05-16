@@ -104,7 +104,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 							</div>
 							<div className="icon_logo">
 								<h2>
-									<a href="$">FitBody</a>
+									<a href="/">FitBody</a>
 								</h2>
 							</div>
 							<div
