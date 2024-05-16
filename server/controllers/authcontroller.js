@@ -1,4 +1,4 @@
-const User = require("../models/userModel");
+import User from "../models/User.js";
 
 const registerUser = async (req, res) => {
   console.log(req.body);
@@ -56,4 +56,4 @@ const authUser = async (req, res) => {
   }
 };
 
-module.exports = { registerUser, authUser };
+export{ registerUser, authUser };

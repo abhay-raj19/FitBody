@@ -12,8 +12,8 @@ import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
-import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 
 
 
@@ -28,11 +28,11 @@ function App() {
   useEffect(() => {
     localStorage.setItem('darkMode', isDarkMode);
   }, [isDarkMode]);
-  
+
   return (
     <>
       <Router>
-          <Routes>
+        <Routes>
           <Route path="/" element={<div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
             <Header isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
             <Hero />
@@ -45,6 +45,7 @@ function App() {
             <BackToTop />
           </div>} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </>

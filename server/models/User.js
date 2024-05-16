@@ -1,13 +1,11 @@
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
-
+import mongoose from "mongoose";
 const userModel = mongoose.Schema({
   id: { type: Number },
   userName: { type: String },
   password: { type: "String", required: true },
   age: { type: Number },
   email: { type: "String", unique: true, required: true },
-  isVerified : {type: Boolean, default : false},
+  isVerified: { type: Boolean, default: false },
   contact: {
     type: String, // Assuming your contact number is stored as a string
     unique: true,
@@ -33,6 +31,6 @@ const userModel = mongoose.Schema({
   },
 });
 
-const Users = mongoose.model("User", userModel);
+const User = mongoose.model("User", userModel);
 
-module.exports = Users;
+export default User;

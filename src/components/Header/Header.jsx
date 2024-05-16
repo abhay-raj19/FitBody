@@ -4,6 +4,7 @@ import logo from "../../assets/img/dumble.png";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
 
 const nav__links = [
@@ -99,14 +100,16 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 					<input type="checkbox" id="nav-check" hidden />
 					<div className="btn__wrapper">
 						<div className="logo">
-							<div className="logo_img">
-								<img src={logo} alt="" />
-							</div>
-							<div className="icon_logo">
-								<h2>
-									<a href="$">FitBody</a>
-								</h2>
-							</div>
+							<Link to="/" className="logo">
+								<div className="logo_img">
+									<img src={logo} alt="" />
+								</div>
+								<div className="icon_logo">
+									<h2>
+										<a href="/">FitBody</a>
+									</h2>
+								</div>
+							</Link>
 							<div
 								className="styles-container"
 								onClick={toggleDarkMode}
@@ -117,8 +120,8 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 									className="styles-ball"
 									style={
 										!isDarkMode
-											? { transform:'translateX(0%)' }
-											: { transform:'translateX(140%)'}
+											? { transform: 'translateX(0%)' }
+											: { transform: 'translateX(140%)' }
 									}
 								/>
 							</div>
