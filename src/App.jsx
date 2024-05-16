@@ -10,12 +10,10 @@ import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
-import LocomotiveScroll from 'locomotive-scroll';
+import LocomotiveScroll from "locomotive-scroll";
 import Classes from "./components/UI/Classes";
-import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
-
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorPage from "./components/UI/ErrorPage";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -23,27 +21,35 @@ function App() {
     Aos.init();
   }, []);
 
-  const [isDarkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+  const [isDarkMode, setDarkMode] = useState(
+    () => localStorage.getItem("darkMode") === "true",
+  );
 
   useEffect(() => {
-    localStorage.setItem('darkMode', isDarkMode);
+    localStorage.setItem("darkMode", isDarkMode);
   }, [isDarkMode]);
-  
+
   return (
     <>
       <Router>
-          <Routes>
-          <Route path="/" element={<div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
-            <Header isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
-            <Hero />
-            <Exercises />
-            <Start />
-            <Pricing />
-            <Testimonials />
-            <ContactUs />
-            <Footer />
-            <BackToTop />
-          </div>} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
+                <Header isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+                <Hero />
+                <Exercises />
+                <Start />
+                <Pricing />
+                <Testimonials />
+                <ContactUs />
+                <Footer />
+                <BackToTop />
+              </div>
+            }
+          />
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/classes" element={<Classes />} />
         </Routes>
       </Router>

@@ -1,0 +1,84 @@
+.grid {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  background-color: #ffffff;
+  padding: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-9xl {
+  font-size: 9rem;
+  font-weight: bold;
+  color: #d1d5db; /* or any desired shade of gray */
+}
+
+.text-gray-200 {
+  color: #d1d5db; /* or any desired shade of gray */
+}
+
+.text-2xl {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+  color: #374151; /* or any desired shade of gray */
+}
+
+.text-gray-900 {
+  color: #111827; /* or any desired shade of gray */
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.bg-indigo-600 {
+  background-color: #4f46e5; /* or any desired shade of indigo */
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.border {
+  border: 1px solid transparent; /* You might want to define border properties separately */
+  border-radius: 0.375rem; /* or any desired border-radius */
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.rounded {
+  border-radius: 0.375rem; /* or any desired border-radius */
+}
+
+.hover\:bg-indigo-700:hover {
+  background-color: #4338ca; /* or any desired shade of indigo */
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
