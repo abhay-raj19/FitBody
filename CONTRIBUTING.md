@@ -67,11 +67,10 @@ All contributions will be reviewed by project maintainers. Please be patient and
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md). Please report any unacceptable behavior to [your email address].
-
+Participating in this project, you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md). Please report any unacceptable behavior to rajpootabhay423@gmail.com
 ## Thank You
 
-We appreciate your contributions to the vaccination project. Your help makes a difference in our efforts to fight against the pandemic. Thank you for being a part of this community!
+We appreciate your contributions to the Fitbody project. Your help makes a difference in Fitness of Peoples. Thank you for being a part of this community!
 
 ---
 

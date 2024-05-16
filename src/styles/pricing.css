@@ -27,6 +27,10 @@
     width: 33%;
     /* background-color:#fff ; */
 }
+.pricing_item:hover{
+    transform: scaleZ(1.8);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 14px 25px 0px;    
+}
 
 .pricing_card-top{
     padding: 30px;
@@ -49,6 +53,7 @@
     padding : 30px;
 
 }
+
 .pricing_item .services ul{
     text-align:start;
 }
