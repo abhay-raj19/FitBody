@@ -9,7 +9,7 @@ const Reviews = () => {
       <div className="grid-container">
         <Box width={{ xs: "100%", md: "80%" }} className="grid-item card">
           {/* back icon */}
-          <div className="flex back-icon">
+          <div className="flex back-icon text-black">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -20,11 +20,11 @@ const Reviews = () => {
               <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path>
             </svg>
           </div>
-          <h1 className="font-lg font-bold mt-4">Reviews And ratings</h1>
+          <h1 className="font-lg font-bold mt-4 text-black">Reviews And ratings</h1>
           <div className="mt-3 flex">
             <div className="">
               {/* actual rating come from api */}
-              <h1 className="font-xl font-bold">4.2</h1>
+              <h1 className="font-xl font-bold text-black">4.2</h1>
             </div>
             <div className="ml-4">
               {/* actual value from api */}
@@ -35,7 +35,7 @@ const Reviews = () => {
                 readOnly
                 size="large"
               />
-              <p>Based on 456 Ratings</p>
+              <p className="text-black">Based on 456 Ratings</p>
             </div>
           </div>
           {/* divider line */}
@@ -67,7 +67,7 @@ export default Reviews;
 const CardParameters = ({ name, rating, value }) => {
   return (
     <div className="mt-3">
-      <div className="flex justify-between">
+      <div className="flex justify-between text-black">
         <h1>{name}</h1>
         <h1>{rating}</h1>
       </div>

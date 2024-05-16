@@ -62,6 +62,7 @@ const ContactUs = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
+                className=" dark:text-white"
               />
             </div>
             <div className="input-group">

@@ -54,6 +54,10 @@
   }
 }
 
+.text-black{
+  color: #000;
+}
+
 .input-group {
   margin-bottom: 20px;
 }
