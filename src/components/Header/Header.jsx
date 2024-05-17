@@ -27,6 +27,10 @@ const nav__links = [
 		path: "#contact-us",
 		display: "Contact Us",
 	},
+	{
+		path: "#about-us",
+		display: "About Us"
+	},
 ];
 const Header = ({ isDarkMode, setDarkMode }) => {
 	const [open, setOpen] = useState(false);
@@ -117,8 +121,8 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 									className="styles-ball"
 									style={
 										!isDarkMode
-											? { transform:'translateX(0%)' }
-											: { transform:'translateX(140%)'}
+											? { left: "2px" }
+											: { right: "2px" }
 									}
 								/>
 							</div>

@@ -11,9 +11,7 @@ import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
-import Classes from "./components/UI/Classes";
-import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
-
+import AboutUs from "./components/UI/AboutUs";
 
 
 
@@ -31,22 +29,18 @@ function App() {
   
   return (
     <>
-      <Router>
-          <Routes>
-          <Route path="/" element={<div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
-            <Header isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
-            <Hero />
-            <Exercises />
-            <Start />
-            <Pricing />
-            <Testimonials />
-            <ContactUs />
-            <Footer />
-            <BackToTop />
-          </div>} />
-          <Route path="/classes" element={<Classes />} />
-        </Routes>
-      </Router>
+      <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
+        <Header isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+        <Hero />
+        <Exercises />
+        <Start />
+        <Pricing />
+        <Testimonials />
+        <AboutUs />
+        <ContactUs />
+        <Footer />
+        <BackToTop />
+      </div>
     </>
   );
 }
