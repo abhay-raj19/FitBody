@@ -57,6 +57,7 @@ ul {
     z-index: 99;
     margin-top: 10px;
     user-select: none;
+    transition: 0.1s ease-in;
 }
 
 .nav__wrapper {
@@ -217,12 +218,9 @@ ul {
         flex-direction: column;
         width: 100%;
         color: #000000;
-
-        background-color:#ffff;
-      
+        background-color: #ffff;
         transition: all 0.3s ease-in-out;
-        overflow-y: hidden;
-        height: 0px;
+        overflow-y: auto; 
         gap: 1rem;
         z-index: 99;
     }
@@ -292,6 +290,7 @@ ul {
     background-color: #A899F7;
     border-radius: 50%;
     position: absolute;
+    transition: 0.5s ease-in;
 }
 
 
@@ -299,7 +298,7 @@ ul {
 @media (max-width: 1000px) {
     .menu {
         column-gap: 1.25rem;
-        margin-top: 2.5rem;
+        /* margin-top: 2.5rem; */
     }
 
     .nav-btn {
