@@ -1,0 +1,162 @@
+/* Light mode styles */
+.light-mode-app {
+  background-color: #f7f7f7; /* Light mode background color */
+  color: #333333; /* Light mode text color */
+  transition: 0.3s ease-in;
+}
+
+/* Dark mode styles */
+.dark-mode-app {
+  background-color: #121212; /* Dark mode background color */
+  color: #ffffff; /* Dark mode text color */
+  transition: 0.3s ease-in;
+}
+
+/* Common styles */
+h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.exercise-container {
+  padding: 5rem 25rem 5rem 25rem; /* Reduce padding for smaller screens */
+}
+
+.exercise-card {
+  color: var(--text-color); /* Use text color variable */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 1.5rem; /* Reduce padding for smaller screens */
+  margin: 1.5rem; /* Reduce margin for smaller screens */
+  display: flex;
+  flex-direction: column; /* Display elements in a row for larger screens */
+}
+
+.exercise-card.light-mode {
+  background-color: #f7f7f7; /* Light mode card background color */
+}
+
+.exercise-card.dark-mode {
+  background-color: #1a1a1a; /* Dark mode card background color */
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+}
+
+.exercise-name {
+  /* color: white; */
+}
+
+.exercise-details {
+  padding: 20px;
+  flex: 1; /* Allow details to take remaining space */
+}
+
+.exercise-minors {
+  color: #6f55f2;
+}
+
+.exercise-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exercise-description {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.exercise-instructions {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 10px;
+  width: 100%; /* Set instructions width to 100% for smaller screens */
+}
+
+.exercise-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Set meta width to 100% for smaller screens */
+}
+
+.exercise-duration,
+.exercise-difficulty {
+  font-size: 0.9rem;
+  color: #999999;
+}
+
+.exercise-yt-videos {
+  display: flex;
+  margin: auto;
+  justify-content: center; /* Center the video horizontally */
+  align-items: center; /* Center the video vertically */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 50%; /* Make the video take full width */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1650px) {
+  /* Tablet styles */
+  .exercise-container {
+    padding: 2rem; /* Reduce padding for tablets */
+  }
+
+  .exercise-card {
+    padding: 1rem; /* Reduce padding for tablets */
+    margin: 1rem; /* Reduce margin for tablets */
+    flex-direction: column;
+  }
+
+  .exercise-yt-videos {
+    width: 100%;
+    margin-left: 0; /* Remove spacing between details and video */
+    margin-top: 1rem; /* Add some spacing between details and video */
+  }
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+  /* Tablet styles */
+  .exercise-container {
+    padding: 2rem; /* Reduce padding for tablets */
+  }
+
+  .exercise-card {
+    padding: 1rem; /* Reduce padding for tablets */
+    margin: 1rem; /* Reduce margin for tablets */
+    flex-direction: column;
+  }
+
+  .exercise-yt-videos {
+    width: 100%;
+    margin-left: 0; /* Remove spacing between details and video */
+    margin-top: 1rem; /* Add some spacing between details and video */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .exercise-container {
+    padding: 1rem; /* Further reduce padding for smaller screens */
+  }
+
+  .exercise-card {
+    padding: 1rem; /* Further reduce padding for smaller screens */
+    margin: 1rem; /* Further reduce margin for smaller screens */
+    flex-direction: column; /* Stack elements vertically for smaller screens */
+  }
+
+  .exercise-yt-videos {
+    width: 100%;
+    margin-left: 0; /* Remove spacing between details and video */
+    margin-top: 1rem; /* Add some spacing between details and video */
+  }
+}
