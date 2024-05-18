@@ -27,6 +27,10 @@ const nav__links = [
 		path: "#contact-us",
 		display: "Contact Us",
 	},
+	{
+		path: "#about-us",
+		display: "About Us",
+	},
 ];
 const Header = ({ isDarkMode, setDarkMode }) => {
 	const [open, setOpen] = useState(false);

@@ -13,6 +13,7 @@ import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
 import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import AboutUs from "./components/UI/AboutUs";
 
 
 
@@ -40,6 +41,7 @@ function App() {
             <Start />
             <Pricing />
             <Testimonials />
+            <AboutUs/>
             <ContactUs />
             <Footer />
             <BackToTop />
