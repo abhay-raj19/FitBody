@@ -12,6 +12,7 @@ import authRoute from './routes/auth-route.js'
 import userRoute from './routes/user-route.js'
 import adminRoute from './routes/admin-route.js'
 import planRoute from './routes/plan-route.js'
+import blogRoute from './routes/blog-route.js'
 
 // Iniliazing Express Server
 const server = express();
@@ -36,6 +37,7 @@ server.use("/api/auth",authRoute);
 server.use("/api/user",userRoute)
 server.use('/api/admin',adminRoute)
 server.use('/api/plan',planRoute)
+server.use('/api/blogs',blogRoute)
 
 // Response Handler Middleware Which will send response to the client in the form of JSON Object 
 
@@ -54,7 +56,7 @@ server.use((obj, req, res, next) => {
 // Database connection Function 
 const ConnetMongoDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/fitbody'); 
+        await mongoose.connect('mongodb://localhost:27017/fitbody');  
         console.log('DB connected !');
     } catch (error) { 
        console.error('Error: ', error);

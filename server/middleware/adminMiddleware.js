@@ -14,7 +14,7 @@ const isAdminAuthenticated = async(req,res,next) => {
     next();
   } 
   catch (error) {
-    return res.status(500).json({ message: "internal server error", err, success: false })  
+    return res.status(500).json({ message: "internal server error", error, success: false })  
   }
 };
 export default isAdminAuthenticated

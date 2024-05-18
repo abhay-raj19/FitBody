@@ -2,29 +2,29 @@ import mongoose from "mongoose";
 import bcrypt from 'bcryptjs'
 
 const userModel = mongoose.Schema({
-  name: { 
+  name: {
     type: String,
-    require:true,
+    require: true,
   },
-  password: { 
-    type: "String", 
-    required: true 
+  password: {
+    type: "String",
+    required: true
   },
-  age: { 
-    type: Number, 
-    required:true
+  age: {
+    type: Number,
+    required: true
   },
-  email: { 
-    type: "String", 
-    unique: true, 
-    required: true 
+  email: {
+    type: "String",
+    unique: true,
+    required: true
   },
-  isVerified : {
-    type: Boolean, 
-    default : false
+  isVerified: {
+    type: Boolean,
+    default: false
   },
   contact: {
-    type: String, 
+    type: String,
     unique: true,
     required: true,
     validate: {
@@ -37,7 +37,7 @@ const userModel = mongoose.Schema({
   panNumber: {
     type: String,
     unique: true,
-    required:true,
+    required: true,
     validate: {
       validator: function (value) {
         // PAN card number validation
@@ -46,19 +46,24 @@ const userModel = mongoose.Schema({
       },
     },
   },
-  plan: { 
-    type: mongoose.Schema.Types.ObjectId, 
-    ref: 'Plan' 
+  plan: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Plan',
+    default: null
   },
-  planStartDate: { 
-    type: String, 
-    default: null 
-  }, 
-  planEndDate: { 
-    type: String, 
-    default: null 
-  }
-},{timestamps:true});
+  planStartDate: {
+    type: String,
+    default: null
+  },
+  planEndDate: {
+    type: String,
+    default: null
+  },
+  blogs: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Blog'
+  }]
+}, { timestamps: true });
 
 userModel.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
