@@ -1,0 +1,127 @@
+/* @dhruv8433 custom styles */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-block: 40px;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* Mobile Styles */
+.form {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.review-container {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.grid {
+  display: grid;
+  columns: 12;
+}
+
+.container {
+  width: 100%;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.font-lg {
+  font-size: 30px;
+}
+
+.font-xl {
+  font-size: 50px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.ml-4 {
+  margin-left: 32px;
+}
+
+.back-icon {
+  padding: 10px;
+  background-color: #e0e0e0;
+  width: min-content;
+  border-radius: 50%;
+}
+
+.back-icon:hover {
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bolder;
+}
+
+.mt-4 {
+  margin-top: 32px;
+}
+
+.mt-3 {
+  margin-top: 24px;
+}
+
+.my-4 {
+  margin-block: 32px;
+}
+
+/* range */
