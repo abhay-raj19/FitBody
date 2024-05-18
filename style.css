@@ -1,0 +1,11 @@
+
+.pricing_wrapper ul {
+    height: 232px;
+} 
+#pricing-plan > div > div.pricing_wrapper > div.pricing_item.aos-init.aos-animate:hover{
+
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(111, 85, 242, 0.8);
+    color:blueviolet;
+
+}
