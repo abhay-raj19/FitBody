@@ -2,6 +2,7 @@ import React from 'react'
 import heroIMG from '../../assets/img/gym-02.png'
 import dumbleIcon from '../../assets/img/dumble.png'
 import '../../styles/hero.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -27,7 +28,7 @@ const Hero = () => {
                         <div className="hero_btns" data-aos='fade-up'
                         data-aos-delay='200'
                          data-aos-duration='2000'>
-                            <button className="register_btn">Get Started</button>
+                            <button className="register_btn"><Link to="/classes">Get Started</Link></button>
                             <button className="watch_btn">
                                 <span>
                                     <i class="ri-play-fill"></i>
