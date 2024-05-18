@@ -89,8 +89,14 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 	return (
 		<header
 			className={headerClass}
-			style={{ background: headerBackground }}
 			ref={headerRef}
+			style={{
+				background: "rgba(39, 39, 39, 0.1)",
+				borderRadius: "20px",
+				backdropFilter: "blur(60px)",
+				border: "2px solid rgba(255, 255, 255, 0.2)",
+				boxShadow: "0 0 80px rgba(0, 0, 0, 0.3)"
+			}}
 		>
 			<div className="container">
 				<div className="nav__wrapper">
@@ -117,8 +123,8 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 									className="styles-ball"
 									style={
 										!isDarkMode
-											? { left: "2px" }
-											: { right: "2px" }
+											? { transform: 'translateX(0%)' }
+											: { transform: 'translateX(140%)' }
 									}
 								/>
 							</div>
