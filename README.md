@@ -1,4 +1,3 @@
-
 <h1 align="center">🏋🏽FitBody🏋🏽</h1>
 <p align="center">
 <div align="center">
@@ -23,26 +22,25 @@
      <br>
 </p>
 
-# 
+#
 
 <!-- ## Simple website that will blow your mind and requires many PR to be raised. -->
 
-
 ## 📍Table Of Contents
 
-- [About](#About)
-- [Live Demo](#LiveDemo)
-- [Issues to be welcomed](#Issuestobewelcomed)
-- [Building FitBody](#BuildingFitBody)
-- [Note](#NOTE)
-- [Features](#Features)
-- [Technology Stack](#TechnologyStack)
-- [License](#License)
-- [Repo Status](#RepoStatus)
-- [Our Contributors](#OurContributors)
-
+-   [About](#About)
+-   [Live Demo](#LiveDemo)
+-   [Issues to be welcomed](#Issuestobewelcomed)
+-   [Building FitBody](#BuildingFitBody)
+-   [Note](#NOTE)
+-   [Features](#Features)
+-   [Technology Stack](#TechnologyStack)
+-   [License](#License)
+-   [Repo Status](#RepoStatus)
+-   [Our Contributors](#OurContributors)
 
 ## 🎯About
+
 FitBody is the growing platform for Gym-enthusiasts and they can choose there respective domains for the pricing category and we are happy to invite you in the gym-community.
 
 ## 🖱️Live Demo
@@ -73,12 +71,13 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 ```markdown
     git add .
 ```
+
 ```markdown
-    git commit -m "Your commit Message" 
+    git commit -m "Your commit Message"
 ```
+
 ```markdown
     git push origin branch-name
-    
 ```
 
 6. Make a pull request.
@@ -91,35 +90,97 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 3. Navigation of the pages.
 4. New cards for Testimonials with Images.
 
-### 📦️Building FitBody
+## 📦️Building Instructions to Start the App
 
-1. Install npm from browser(windows), using ``sudo apt install npm``(linux) in the terminal.
+1. Clone the repository
 
-2. In the root directory: `npm install` for downloading all the dependencies needed for the project.
+```bash
+git clone https://github.com/----/FitBody.git
+```
 
-3. Run `npm start` for starting the server (FitBody is currently running on `localhost:3000`)
+2. Change the Directory to the root of the repository
 
+```bash
+cd FitBody
+```
 
+### Using Docker Container
+
+3.  1. Run the Docker Compose up Command
+
+```bash
+docker-compose -f docker-compose.dev.yaml up
+#  or
+docker-compose -f docker-compose.dev.yaml up --build
+```
+
+Your Docker container will be running at `https://localhost:8000/`.
+
+### Using Local Server
+
+3.  1. Install the dependencies for Web_App
+
+```bash
+npm install
+```
+
+3.  2. Run the Web_App
+
+```bash
+npm run dev
+```
+
+4.  1. Change the directory to the /server directory
+
+```bash
+cd /server
+```
+
+4.  2. Install the dependencies for Server
+
+```bash
+npm install
+```
+
+4.  3. Copy Environment Variables
+
+```bash
+cp env.example .env
+```
+
+4.  4. Inside of ".env" Change Database variable to "localhost"
+
+```bash
+DATABASE=localhost
+```
+
+4.  3. Run the NodeJs Server
+
+```bash
+npm start
+```
+
+On web Browser, Go to `https://localhost:8000/` for the Application
 
     Happy coding :)
 
-
 ### 🗒️NOTE
 
-- Make Sure you commit your changes in a new branch.
-- Make Sure you Give a proper name to your files describing the addition.
-- Also Make Sure you comment on your code wherever necessary.
+-   Make Sure you commit your changes in a new branch.
+-   Make Sure you Give a proper name to your files describing the addition.
+-   Also Make Sure you comment on your code wherever necessary.
 
 ## 💫Features
-- Personalized Workout Plans: Provide the option for users to receive personalized workout plans tailored to their fitness goals. Users can input their preferences and goals, and the website generates a customized plan for them.
 
-- Progress Tracking: Enable users to track their fitness progress over time. They can input their measurements, record workout sessions, and monitor their improvements through charts or graphs.
+-   Personalized Workout Plans: Provide the option for users to receive personalized workout plans tailored to their fitness goals. Users can input their preferences and goals, and the website generates a customized plan for them.
 
-- Nutrition Guidance: Offer nutrition tips and guidance to help users maintain a healthy diet and complement their fitness routines. This can include articles, meal plans, and recipes.
+-   Progress Tracking: Enable users to track their fitness progress over time. They can input their measurements, record workout sessions, and monitor their improvements through charts or graphs.
 
-- Community and Social Interaction: Foster a sense of community among gym members through features like forums or social media integration. Users can connect, share their fitness journeys, and support one another.
+-   Nutrition Guidance: Offer nutrition tips and guidance to help users maintain a healthy diet and complement their fitness routines. This can include articles, meal plans, and recipes.
 
-- Blog and Articles: Publish informative articles and blog posts related to fitness, health, and wellness. 
+-   Community and Social Interaction: Foster a sense of community among gym members through features like forums or social media integration. Users can connect, share their fitness journeys, and support one another.
+
+-   Blog and Articles: Publish informative articles and blog posts related to fitness, health, and wellness.
 
 ## 💻Technology Stack
 
@@ -130,7 +191,9 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 ## License
+
 Licensed under the MIT License.
+
 ## Repo Status
 
 ![GitHub PR Open](https://img.shields.io/github/issues-pr/abhay-raj19/FitBody?style=for-the-badge&color=aqua)
@@ -139,11 +202,10 @@ Licensed under the MIT License.
 <br><br>
 
 ## Join our Discord Community
+
 To get latest updates on the project and to interact with the community. We are happy to help you with your queries.
 
-  [![Join our Discord server!](https://invidget.switchblade.xyz/9jqmCs3KX3?theme=light)](https://discord.gg/Ra8vsr5bPK)
-
-
+[![Join our Discord server!](https://invidget.switchblade.xyz/9jqmCs3KX3?theme=light)](https://discord.gg/Ra8vsr5bPK)
 
 ## 🤝Our Contributors
 
@@ -248,10 +310,8 @@ To get latest updates on the project and to interact with the community. We are 
   </tr>
 </table>
 
-
 Thank you to all the amazing contributors who have made this project possible!
 
 Show some ❤️ by starring this repository !
 
 <p align="right">(<a href="#top">⇑</a>)</p>
-

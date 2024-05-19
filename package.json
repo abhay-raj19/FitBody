@@ -8,6 +8,7 @@
     "@gsap/react": "^2.1.1",
     "@mui/icons-material": "^5.15.17",
     "@mui/material": "^5.15.17",
+    "@rollup/rollup-linux-x64-gnu": "^4.17.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -28,7 +29,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dev":"vite"
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
