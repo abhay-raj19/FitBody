@@ -12,6 +12,7 @@ import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
+import Diet from "./components/UI/Diet";
 import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 
 
@@ -45,6 +46,7 @@ function App() {
             <BackToTop />
           </div>} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/diet" element={<Diet />} />
         </Routes>
       </Router>
     </>
