@@ -15,6 +15,43 @@ const Support = () => {
       setOpenFAQ(index);
     }
   };
+  const faqs = [
+    {
+      question: "How can I upgrade my current plan?",
+      answer:
+        "You can change the email address associated with your Airtable Account by going to airtable.com/account from a laptop or desktop.",
+    },
+    {
+      question: "How often are new free workout videos added?",
+      answer:
+        "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+    },
+    {
+        question: "Can I cancel my subscription at any time and get refund?",
+        answer:
+          "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+      },
+      {
+        question: "Who can I contact if I have issues or need support with my plan?",
+        answer:
+          "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+      },
+      {
+        question: "Do you offer nutritional advice or meal plans to complement the workout programs?",
+        answer:
+          "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+      },
+      {
+        question: "What qualifications do the trainers in the gym have?",
+        answer:
+          "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+      },
+      {
+        question: "Are there any age restrictions for using the gym plan?",
+        answer:
+          "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+      },
+  ];
 
 
   return (
