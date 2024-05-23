@@ -4,7 +4,7 @@ import "../../styles/contactUs.css";
 import Lottie from "lottie-react";
 import ContactAnimation from "../../assets/JSON/contactus.json";
 
-const ContactUs = () => {
+const ContactUs = ({ isDarkMode }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -62,6 +62,7 @@ const ContactUs = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
+                className={isDarkMode ? "dark-mode-color" : "light-mode-color"}
               />
             </div>
             <div className="input-group">
@@ -71,6 +72,7 @@ const ContactUs = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
+                className={isDarkMode ? "dark-mode-color" : "light-mode-color"}
               />
             </div>
             <div className="input-group">
@@ -80,6 +82,7 @@ const ContactUs = () => {
                 rows={7}
                 value={formData.message}
                 onChange={handleInputChange}
+                className={isDarkMode ? "dark-mode-color" : "light-mode-color"}
               />
             </div>
             <div className="text-end">

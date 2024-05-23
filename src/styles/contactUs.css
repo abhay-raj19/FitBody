@@ -44,6 +44,13 @@ select:focus {
   outline: none;
 }
 
+.dark-mode-color {
+  color: rgb(222, 226, 244);  
+}
+.light-mode-color {
+  color: black;  
+}
+
 .text-end {
   text-align: end;
 }
