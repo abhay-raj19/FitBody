@@ -8,6 +8,7 @@ import Hero from "./components/UI/Hero";
 import Pricing from "./components/UI/Pricing";
 import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
+import Support from "./components/UI/Support";
 import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
@@ -42,8 +43,10 @@ function App() {
             <Pricing />
             <Testimonials />
             <ContactUs />
+            <Support></Support>
             <Footer />
             <BackToTop />
+
           </div>} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/diet" element={<Diet />} />
