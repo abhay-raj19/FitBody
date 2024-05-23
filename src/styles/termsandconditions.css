@@ -1,0 +1,35 @@
+.terms-and-conditions {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.terms-and-conditions h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions section {
+    padding: 0px 0px;
+}
+
+.terms-and-conditions h2 {
+    font-size: 1.5em;
+}
+
+.terms-and-conditions p {
+    margin: 10px 0;
+}
+
+.terms-and-conditions ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.terms-and-conditions li {
+    margin: 5px 0;
+}
