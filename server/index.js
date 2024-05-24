@@ -13,6 +13,7 @@ import userRoute from './routes/user-route.js'
 import adminRoute from './routes/admin-route.js'
 import planRoute from './routes/plan-route.js'
 import blogRoute from './routes/blog-route.js'
+import subscriberRoute from './routes/subscriber-route.js'
 
 // Iniliazing Express Server
 const server = express();
@@ -38,6 +39,7 @@ server.use("/api/user",userRoute)
 server.use('/api/admin',adminRoute)
 server.use('/api/plan',planRoute)
 server.use('/api/blogs',blogRoute)
+server.use('/api/subscriber',subscriberRoute);
 
 // Response Handler Middleware Which will send response to the client in the form of JSON Object 
 

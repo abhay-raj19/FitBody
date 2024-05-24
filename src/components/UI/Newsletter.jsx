@@ -10,6 +10,7 @@ const Newsletter = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
     }
 
     return (
