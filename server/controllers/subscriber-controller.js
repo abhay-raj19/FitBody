@@ -1,10 +1,9 @@
-import mongoose from 'mongoose';
-import Subscriber from '../models/subscriber-model';
+import Subscriber from '../models/subscriber-model.js';
 
 export const addSubscriber = async( req, res ) =>{
     try{
         const { subscriberEmail } = req.body;
-        if(!email){
+        if(!subscriberEmail){
             return res.status(400).json({message:"Enter the field", success:false})
         }
         const newSubscriber = {
@@ -14,7 +13,6 @@ export const addSubscriber = async( req, res ) =>{
         const subscriber = await Subscriber.create(newSubscriber);
 
         return res.status(201).send(subscriber);
-
 
     }
     catch(error){

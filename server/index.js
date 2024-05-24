@@ -58,7 +58,7 @@ server.use((obj, req, res, next) => {
 // Database connection Function 
 const ConnetMongoDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/fitbody');  
+        await mongoose.connect('mongodb://localhost:27017/fitbody'); /// here put the mongodb atlas driver string 
         console.log('DB connected !');
     } catch (error) { 
        console.error('Error: ', error);
