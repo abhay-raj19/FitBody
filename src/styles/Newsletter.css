@@ -1,0 +1,82 @@
+.newsletter-container {
+    width: 100%;
+}
+
+.newsletter-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* 6 * 0.25rem */
+    padding: 1rem 1rem; /* 10 * 0.25rem 20 * 0.25rem */
+}
+@media ( min-width:768px){
+    .newsletter-content{
+        padding: 2.5rem 5rem; /* 10 * 0.25rem 20 * 0.25rem */
+    }
+}
+.newsletter-title {
+    font-size: 0.75rem; /* 12px */
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .newsletter-title {
+        font-size: 1.125rem; /* 18px */
+    }
+}
+
+.newsletter-subtitle {
+    font-size: 0.75rem; /* 12px */
+    text-transform: uppercase;
+    color: var(--primary-color); /* or your primary-light color */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .newsletter-subtitle {
+        font-size: 1.25rem; /* 20px */
+    }
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* height: 50px; */
+}
+
+@media (min-width: 768px) {
+    .newsletter-form {
+        flex-direction: row;
+    }
+}
+
+.newsletter-input {
+    width: 16rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.25rem 0.75rem; 
+}
+
+.newsletter-button {
+    background-color: var(--primary-color); /* or your primary color */
+    padding: 0.6rem 1rem;
+    border: none;
+    
+}
+
+.newsletter-policy {
+    font-size: 0.5rem; 
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .newsletter-policy {
+        font-size: 1rem; /* 16px */
+    }
+}

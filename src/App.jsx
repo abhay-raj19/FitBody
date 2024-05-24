@@ -9,6 +9,7 @@ import Pricing from "./components/UI/Pricing";
 import Start from "./components/UI/Start";
 import Testimonials from "./components/UI/Testimonials";
 import ContactUs from "./components/UI/ContactUs";
+import Newsletter from "./components/UI/Newsletter";
 import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
@@ -42,6 +43,7 @@ function App() {
             <Pricing />
             <Testimonials />
             <ContactUs />
+            <Newsletter />
             <Footer />
             <BackToTop />
           </div>} />
