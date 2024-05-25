@@ -63,6 +63,6 @@ export const addUserToPlan = async (req, res) => {
         return res.status(200).json({ message: "User added to plan successfully.", success: true });
     } 
     catch (error) {
-        return res.status(500).json({ message: "Internal server error.", success:false });
+        return res.status(500).json({ message: "Internal server error.", success:false,error});
     }
 };
