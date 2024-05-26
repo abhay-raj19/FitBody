@@ -46,7 +46,11 @@ const Support = () => {
         answer:
           "Yes, you can customize your invoices by adding additional details that you deem necessary.",
       },
-     
+      {
+        question: "Are there any age restrictions for using the gym plan?",
+        answer:
+          "Yes, you can customize your invoices by adding additional details that you deem necessary.",
+      },
   ];
 
 
