@@ -4,7 +4,7 @@
     margin: 20px auto;
   
   }
-  
+ 
   .support_title{
     text-align: center;
     font-size: 2.3rem;
@@ -27,6 +27,7 @@
     cursor: pointer;
     position: relative;
     font-weight: bold;
+    color:var(--heading-color);
   }
   
   .faq-icon {
@@ -50,4 +51,18 @@
   .faq-answer.show {
     max-height: 100px; /* Adjust as necessary */
     padding: 15px 20px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .faq-container{
+      width: 70%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .faq-container{
+      width: 90%;
+    }
+    .faq-item{
+      padding:1px;
+    }
   }
