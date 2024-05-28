@@ -15,6 +15,7 @@ const Support = () => {
       setOpenFAQ(index);
     }
   };
+<<<<<<< HEAD
   const faqs = [
     {
       question: "How can I upgrade my current plan?",
@@ -52,11 +53,17 @@ const Support = () => {
           "Yes, you can customize your invoices by adding additional details that you deem necessary.",
       },
   ];
+=======
+>>>>>>> 01e2619 (Implemented FAQ design without CSS)
 
 
   return (
     <>
+<<<<<<< HEAD
       <section className="support_section" id="support" >
+=======
+      <section className="support_section">
+>>>>>>> 01e2619 (Implemented FAQ design without CSS)
         <h2 className="support_title">FAQ's</h2>
         <div className="faq-container">
           {faqs.map((faq, index) => (
