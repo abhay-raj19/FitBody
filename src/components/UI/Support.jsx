@@ -56,7 +56,7 @@ const Support = () => {
 
   return (
     <>
-      <section className="support_section">
+      <section className="support_section" id="support" >
         <h2 className="support_title">FAQ's</h2>
         <div className="faq-container">
           {faqs.map((faq, index) => (

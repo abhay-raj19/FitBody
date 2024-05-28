@@ -5,7 +5,6 @@ import logo from "../../assets/img/dumble.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-
   return (
     <footer className="footer" data-aos="fade-up" data-aos-duration="1500">
       <div className="container">
@@ -50,7 +49,7 @@ const Footer = () => {
               <a href="#contact-us">
                 <li>Contact Us</li>
               </a>
-              <a href="/#">
+              <a href="#support">
                 <li>Support</li>
               </a>
             </ul>
