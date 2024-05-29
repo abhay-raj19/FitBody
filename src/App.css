@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 /* Styles for light mode */
 .light-mode-app {
@@ -40,7 +44,7 @@
 
 
 
-/* Common styles for both modes */
+/* Common styles for both modes */  
 /* ... */
 
 

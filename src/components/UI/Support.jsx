@@ -46,25 +46,17 @@ const Support = () => {
         answer:
           "Yes, you can customize your invoices by adding additional details that you deem necessary.",
       },
-<<<<<<< HEAD
       {
         question: "Are there any age restrictions for using the gym plan?",
         answer:
           "Yes, you can customize your invoices by adding additional details that you deem necessary.",
       },
-=======
-     
->>>>>>> main
   ];
 
 
   return (
     <>
-<<<<<<< HEAD
       <section className="support_section" id="support" >
-=======
-      <section className="support_section">
->>>>>>> main
         <h2 className="support_title">FAQ's</h2>
         <div className="faq-container">
           {faqs.map((faq, index) => (
