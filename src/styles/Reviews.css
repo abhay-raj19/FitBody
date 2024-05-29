@@ -47,6 +47,7 @@
 
 .review-container {
   background-color: #e0e0e0;
+  color: black;
 }
 
 @media (max-width: 768px) {
