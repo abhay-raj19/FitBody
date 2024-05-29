@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../UI/Footer';
 import "../../styles/Classes.css";
 import "../../styles/header.css";
-
+import BackToTop from "./BackToTop"
 
 
 const Classes = () => {
@@ -100,6 +100,7 @@ const Classes = () => {
             <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
                 <Header className="header" isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
                 <div className="exercise-container">
+                    <BackToTop />
                     <h1>Workouts For Free</h1>
                     {exercises.map((exercise, index) => (
                         <div key={index} className="exercise-card">
