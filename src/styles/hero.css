@@ -90,7 +90,7 @@
     position:absolute ;
     top: -10%;
     left: -20%;
-    z-index: 10;
+    z-index: 2;
 }
 
 .box_img img {
