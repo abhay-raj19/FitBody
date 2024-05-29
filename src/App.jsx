@@ -47,6 +47,7 @@ function App() {
           </div>} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/diet" element={<Diet />} />
+          
         </Routes>
       </Router>
     </>
