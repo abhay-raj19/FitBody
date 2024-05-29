@@ -8,9 +8,6 @@
     "@gsap/react": "^2.1.1",
     "@mui/icons-material": "^5.15.17",
     "@mui/material": "^5.15.17",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.12",
@@ -21,14 +18,13 @@
     "react-router-dom": "^6.23.1",
     "remixicon": "^2.5.0",
     "styled-components": "^5.3.11",
-    "swiper": "^9.3.2",
-    "web-vitals": "^2.1.4"
+    "swiper": "^9.3.2"
   },
   "scripts": {
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dev":"vite"
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
