@@ -22,7 +22,8 @@
     "remixicon": "^2.5.0",
     "styled-components": "^5.3.11",
     "swiper": "^9.3.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@rollup/rollup-linux-x64-gnu": "^4.9.2"
   },
   "scripts": {
     "start": "vite",
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@emotion/babel-plugin": "^11.11.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.2.11"
+    "vite": "^5.2.11",
+    "esbuild": "^0.15.0"
   }
 }
