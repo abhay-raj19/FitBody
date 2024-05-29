@@ -92,9 +92,8 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 			ref={headerRef}
 			style={{
 				background: "rgba(39, 39, 39, 0.1)",
-				borderRadius: "20px",
 				backdropFilter: "blur(60px)",
-				border: "2px solid rgba(255, 255, 255, 0.2)",
+				borderBottom: "2px solid rgba(255, 255, 255, 0.2)",
 				boxShadow: "0 0 80px rgba(0, 0, 0, 0.3)"
 			}}
 		>
