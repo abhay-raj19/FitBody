@@ -44,6 +44,11 @@ select:focus {
   outline: none;
 }
 
+.darkInput {
+  color: rgb(216, 208, 208);
+  border-bottom: 1px rgb(120, 111, 111) solid;
+}
+
 .text-end {
   text-align: end;
 }

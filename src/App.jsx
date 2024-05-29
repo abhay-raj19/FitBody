@@ -41,7 +41,7 @@ function App() {
             <Start />
             <Pricing />
             <Testimonials />
-            <ContactUs />
+            <ContactUs isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
             <Footer />
             <BackToTop />
           </div>} />
