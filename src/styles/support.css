@@ -4,11 +4,6 @@
     margin: 20px auto;
   
   }
-<<<<<<< HEAD
- 
-=======
-  
->>>>>>> 0f86b91 (Added FAQ CSS)
   .support_title{
     text-align: center;
     font-size: 2.3rem;
@@ -31,10 +26,7 @@
     cursor: pointer;
     position: relative;
     font-weight: bold;
-<<<<<<< HEAD
     color:var(--heading-color);
-=======
->>>>>>> 0f86b91 (Added FAQ CSS)
   }
   
   .faq-icon {
@@ -58,7 +50,6 @@
   .faq-answer.show {
     max-height: 100px; /* Adjust as necessary */
     padding: 15px 20px;
-<<<<<<< HEAD
   }
 
   @media only screen and (max-width: 800px) {
@@ -73,6 +64,6 @@
     .faq-item{
       padding:1px;
     }
-=======
->>>>>>> 0f86b91 (Added FAQ CSS)
   }
+
+
