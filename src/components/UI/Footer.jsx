@@ -50,7 +50,7 @@ const Footer = () => {
               <a href="#contact-us">
                 <li>Contact Us</li>
               </a>
-              <a href="/#">
+              <a href="#support">
                 <li>Support</li>
               </a>
             </ul>
