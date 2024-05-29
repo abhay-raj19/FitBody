@@ -1,0 +1,111 @@
+/* Base styles for both modes */
+.diet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .meal-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .meal-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .meal-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .meal-time {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .meal-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .meal-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .meal-item p {
+    margin: 5px 0;
+  }
+  
+  .meal-total-calories {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .diet-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .meal-card {
+      width: 90%;
+    }
+  }
+  
+  /* Light mode styles */
+  .light-mode-app {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .light-mode-app .meal-card {
+    background-color: #fff;
+  }
+  
+  .light-mode-app .meal-item {
+    background-color: #f9f9f9;
+  }
+  
+  .light-mode-app .meal-title,
+  .light-mode-app .meal-total-calories {
+    color: #333;
+  }
+  
+  .light-mode-app .meal-time,
+  .light-mode-app .meal-item p {
+    color: #555;
+  }
+  
+  /* Dark mode styles */
+  .dark-mode-app {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+  
+  .dark-mode-app .meal-card {
+    background-color: #2e2e2e;
+  }
+  
+  .dark-mode-app .meal-item {
+    background-color: #3a3a3a;
+  }
+  
+  .dark-mode-app .meal-title,
+  .dark-mode-app .meal-total-calories {
+    color: #ddd;
+  }
+  
+  .dark-mode-app .meal-time,
+  .dark-mode-app .meal-item p {
+    color: #aaa;
+  }
+  
