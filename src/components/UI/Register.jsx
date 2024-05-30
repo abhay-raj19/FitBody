@@ -147,6 +147,7 @@ const Register = () => {
                             </button>
                         </div>
                     </form>
+                    <a href="/login">Already have an account? <span >Login</span></a>
                 </div>
             </div>
         </section>
