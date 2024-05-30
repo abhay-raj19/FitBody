@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Exercises from "./components/UI/Exercises";
@@ -13,7 +14,11 @@ import Diet from "./components/UI/Diet";
 import PrivacyPolicy from "./components/UI/privacypolicy";
 import Licensing from "./components/UI/Licensing";
 import TermsAndConditions from "./components/UI/termsandconditions";
-import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import { Register } from "./components/UI/Register";
+// import { useState, useEffect } from "react";
+import Aos from "aos";
+import LocomotiveScroll from 'locomotive-scroll';
+import "./App.css";
 
 
 
@@ -52,6 +57,7 @@ function App() {
             <Footer />
             <BackToTop />
           </div>} />
+          <Route path="/register" element={<Register />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/diet" element={<Diet />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
@@ -59,7 +65,7 @@ function App() {
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
         </Routes>
       </Router>
-    </>
+    
   );
 }
 
