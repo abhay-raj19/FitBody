@@ -32,6 +32,7 @@ textarea {
   margin-block: 10px;
   font: var(--font-name);
   background: none;
+  color: inherit;
 }
 
 input {
