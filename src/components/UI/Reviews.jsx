@@ -5,9 +5,9 @@ import { KeyboardArrowDown } from "@mui/icons-material";
 
 const Reviews = () => {
   return (
-    <section className="container">
+    <section>
       <div className="grid-container">
-        <Box width={{ xs: "100%", md: "80%" }} className="grid-item card">
+        <Box className="grid-item card">
           {/* back icon */}
           <div className="flex back-icon">
             <svg

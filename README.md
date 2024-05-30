@@ -151,9 +151,12 @@ To get latest updates on the project and to interact with the community. We are 
   <img src="https://contrib.rocks/image?repo=abhay-raj19/fitbody" />
 </a>
 
+
 Thank you to all the amazing contributors who have made this project possible!
+
 
 Show some ❤️ by starring this repository !
 
 <p align="right">(<a href="#top">⇑</a>)</p>
+
 
