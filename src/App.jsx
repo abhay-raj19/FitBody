@@ -14,7 +14,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
 import Diet from "./components/UI/Diet";
 import Register from "./components/UI/Register";
-import { BrowserRouter as Router , Routes, Route } from "reacts-router-dom";
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 
 
 
