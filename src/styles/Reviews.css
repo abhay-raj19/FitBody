@@ -98,7 +98,6 @@
   background-color: #e0e0e0;
   width: min-content;
   border-radius: 50%;
-  color: black; 
 }
 
 .back-icon:hover {
@@ -121,6 +120,4 @@
   margin-block: 32px;
 }
 
-body, p, h1 {
-  color: black;
-}
+/* range */
