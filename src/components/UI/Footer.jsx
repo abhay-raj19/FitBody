@@ -44,6 +44,9 @@ const Footer = () => {
           <div className="footer_box">
             <h4 className="footer_title">Quick Links</h4>
             <ul className="footer_links">
+            <a href="/">
+                <li>Home</li>
+              </a>
               <a href="/#">
                 <li>About Us</li>
               </a>
@@ -52,6 +55,20 @@ const Footer = () => {
               </a>
               <a href="/#">
                 <li>Support</li>
+              </a>
+            </ul>
+          </div>
+          <div className="footer_box">
+            <h4 className="footer_title">Legal</h4>
+            <ul className="footer_links">
+              <a href="/privacypolicy">
+                <li>Privacy Policy</li>
+              </a>
+              <a href="/licensing">
+                <li>Licensing</li>
+              </a>
+              <a href="/termsandconditions">
+                <li>Terms and Conditions</li>
               </a>
             </ul>
           </div>

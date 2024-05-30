@@ -10,11 +10,13 @@ import ContactUs from "./components/UI/ContactUs";
 import BackToTop from "./components/UI/BackToTop";
 import Classes from "./components/UI/Classes";
 import Diet from "./components/UI/Diet";
-import { Register } from "./components/UI/Register";
-import { useState, useEffect } from "react";
-import Aos from "aos";
-import LocomotiveScroll from 'locomotive-scroll';
-import "./App.css";
+import PrivacyPolicy from "./components/UI/privacypolicy";
+import Licensing from "./components/UI/Licensing";
+import TermsAndConditions from "./components/UI/termsandconditions";
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+
+
+
 
 function App() {
   useEffect(() => {
@@ -49,13 +51,15 @@ function App() {
             <ContactUs />
             <Footer />
             <BackToTop />
-          </div>
-        } />
-        <Route path="/register" element={<Register />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/diet" element={<Diet />} />
-      </Routes>
-    </Router>
+          </div>} />
+          <Route path="/classes" element={<Classes />} />
+          <Route path="/diet" element={<Diet />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/licensing" element={<Licensing />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
