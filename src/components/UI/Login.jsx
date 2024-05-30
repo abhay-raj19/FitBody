@@ -90,7 +90,9 @@ const Login = () => {
                                 Login
                             </button>
                         </div>
-                        <a href="/register">New user ? <span>Register Here.</span> </a>
+                        <div>
+                            <a href="/register">New user ? <span>Register Here.</span> </a>
+                        </div>
                     </form>
                 </div>
             </div>
