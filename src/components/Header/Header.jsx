@@ -52,9 +52,9 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 			document.documentElement.scrollTop > 80
 		) {
 			setHeaderBackground(isDarkMode ? "#111" : "#fff");
-			headerRef.current.classList.add("sticky_header");
+			headerRef.current.classList.add("fixed_header");
 		} else {
-			headerRef.current.classList.remove("sticky_header");
+			headerRef.current.classList.remove("fixed_header");
 		}
 	};
 
@@ -84,7 +84,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 		toggleMobileMenu();
 	};
 
-	const headerClass = isDarkMode ? "header dark-mode" : "header";
+	const headerClass = isDarkMode ? "header dark-mode sticky_header" : "header sticky_header";
 
 	return (
 		<header
@@ -141,7 +141,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 
 					{/*====Navigation bar====*/}
 
-					<div className="nav__links">
+					<div className={`${isDarkMode ? "nav__links dark_nav__links" : "nav__links"}`}>
 						<div className="navigation">
 							<ul className="menu">
 								{nav__links.map((item, index) => (
