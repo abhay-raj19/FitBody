@@ -13,7 +13,8 @@ import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
 import Diet from "./components/UI/Diet";
-import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import Register from "./components/UI/Register";
+import { BrowserRouter as Router , Routes, Route } from "reacts-router-dom";
 
 
 
@@ -47,6 +48,7 @@ function App() {
           </div>} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/diet" element={<Diet />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </>
