@@ -41,6 +41,7 @@
 
 .grid-item {
   background-color: #f0f0f0;
+  color: black;
   padding: 20px;
 }
 
@@ -67,17 +68,13 @@
   columns: 12;
 }
 
-.container {
-  width: 100%;
-}
-
 .justify-between {
   justify-content: space-between;
 }
 
 .card {
   background: white;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 20px;
 }
 
