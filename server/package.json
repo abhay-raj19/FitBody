@@ -19,6 +19,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.4",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "zod": "^3.23.8"
   }
 }
