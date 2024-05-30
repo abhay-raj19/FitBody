@@ -14,6 +14,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import Classes from "./components/UI/Classes";
 import Diet from "./components/UI/Diet";
 import Register from "./components/UI/Register";
+import Login from "./components/UI/Login";
 import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="/classes" element={<Classes />} />
           <Route path="/diet" element={<Diet />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </>

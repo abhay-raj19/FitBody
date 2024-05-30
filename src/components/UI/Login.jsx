@@ -4,39 +4,19 @@ import "../../styles/register.css";
 import Lottie from "lottie-react";
 import ContactAnimation from "../../assets/JSON/contactus.json";
 
-const Register = () => {
+const Login = () => {
     const initialFormData = {
-        name: "",
         email: "",
-        age: "",
-        contact: "",
-        panNumber: "",
         password: "",
     };
     const [formData, setFormData] = useState(initialFormData);
 
     const validateForm = () => {
-        if (formData.name === "" || formData.name === null) {
-            toast.error("Please enter your name");
-            return false;
-        } else if (formData.email === "" || formData.email === null) {
+        if (formData.email === "" || formData.email === null) {
             toast.error("Please enter your email");
             return false;
         } else if (!isValidEmail(formData.email)) {
             toast.error("Please enter a valid email");
-            return false;
-        } else if (formData.age === "" || formData.age === null) {
-            toast.error("Please provide your age");
-            return false;
-        } else if (formData.contact === "" || formData.contact === null) {
-            toast.error("Please provide your phone number");
-            return false;
-        } else if (isNaN(formData.contact)) {
-            toast.error("Please enter a valid phone number");
-            return false;
-        }
-        else if (formData.panNumber === "" || formData.panNumber === null) {
-            toast.error("Please provide your PAN number");
             return false;
         } else if (formData.password === "" || formData.password === null) {
             toast.error("Please enter a password");
@@ -62,7 +42,7 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateForm()) {
-            toast.success("Registered successfully", {
+            toast.success("Logged-in successfully", {
                 duration: 3000, // Duration in milliseconds (3 seconds)
                 position: "top-center",
             }
@@ -85,50 +65,14 @@ const Register = () => {
                     <Lottie animationData={ContactAnimation} />
                 </div>
                 <div className="contact-form-container">
-                    <h1 className="heading text-center">Register</h1>
+                    <h1 className="heading text-center">Login</h1>
                     <form onSubmit={handleSubmit} className="contact-form">
-                        <div className="input-group">
-                            <input
-                                type="text"
-                                placeholder="Name"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleInputChange}
-                            />
-                        </div>
                         <div className="input-group">
                             <input
                                 type="email"
                                 placeholder="Email"
                                 name="email"
                                 value={formData.email}
-                                onChange={handleInputChange}
-                            />
-                        </div>
-                        <div className="input-group">
-                            <input
-                                type="number"
-                                placeholder="Phone Number"
-                                name="contact"
-                                value={formData.contact}
-                                onChange={handleInputChange}
-                            />
-                        </div>
-                        <div className="input-group">
-                            <input
-                                type="number"
-                                placeholder="Age"
-                                name="age"
-                                value={formData.age}
-                                onChange={handleInputChange}
-                            />
-                        </div>
-                        <div className="input-group">
-                            <input
-                                type="text"
-                                placeholder="PAN number"
-                                name="panNumber"
-                                value={formData.panNumber}
                                 onChange={handleInputChange}
                             />
                         </div>
@@ -143,7 +87,7 @@ const Register = () => {
                         </div>
                         <div className="text-end">
                             <button className="submit" type="submit">
-                                Register
+                                Login
                             </button>
                         </div>
                     </form>
@@ -153,4 +97,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default Login;

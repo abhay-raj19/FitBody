@@ -162,6 +162,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 
 						<div className="nav_right">
 							<button className="register_btn" ><Link to="/register">Register</Link></button>
+							<button className="register_btn" ><Link to="/login">Login</Link></button>
 						</div>
 					</div>
 				</div>
