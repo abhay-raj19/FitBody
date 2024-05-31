@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import Footer from '../UI/Footer';
 import "../../styles/Classes.css";
 import "../../styles/header.css";
-
+import {Link} from 'react-router-dom'
 
 
 const Classes = () => {
@@ -98,9 +98,10 @@ const Classes = () => {
     return (
         <>
             <div className={isDarkMode ? "dark-mode-app" : "light-mode-app"}>
-                <Header className="header" isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
                 <div className="exercise-container">
                     <h1>Workouts For Free</h1>
+                    <button className='gotohome' ><Link to="/">Go To Home </Link></button>
+
                     {exercises.map((exercise, index) => (
                         <div key={index} className="exercise-card">
                             <div className="exercise-details">
