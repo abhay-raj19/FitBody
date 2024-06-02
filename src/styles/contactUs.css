@@ -100,7 +100,12 @@ select:focus {
 .input-group {
   margin-bottom: 20px;
 }
-
+.input-group input,.input-group textarea{
+  color: black;
+}
+.dark-mode-app .input-group input,.dark-mode-app .input-group textarea{
+  color: white;
+} 
 .text-end {
   text-align: end;
 }
