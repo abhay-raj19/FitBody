@@ -13,22 +13,27 @@ const ContactUs = () => {
 
   const validateForm = () => {
     if (formData.name === "" || formData.name === null) {
-      toast.error("please enter your name");
+      toast.error("Please enter your name");
+      return false;
     } else if (formData.email === "" || formData.email === null) {
-      toast.error("please enter your email");
+      toast.error("Please enter your email");
+      return false;
     } else if (!isValidEmail(formData.email)) {
       toast.error("Please enter a valid email");
+      return false;
     } else if (formData.message === "" || formData.message === null) {
-      toast.error("please provide a message");
-    } else {
-      toast.success("Form submitted successfully");
-      console.log("contact form: ", formData);
+      toast.error("Please provide a message");
+      return false;
     }
+    toast.success("Form submitted successfully");
+    console.log("contact form: ", formData);
+
+    return true;
   };
 
   const isValidEmail = (email) => {
     // Basic email format validation
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email);
   };
 
