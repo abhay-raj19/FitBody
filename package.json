@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
+    "font-awesome": "^4.7.0",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.12",
     "lottie-react": "^2.4.0",
@@ -28,7 +29,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dev":"vite"
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
@@ -51,7 +52,7 @@
   "devDependencies": {
     "@emotion/babel-plugin": "^11.11.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.2.11",
-    "esbuild": "^0.15.0"
+    "esbuild": "^0.15.0",
+    "vite": "^5.2.11"
   }
 }
