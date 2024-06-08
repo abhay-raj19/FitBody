@@ -61,8 +61,8 @@ const Login = () => {
         <section id="contact-us" className="form">
             <Toaster />
             <div className="w-full form grid justify-center items-center">
-                <div className="contact-animation">
-                    <Lottie animationData={ContactAnimation} />
+            <div className="register-img">
+                    <img src="./image.png" width={500}></img>
                 </div>
                 <div className="contact-form-container">
                     <h1 className="heading text-center">Login</h1>
@@ -91,7 +91,7 @@ const Login = () => {
                             </button>
                         </div>
                         <div>
-                            <a href="/register">New user ? <span>Register Here.</span> </a>
+                            <a href="/register">New user ? <span style={{fontWeight:900}}>Register Here.</span> </a>
                         </div>
                     </form>
                 </div>

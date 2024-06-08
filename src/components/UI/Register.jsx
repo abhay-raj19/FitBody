@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import "../../styles/register.css";
-import Lottie from "lottie-react";
-import ContactAnimation from "../../assets/JSON/contactus.json";
+
 
 const Register = () => {
     const initialFormData = {
@@ -81,8 +80,11 @@ const Register = () => {
         <section id="contact-us" className="form">
             <Toaster />
             <div className="w-full form grid justify-center items-center">
-                <div className="contact-animation">
+                {/* <div className="contact-animation">
                     <Lottie animationData={ContactAnimation} />
+                </div> */}
+                <div className="register-img">
+                    <img src="./image.png" width={500} ></img>
                 </div>
                 <div className="contact-form-container">
                     <h1 className="heading text-center">Register</h1>
@@ -148,7 +150,7 @@ const Register = () => {
                         </div>
                     </form>
                     <div>
-                        <a href="/login">Already have an account? <span >Login</span></a>
+                        <a href="/login">Already have an account?  <span style={{fontWeight:900}}>Login Here.</span> </a>
                     </div>
                 </div>
             </div>

@@ -148,3 +148,9 @@ select:focus {
   justify-content: space-between;
 }
 
+.register-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
