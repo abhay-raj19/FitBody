@@ -53,7 +53,7 @@ const Reviews = () => {
           <div className="mt-4">
             <Button variant="text" endIcon={<KeyboardArrowDown />}>
               {" "}
-              Show Summery
+              Show Summary
             </Button>
           </div>
         </Box>
