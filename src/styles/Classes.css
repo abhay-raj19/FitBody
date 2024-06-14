@@ -164,12 +164,13 @@ h1 {
 
 .gotohome {
   height: 50px;
-  width: 100px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left:1250px;
-  background-color: #4CAF50; 
+  margin-left:10px;
+  margin-top:-50px;
+  background-color: #6f55f2; 
   color: white; 
   border: none; 
   border-radius: 5%;
@@ -180,6 +181,5 @@ h1 {
 }
 
 .gotohome:hover {
-  background-color: #45a049; 
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+  box-shadow: 0.3rem 0.3rem #5844c1, -0.3rem -0.3rem #8b76f4;
 }
