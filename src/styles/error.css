@@ -1,0 +1,70 @@
+
+ .not-found-container {
+      display: flex;
+      justify-content: center;
+      margin-top: -3.2rem;
+      align-items: center;
+      height: 95vh;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+  }
+
+  .error-image {
+      max-width: 100%;
+      height: 375px;
+      margin-bottom: 20px;
+  }
+
+  .content {
+      border-radius: 10px;
+  }
+
+  .content-text {
+      font-size: 2rem;
+      margin-bottom: 70px;
+  }
+
+  .home-button {
+      border: none;
+      outline: none;
+      padding: 15px 20px;
+      color: #fff;
+      background: var(--primary-color);
+      border-radius: 5px;
+      font-family: var(--font-name);
+      font-size: 1.0rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .home-button:hover {
+      box-shadow: 0.3rem 0.3rem #5844c1, -0.3rem -0.3rem #8b76f4;
+      color: white;
+  }
+
+  /* Light mode styles */
+  .light-mode-app .content {
+      color: #000;
+  }
+
+  /* Dark mode styles */
+  .dark-mode-app .content {
+      color: #fff;
+  }
+
+  @media (max-width: 768px) {
+      .content {
+          width: 90%;
+          padding: 15px;
+      }
+
+      .home-button {
+          font-size: 1rem;
+          padding: 8px 16px;
+      }
+  }
+
+
