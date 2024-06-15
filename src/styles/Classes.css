@@ -3,6 +3,7 @@
   background-color: #f7f7f7; /* Light mode background color */
   color: #333333; /* Light mode text color */
   transition: 0.3s ease-in;
+  height: 100vh;
 }
 
 /* Dark mode styles */
@@ -10,6 +11,7 @@
   background-color: #121212; /* Dark mode background color */
   color: #ffffff; /* Dark mode text color */
   transition: 0.3s ease-in;
+  height:100vh;
 }
 
 /* Common styles */

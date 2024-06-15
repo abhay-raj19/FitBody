@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -21,5 +20,6 @@
     "mongoose": "^8.3.4",
     "nodemon": "^3.1.0",
     "zod": "^3.23.8"
-  }
+  },
+  "description": ""
 }
