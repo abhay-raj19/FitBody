@@ -99,6 +99,17 @@ Here is the live view of this website. It is hosted on Vercel https://fit-body-d
 
 3. Run `npm start` for starting the server (FitBody is currently running on `localhost:3000`)
 
+#### Using Docker Container
+
+1. At root directory, Run the Docker Compose up Command 
+
+```bash
+docker-compose -f docker-compose.dev.yaml up
+#  or
+docker-compose -f docker-compose.dev.yaml up --build
+```
+
+Your Docker container will be running at `https://localhost:8000/`.
 
 
     Happy coding :)
