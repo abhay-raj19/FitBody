@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+    fitbody_web:
+        container_name: FitBody_Web
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: development
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/app
+
+    fitbody_server:
+        container_name: FitBody_Server
+        build:
+            context: ./server
+            dockerfile: Dockerfile.server
+        ports:
+            - "3000:3000"
+        depends_on:
+            - fitbody_mongo
+
+    fitbody_mongo:
+        container_name: "FitBody_Mongo"
+        image: mongo
+        ports:
+            - "27017:27017"
+        volumes:
+            - mongodb-data:/data/db/
+volumes:
+    mongodb-data:
