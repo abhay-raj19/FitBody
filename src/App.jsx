@@ -18,6 +18,7 @@ import Licensing from "./components/UI/Licensing";
 import TermsAndConditions from "./components/UI/termsandconditions";
 import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
 import Error from "./components/UI/Error";
+import Register from "./components/UI/Register";
 
 
 
@@ -54,6 +55,7 @@ function App() {
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/licensing" element={<Licensing />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/register" element={<Register/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
