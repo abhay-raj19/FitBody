@@ -24,9 +24,29 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script >
+      window.addEventListener("load", function () {
+          const loader = document.getElementById("loading");
+          loader.style.display = "none";
+      });
+  </script>
     <title>FitBody</title>
+    <style>
+      #loading {
+    background : url(./src/assets/img/Circle\ Loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: 999;
+    height: 100vh;
+    width: 100%;
+    
+
+}
+    </style>
   </head>
-  <body>
+  <body class="load">
+    <div id="loading"></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
 
@@ -41,5 +61,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
 </html>
