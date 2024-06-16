@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "../../styles/header.css";
 import logo from "../../assets/img/dumble.png";
-import { useEffect, useState } from "react";
 import gsap from "gsap";
+import { NavLink } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 const nav__links = [
 	{
-		path: "#home",
+		path: "/",
 		display: "Home",
 	},
 	{
@@ -28,6 +28,7 @@ const nav__links = [
 		display: "Contact Us",
 	},
 ];
+
 const Header = ({ isDarkMode, setDarkMode }) => {
 	const [open, setOpen] = useState(false);
 	const [headerBackground, setHeaderBackground] = useState(
@@ -71,16 +72,21 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 		};
 	}, [isDarkMode]);
 
-	const handleClick = (e) => {
+	const handleClick = (e, path) => {
 		e.preventDefault();
 
-		const targetAttr = e.target.getAttribute("href");
-		const location = document.querySelector(targetAttr).offsetTop;
-
-		window.scrollTo({
-			left: 0,
-			top: location - 80,
-		});
+		if (path === "/") {
+			window.scrollTo({
+				left: 0,
+				top: 0,
+			});
+		} else {
+			const location = document.querySelector(path).offsetTop;
+			window.scrollTo({
+				left: 0,
+				top: location - 80,
+			});
+		}
 		toggleMobileMenu();
 	};
 
@@ -110,7 +116,7 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 							</div>
 							<div className="icon_logo">
 								<h2>
-									<a href="/">FitBody</a>
+									<NavLink to="/">FitBody</NavLink>
 								</h2>
 							</div>
 							<div
@@ -146,12 +152,23 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 							<ul className="menu">
 								{nav__links.map((item, index) => (
 									<li className="nav_item" key={index}>
-										<a
-											onClick={handleClick}
-											href={item.path}
-										>
-											{item.display}
-										</a>
+										{item.path === "/" ? (
+											<NavLink
+												
+												to="/"
+											>
+												{item.display}
+											</NavLink>
+										) : (
+											<a
+												onClick={(e) =>
+													handleClick(e, item.path)
+												}
+												href={item.path}
+											>
+												{item.display}
+											</a>
+										)}
 									</li>
 								))}
 							</ul>
@@ -159,12 +176,9 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 
 						{/* Nav Right */}
 
-						<div className="nav_right">
+						<NavLink to="/register"><div className="nav_right">
 							<button className="register_btn">Register</button>
-							{/* <span className="mobile__menu">
-                <i className="ri-menu-line"></i>
-              </span> */}
-						</div>
+						</div></NavLink>
 					</div>
 				</div>
 			</div>

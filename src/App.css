@@ -23,12 +23,14 @@
 .light-mode-app {
   background-color: #f7f7f7;
   color: #333;
+  height:100vh;
 }
 
 /* Styles for dark mode */
 .dark-mode-app {
   background-color:#111;
-   color:#f7f7f7
+   color:#f7f7f7;
+   height:100vh;
 }
 
 @media (max-width: 768px) {

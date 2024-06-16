@@ -28,7 +28,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "dev":"vite"
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +53,9 @@
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.2.11",
     "esbuild": "^0.15.0"
-  }
+  },
+  "description": "<h1 align=\"center\">🏋🏽FitBody🏋🏽</h1>\r <p align=\"center\">\r <div align=\"center\">\r <img src=\"https://forthebadge.com/images/badges/built-with-love.svg\" />\r <img src=\"https://forthebadge.com/images/badges/uses-brains.svg\" />\r <img src=\"https://forthebadge.com/images/badges/powered-by-responsibility.svg\" />\r    <br>\r    <img src=\"https://img.shields.io/github/repo-size/abhay-raj19/FitBody?style=for-the-badge\" />\r    <img src=\"https://img.shields.io/github/issues/abhay-raj19/FitBody?style=for-the-badge\" />\r    <img src=\"https://img.shields.io/github/issues-closed-raw/abhay-raj19/FitBody?style=for-the-badge\" />\r     <img src=\"https://img.shields.io/github/license/abhay-raj19/FitBody?style=for-the-badge\" />",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
