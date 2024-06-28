@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "./App.css";
+import About from "./components/UI/About";
 import Header from "./components/Header/Header";
 import Exercises from "./components/UI/Exercises";
 import Footer from "./components/UI/Footer";
@@ -55,6 +56,7 @@ function App() {
             <BackToTop />
           </div>} />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/about" element={<About />} />
           <Route path="/diet" element={<Diet />} />
 
           <Route path="/register" element={<Register />} />

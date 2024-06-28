@@ -33,6 +33,7 @@ textarea {
   font: var(--font-name);
   background: none;
   color: inherit;
+  transition: 0.5s;
 }
 
 input {
@@ -43,6 +44,8 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+  width: 520px;
+  border-color: var(--primary-color);
 }
 
 .text-end {
