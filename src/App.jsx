@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Aos from "aos";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
+import About from "./components/UI/About";
 import Header from "./components/Header/Header";
 import Exercises from "./components/UI/Exercises";
 import Footer from "./components/UI/Footer";
@@ -14,6 +15,10 @@ import BackToTop from "./components/UI/BackToTop";
 import LocomotiveScroll from "locomotive-scroll";
 import Classes from "./components/UI/Classes";
 import Diet from "./components/UI/Diet";
+
+import Register from "./components/UI/Register";
+import Login from "./components/UI/Login";
+
 import PrivacyPolicy from "./components/UI/privacypolicy";
 import Licensing from "./components/UI/Licensing";
 import TermsAndConditions from "./components/UI/termsandconditions";
@@ -56,11 +61,18 @@ function App() {
             }
           />
           <Route path="/classes" element={<Classes />} />
+          <Route path="/about" element={<About />} />
           <Route path="/diet" element={<Diet />} />
+
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/licensing" element={<Licensing />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
+
           <Route path="*" element={<Error />} />
+
         </Routes>
       </Router>
     </>
