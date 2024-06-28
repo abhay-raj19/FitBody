@@ -1,0 +1,156 @@
+/* @dhruv8433 custom styles */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-block: 40px;
+}
+
+input,
+textarea {
+  width: 500px;
+  border: none;
+  border-bottom: 1px solid;
+  margin-block: 10px;
+  font: var(--font-name);
+  background: none;
+}
+
+input {
+  height: 40px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.contact-us {
+  width: max-content;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 5px;
+  font-family: var(--font-name);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-top: 20px;
+}
+
+.submit:hover {
+  cursor: pointer;
+  box-shadow: 0.3rem 0.3rem #5844c1, -0.3rem -0.3rem #8b76f4;
+}
+/* contactUs.css */
+/* Mobile Styles */
+.form {
+  padding: 20px;
+}
+
+.contact-form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contact-animation {
+  margin-bottom: 20px;
+}
+
+.contact-form-container {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* Tablet and Desktop Styles */
+@media screen and (min-width: 768px) {
+  .form {
+    padding: 50px;
+  }
+
+  .contact-us-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-animation {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    margin-right: 50px;
+  }
+
+  .contact-form-container {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+  }
+}
+
+.grid{
+  display: grid;
+  columns: 12;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .contact-us {
+    width: 90%;
+    border-radius: 0;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: calc(100% - 4px);
+  }
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.register-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
