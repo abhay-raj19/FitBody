@@ -4,6 +4,7 @@ import logo from "../../assets/img/dumble.png";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
 
 const nav__links = [
@@ -160,10 +161,8 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 						{/* Nav Right */}
 
 						<div className="nav_right">
-							<button className="register_btn">Register</button>
-							{/* <span className="mobile__menu">
-                <i className="ri-menu-line"></i>
-              </span> */}
+							<button className="register_btn" ><Link to="/register">Register</Link></button>
+							<button className="register_btn" ><Link to="/login">Login</Link></button>
 						</div>
 					</div>
 				</div>

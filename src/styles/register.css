@@ -32,8 +32,6 @@ textarea {
   margin-block: 10px;
   font: var(--font-name);
   background: none;
-  color: inherit;
-  transition: 0.5s;
 }
 
 input {
@@ -44,8 +42,6 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  width: 520px;
-  border-color: var(--primary-color);
 }
 
 .text-end {
@@ -81,7 +77,7 @@ select:focus {
   padding: 20px;
 }
 
-.contact-us-container {
+.contact-form-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -103,12 +99,7 @@ select:focus {
 .input-group {
   margin-bottom: 20px;
 }
-.input-group input,.input-group textarea{
-  color: black;
-}
-.dark-mode-app .input-group input,.dark-mode-app .input-group textarea{
-  color: white;
-} 
+
 .text-end {
   text-align: end;
 }
@@ -157,3 +148,9 @@ select:focus {
   justify-content: space-between;
 }
 
+.register-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
