@@ -1,0 +1,55 @@
+/* Create styles specific to About Us page */
+#about-us {
+    padding: 5rem 0;
+  }
+  
+  #about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #about-us .about_top {
+    text-align: center;
+  }
+
+  #about-us .about_top h2{
+    font-size: 3rem;
+    line-height: 60px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  #about-us .section_title {
+    margin-bottom: 1rem;
+  }
+  
+  #about-us p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+
+  #about-us .about_content p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    line-height: 30px;
+  }
+  
+  #about-us h3 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  #about-us ul {
+    list-style: disc;
+    margin-bottom: 0;
+  }
+
+  #about-us ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    line-height: 30px;
+  }
+  
