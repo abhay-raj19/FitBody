@@ -1,5 +1,6 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import 'font-awesome/css/font-awesome.min.css';
 
 :root {
   --primary-color: #6f55f2;

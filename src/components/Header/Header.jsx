@@ -30,6 +30,7 @@ const nav__links = [
 	},
 ];
 const Header = ({ isDarkMode, setDarkMode }) => {
+	const [isClicked, setIsClicked] = useState(false)
 	const [open, setOpen] = useState(false);
 	const [headerBackground, setHeaderBackground] = useState(
 		isDarkMode ? "#111" : "#fff"
@@ -58,6 +59,14 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 			headerRef.current.classList.remove("sticky_header");
 		}
 	};
+	const byClick=()=>{
+		if(isClicked==false){
+		setIsClicked(true);
+	}else{
+	setIsClicked(false);
+	}
+	toggleMobileMenu()
+	}
 
 	useEffect(() => {
 		setHeaderBackground(isDarkMode ? "#111" : "#fff");
@@ -127,11 +136,14 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 											? { transform: 'translateX(0%)' }
 											: { transform: 'translateX(140%)' }
 									}
-								/>
+									/>
 							</div>
 						</div>
 
-						<div className="nav-btn">
+						<div 
+s							onClick={byClick}	className={`fa ${isClicked ? 'fa-times' : 'fa-bars'} ` }
+
+						>
 							<label htmlFor="nav-check">
 								<span></span>
 								<span></span>
