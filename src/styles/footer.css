@@ -1,147 +1,176 @@
-.footer{
+.footer {
     padding: 50px 0px;
-    background: #eeeaff ;
+    background: #eeeaff;
 }
 
-.footer_wrapper{
+.footer_wrapper {
     display: flex;
     align-items: center;
-    justify-content : space-between;
+    justify-content: space-between;
     column-gap: 2rem;
 }
-.footer_box{
-    width:30%;
-    
+
+.footer_box {
+    width: 30%;
 }
-.abc{
-    padding-right:50px;
+
+.abc {
+    padding-right: 50px;
 }
-.footer_box p{
-    color:var(--heading-color);
+
+.footer_box p {
+    color: var(--heading-color);
     line-height: 28px;
-    margin-top : 20px;
+    margin-top: 20px;
 }
-.footer_title{
+
+.footer_title {
     font-size: 1.2rem;
     color: var(--heading-color);
     margin-bottom: 20px;
 }
+
 .footer_links li {
     line-height: 28px;
-    color:black;
+    color: black;
 }
+
 .footer_links li a {
     color: var(--heading-color);
- 
 }
 
-/* changes some css  */
-
-.footer_links li:hover {
-  color: #0078d4;                  
-  cursor: pointer;
- 
-}
 .copyright{
     margin-top: 30px;
     text-align: center;
-    color: #777;
+    color: #777777;
     font-size: 1rem;
 }
-/* 
------- */
+
+/* Light mode hover styles */
+.footer_links li a:hover {
+    color: #0078d4; /* Light mode hover color for links */
+    cursor: pointer;
+}
+
+/* Social media icon hover effects in light mode */
+.social_media .ri-github-fill:hover {
+    color: #575454; /* GitHub */
+}
+
+.social_media .ri-linkedin-box-fill:hover {
+    color: #0077b5; /* LinkedIn */
+}
+
+.social_media .ri-instagram-line:hover {
+    color: #cd486b; /* Instagram */
+}
+
+.social_media .ri-facebook-circle-fill:hover {
+    color: #1877F2; /* Facebook */
+}
+
+.social_media .bi-twitter-x:hover {
+    color: #1da1f2; /* Twitter */
+}
 
 /* Dark mode styles */
 .dark-mode-app .footer {
-  background: #111;
-  color: #fff; /* Text color in dark mode */
+    background: #111;
+    color: #fff; /* Text color in dark mode */
 }
-.dark-mode-app .footer p{
-  color: #fff; /* Text color in dark mode */
+
+.dark-mode-app .footer p {
+    color: #fff; /* Text color in dark mode */
 }
 
 .dark-mode-app .footer_title {
-  color: #fff; /* Heading color in dark mode */
+    color: #fff; /* Heading color in dark mode */
 }
 
 .dark-mode-app .footer_links li {
-  color: #535fb9; /* Link color in dark mode */
+    color: #535fb9; /* Link color in dark mode */
 }
 
-.dark-mode-app .footer_links li:hover {
-  color: #0078d4;   /* Hover color in dark mode */
+.dark-mode-app .footer_links li a {
+    color: #fff; /* Link color in dark mode */
 }
-.dark-mode-app .social_media i:hover {
-  color: #0078d4; /* Hover color in dark mode */
+
+/* Dark mode hover styles */
+.dark-mode-app .footer_links li a:hover {
+    color: #0078d4; /* Dark mode hover color for links */
+    cursor: pointer;
+}
+
+/* Social media icon hover effects in dark mode */
+.dark-mode-app .social_media .ri-github-fill:hover {
+    color: #777373; /* GitHub in dark mode */
+}
+
+.dark-mode-app .social_media .ri-linkedin-box-fill:hover {
+    color: #0077b5; /* LinkedIn in dark mode */
+}
+
+.dark-mode-app .social_media .ri-instagram-line:hover {
+    color: #cd486b; /* Instagram in dark mode */
+}
+
+.dark-mode-app .social_media .ri-facebook-circle-fill:hover {
+    color: #1877F2; /* Facebook in dark mode */
+}
+
+.dark-mode-app .social_media .bi-twitter-x:hover {
+    color: #1da1f2; /* Twitter in dark mode */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .footer_wrapper {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
-  
+
     .footer_box {
-      width: 100%;
-      margin-bottom: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
     }
-  }
-  .container {
+}
+
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
+}
 
-  .logo h2 {
+.logo h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-  
-  .footer_title {
+}
+
+.footer_title {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-  }
+}
 
-  .social_media{
+.social_media {
     margin-top: 15px;
     text-align: center;
     font-size: 1.6rem;
-  }
+}
 
-  .social_media i{
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-    
-  }
+.social_media i,
+.social_media svg {
+    margin: 0 0.75rem;
+}
 
-  .social_media svg {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
-  
-  }
-  
-  .social_media svg:hover {
-    color: #0078d4;
-    cursor: pointer;
-  }
-
-  .social_media i:hover {
-    color: #0078d4;                  
-    cursor: pointer;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
     .logo h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
-  
+
     .footer_title {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
     }
-  }
-  
+}

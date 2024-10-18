@@ -2,7 +2,6 @@ import React from "react";
 import "../../styles/footer.css";
 import logo from "../../assets/img/dumble.png";
 
-
 const Footer = () => {
   const year = new Date().getFullYear();
 
@@ -44,7 +43,7 @@ const Footer = () => {
           <div className="footer_box">
             <h4 className="footer_title">Quick Links</h4>
             <ul className="footer_links">
-            <a href="/">
+              <a href="/">
                 <li>Home</li>
               </a>
               <a href="/about">
@@ -92,7 +91,14 @@ const Footer = () => {
           </a>
           <a href="/#">
             {" "}
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="25"
+              fill="currentColor"
+              class="bi bi-twitter-x"
+              viewBox="0 0 16 16"
+            >
               <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
             </svg>{" "}
           </a>
@@ -100,7 +106,15 @@ const Footer = () => {
           {/* <i class="ri-twitter-x-fill"></i> */}
         </p>
         <p className="copyright">
-          Copyright - {year} developed by abhay-raj19. All rights reserved.
+          &copy; {year}. Website developed by{" "}
+          <a
+            href="https://github.com/abhay-raj19"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abhay Raj
+          </a>
+          . All rights reserved.
         </p>
       </div>
     </footer>

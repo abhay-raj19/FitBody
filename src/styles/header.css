@@ -62,7 +62,7 @@ ul {
 
 .nav__wrapper {
     display: flex;
-    align-items: center;
+    align-items: first baseline;
     justify-content: space-between;
 }
 
@@ -188,8 +188,6 @@ ul {
         display: block;
     }
     
-   
-
     .nav-btn>label>span {
         display: block;
         width: 19px;
@@ -267,7 +265,14 @@ ul {
         justify-content: space-between;
         width: 100%;
     }
- 
+    
+    .fa {
+    display: block; /* Ensure it's displayed */
+    font-size: 2rem; /* Increase font size for the hamburger icon */
+    width: 30px; /* Set a width */
+    height: 30px; /* Set a height */
+    cursor: pointer; /* Change cursor to pointer */
+}
 }
 
 .styles-container {
@@ -298,7 +303,6 @@ ul {
 }
 
 
-
 @media (max-width: 1000px) {
   
     .menu {
@@ -308,7 +312,7 @@ ul {
 
     .nav-btn {
         border-radius:6px;
-           background: var(--bg-gradient);
+        background: var(--bg-gradient);
     }
 
     .nav_item a {
@@ -319,7 +323,7 @@ ul {
         gap: 1.5rem;
     }
 }
-@media (min-width:641px) and (max-width:1281px) {
+@media (min-width:768px) and (max-width:1581px) {
     .fa{
         display: none;
     }

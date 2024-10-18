@@ -97,90 +97,89 @@ const Header = ({ isDarkMode, setDarkMode }) => {
 	const headerClass = isDarkMode ? "header dark-mode" : "header";
 
 	return (
-		<header
-			className={headerClass}
-			ref={headerRef}
-			style={{
-				background: "rgba(39, 39, 39, 0.1)",
-				borderRadius: "20px",
-				backdropFilter: "blur(60px)",
-				border: "2px solid rgba(255, 255, 255, 0.2)",
-				boxShadow: "0 0 80px rgba(0, 0, 0, 0.3)"
-			}}
-		>
-			<div className="container">
-				<div className="nav__wrapper">
-					{/*=====LOGO===*/}
+    <header
+      className={headerClass}
+      ref={headerRef}
+      style={{
+        background: "rgba(39, 39, 39, 0.1)",
+        borderRadius: "20px",
+        backdropFilter: "blur(60px)",
+        border: "2px solid rgba(255, 255, 255, 0.2)",
+        boxShadow: "0 0 80px rgba(0, 0, 0, 0.3)",
+      }}
+    >
+      <div className="container">
+        <div className="nav__wrapper">
+          {/*=====LOGO===*/}
 
-					<input type="checkbox" id="nav-check" hidden />
-					<div className="btn__wrapper">
-						<div className="logo">
-							<div className="logo_img">
-								<img src={logo} alt="" />
-							</div>
-							<div className="icon_logo">
-								<h2>
-									<a href="/">FitBody</a>
-								</h2>
-							</div>
-							<div
-								className="styles-container"
-								onClick={toggleDarkMode}
-							>
-								<div className="styles-icon">🌙</div>
-								<div className="styles-icon">🔆</div>
-								<div
-									className="styles-ball"
-									style={
-										!isDarkMode
-											? { transform: 'translateX(0%)' }
-											: { transform: 'translateX(140%)' }
-									}
-									/>
-							</div>
-						</div>
+          <input type="checkbox" id="nav-check" hidden />
+          <div className="btn__wrapper">
+            <div className="logo">
+              <div className="logo_img">
+                <img src={logo} alt="" />
+              </div>
+              <div className="icon_logo">
+                <h2>
+                  <a href="/">FitBody</a>
+                </h2>
+              </div>
+              <div className="styles-container" onClick={toggleDarkMode}>
+                <div className="styles-icon">🌙</div>
+                <div className="styles-icon">🔆</div>
+                <div
+                  className="styles-ball"
+                  style={
+                    !isDarkMode
+                      ? { transform: "translateX(0%)" }
+                      : { transform: "translateX(140%)" }
+                  }
+                />
+              </div>
+            </div>
 
-						<div 
-s							onClick={byClick}	className={`fa ${isClicked ? 'fa-times' : 'fa-bars'} ` }
+            <div
+              s
+              onClick={byClick}
+              className={`fa ${isClicked ? "fa-times" : "fa-bars"} `}
+            >
+              <label htmlFor="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+          </div>
 
-						>
-							<label htmlFor="nav-check">
-								<span></span>
-								<span></span>
-								<span></span>
-							</label>
-						</div>
-					</div>
+          {/*====Navigation bar====*/}
 
-					{/*====Navigation bar====*/}
+          <div className="nav__links">
+            <div className="navigation">
+              <ul className="menu">
+                {nav__links.map((item, index) => (
+                  <li className="nav_item" key={index}>
+                    <a onClick={handleClick} href={item.path}>
+                      {item.display}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-					<div className="nav__links">
-						<div className="navigation">
-							<ul className="menu">
-								{nav__links.map((item, index) => (
-									<li className="nav_item" key={index}>
-										<a
-											onClick={handleClick}
-											href={item.path}
-										>
-											{item.display}
-										</a>
-									</li>
-								))}
-							</ul>
-						</div>
+            {/* Nav Right */}
 
-						{/* Nav Right */}
-
-						<div className="nav_right">
-							<button className="register_btn" ><Link to="/register">Register</Link></button>
-							<button className="register_btn" ><Link to="/login">Login</Link></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-	);
+            <div className="nav_right">
+              <button className="register_btn">
+                <Link to="#">Register</Link>
+              </button>
+              {/* <button className="register_btn">
+                <Link to="/login">Login</Link>
+              </button> */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
