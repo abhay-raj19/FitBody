@@ -1,3 +1,23 @@
+
+/* :root {
+    --heading-color: #ffffff;
+} */
+
+
+
+/* Default (light mode) */
+:root {
+  --heading-color: #000000;  /* black for light backgrounds */
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --heading-color: #aaaaaa;  /* light gray for dark backgrounds */
+  }
+}
+
+
 .hero_wrapper{
     display: flex;
     justify-content: space-between;
