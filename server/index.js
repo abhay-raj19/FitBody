@@ -55,14 +55,16 @@ server.use((obj, req, res, next) => {
 
 // Database connection Function 
 const ConnetMongoDB = async () => {
-    try {
-        await mongoose.connect('mongodb://localhost:27017/fitbody');  
-        console.log('DB connected !');
-    } catch (error) { 
-       console.error('Error: ', error);
-        console.log('DB connection failed');
-    }
-}
+	try {
+		await mongoose.connect(
+			`mongodb://${process.env.DATABASE}:27017/fitbody`
+		);
+		console.log("DB connected !");
+	} catch (error) {
+		console.error("Error: ", error);
+		console.log("DB connection failed");
+	}
+};
 
 
 // Server Listening
